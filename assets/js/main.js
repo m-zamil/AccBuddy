@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const logo = document.querySelector('[data-logo]');
   console.log(headerNav);
 
-  const topbar = document.querySelector('[data-header-mobile-topbar');
+  const topbar = document.querySelector('[data-header-topbar');
   const bottomBar = document.querySelector('[data-header-bottom-bar');
 
   hamburger.addEventListener('click', () => {
