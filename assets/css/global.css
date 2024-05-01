@@ -51,6 +51,9 @@ ul {
   padding-left: 0;
   margin: 0;
 }
+dl {
+  margin: 0;
+}
 img {
   vertical-align: middle;
   max-width: 100%;
@@ -82,6 +85,11 @@ input:focus-visible {
   background-color: var(--yellow);
   border-radius: 5px;
   padding: 0 0.5em;
+}
+.always-portrait {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 p .highlight {
   padding: 0;
@@ -423,43 +431,6 @@ p .highlight {
   }
   .logo-word-2 {
     margin-left: 4px;
-  }
-}
-/* ============ Breadcrumb Styles ============ */
-.breadcrumb-section {
-  margin: 32px 0 10px;
-}
-
-.breadcrumb > li {
-  display: inline;
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.breadcrumb a,
-.breadcrumb span {
-  background-color: var(--yellow);
-  border-radius: 5px;
-  padding: 0 4px;
-  display: inline-block;
-}
-
-.breadcrumb > li + li:before {
-  content: '/';
-}
-@media (min-width: 768px) {
-  .breadcrumb > li {
-    font-size: 12px;
-  }
-}
-@media (min-width: 1201px) {
-  .breadcrumb > li {
-    font-size: 16px;
-  }
-  .breadcrumb a,
-  .breadcrumb span {
-    padding: 0 5px;
   }
 }
 /* ============ Footer Styles ============ */
