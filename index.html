@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/breadcrumb.css" />
+    <link rel="stylesheet" href="./assets/css/article.css" />
   </head>
   <body>
     <!-- ====== Header ======-->
@@ -76,33 +78,29 @@
       </div>
     </header>
     <main>
-      <!-- ====== Breadcrumb ====== -->
-      <div class="breadcrumb-section">
-        <div class="container">
-          <nav>
-            <ol class="breadcrumb">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/blog">Blog</a>
-              </li>
-              <li>
-                <span>How to Set Up and Use a Microsoft Account</span>
-              </li>
-            </ol>
-          </nav>
-        </div>
+      <!-- ============ Breadcrumb ============ -->
+      <div class="container">
+        <nav>
+          <ol class="breadcrumb">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+            <li>
+              <span>How to Set Up and Use a Microsoft Account</span>
+            </li>
+          </ol>
+        </nav>
       </div>
+      <!-- ============ Article ============ -->
       <article class="article">
         <div class="container">
-          <h1 class="article__heading" data-import-article="h1">How to Set Up and Use a Microsoft Account</h1>
-          <div class="article__info">
-            <span class="article__author highlight">AccWorld review team</span>
-            <time class="article__date">29 jul 2024</time>
-          </div>
+          <h1 data-import-article="h1">How to Set Up and Use a Microsoft Account</h1>
+          <span class="article__author highlight">AccWorld review team</span> <time class="article__date">29 jul 2024</time>
           <p class="article__lead">Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-          <h2 class="article__heading-toc">Table of contents</h2>
+          <h2>Table of contents</h2>
           <nav class="article__nav">
             <ul class="article__nav-list">
               <li data-table-of-contents-element="">Security: Enhanced with passwords, secret questions, and two-factor authentication.</li>
@@ -114,86 +112,78 @@
               <li data-table-of-contents-element="">Support: Quick access to Microsoft product experts for assistance and advice.</li>
             </ul>
           </nav>
-          <div class="article__content">
-            <h2>Consequat, vel illum dolore eu feug</h2>
-            <p>
-              Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <a href="#" class="highlight">Duis autem vel eum iriure dolor in</a> hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <br />
-              Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-            </p>
-            <h3>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</h3>
-            <table class="article__table">
-              <tr>
-                <th>Lorem ipsum</th>
-                <th>Erat volutpat</th>
-                <th>Ad minim veniam</th>
-                <th>Magna aliquam</th>
-                <th>Lobortis nisl</th>
-              </tr>
-              <tr>
-                <td>Cons ectetuer</td>
-                <td>Dolor sit amet, cons ectetuer</td>
-                <td>Ut wisi enim ad</td>
-                <td>Cons ectetuer</td>
-                <td>Dolor sit amet, cons ectetuer</td>
-              </tr>
-              <tr>
-                <td>Ut wisi enim ad</td>
-                <td>Cons ectetuer</td>
-                <td>Dolor sit amet, cons ectetuer</td>
-                <td>Ut wisi enim ad</td>
-                <td>Cons ectetuer</td>
-              </tr>
-              <tr>
-                <td>Dolor sit amet, cons ectetuer</td>
-                <td>Ut wisi enim ad</td>
-                <td>Cons ectetuer</td>
-                <td>Dolor sit amet, cons ectetuer</td>
-                <td>Ut wisi enim ad</td>
-              </tr>
-            </table>
-            <h3>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</h3>
-            <ul class="article__list">
-              <li>Security: Enhanced with passwords, secret questions, and two-factor authentication.</li>
-              <li>Privacy: Access to search history across all devices, webpage visits, location data, and more.</li>
-              <li>Family Features: Stay connected with loved ones no matter where they are.</li>
-              <li>Payments: Easily update payment information, view order history, and manage transactions.</li>
-              <li>Subscriptions: Renew and manage Microsoft services and subscriptions from one dashboard.</li>
-              <li>Device Management: Locate or lock lost Windows devices and easily arrange repairs.</li>
-              <li>Support: Quick access to Microsoft product experts for assistance and advice.</li>
-            </ul>
-            <ol class="article__list">
-              <li><span class="semibold">Security:</span> Enhanced with passwords, secret questions, and two-factor authentication.</li>
-              <li><span class="semibold">Privacy:</span> Access to search history across all devices, webpage visits, location data, and more.</li>
-              <li><span class="semibold">Family Features:</span> Stay connected with loved ones no matter where they are.</li>
-              <li><span class="semibold">Payments:</span> Easily update payment information, view order history, and manage transactions.</li>
-              <li><span class="semibold">Subscriptions:</span> Renew and manage Microsoft services and subscriptions from one dashboard.</li>
-              <li><span class="semibold">Device Management:</span> Locate or lock lost Windows devices and easily arrange repairs.</li>
-              <li><span class="semibold">Support:</span> Quick access to Microsoft product experts for assistance and advice.</li>
-            </ol>
-            <div class="article__img-wrapper">
-              <figure>
-                <picture>
-                  <img class="article__img" data-import-article="img-lead" alt="" src="./assets/images/portrait-of-woman-270w.png" srcset="./assets/images/portrait-of-woman-166w.png 166w, ./assets/images/portrait-of-woman-270w.png 270w, ./assets/images/portrait-of-woman-434w.png 434w, ./assets/images/portrait-of-woman-770w.png 770w" sizes="(min-width: 1920px) 770px, (min-width: 1200px) 434px, (min-width: 768px) 270px,(min-width:361px) 345px, 166px" />
-                  <!-- <img class="article__img" src="./assets/images/cvc_article_lead_image_2048w.jpeg" alt="" /> -->
-                </picture>
-                <figcaption>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis n</figcaption>
-              </figure>
-            </div>
+          <h2>Consequat, vel illum dolore eu feug</h2>
+          <p>
+            Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <a href="#" class="highlight">Duis autem vel eum iriure dolor in</a> hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. <br />
+            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+          </p>
+          <h3>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</h3>
+          <table class="article__table">
+            <tr>
+              <th>Lorem ipsum</th>
+              <th>Erat volutpat</th>
+              <th>Ad minim veniam</th>
+              <th>Magna aliquam</th>
+              <th>Lobortis nisl</th>
+            </tr>
+            <tr>
+              <td>Cons ectetuer</td>
+              <td>Dolor sit amet, cons ectetuer</td>
+              <td>Ut wisi enim ad</td>
+              <td>Cons ectetuer</td>
+              <td>Dolor sit amet, cons ectetuer</td>
+            </tr>
+            <tr>
+              <td>Ut wisi enim ad</td>
+              <td>Cons ectetuer</td>
+              <td>Dolor sit amet, cons ectetuer</td>
+              <td>Ut wisi enim ad</td>
+              <td>Cons ectetuer</td>
+            </tr>
+            <tr>
+              <td>Dolor sit amet, cons ectetuer</td>
+              <td>Ut wisi enim ad</td>
+              <td>Cons ectetuer</td>
+              <td>Dolor sit amet, cons ectetuer</td>
+              <td>Ut wisi enim ad</td>
+            </tr>
+          </table>
+          <h3>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</h3>
+          <ul class="article__list">
+            <li>Security: Enhanced with passwords, secret questions, and two-factor authentication.</li>
+            <li>Privacy: Access to search history across all devices, webpage visits, location data, and more.</li>
+            <li>Family Features: Stay connected with loved ones no matter where they are.</li>
+            <li>Payments: Easily update payment information, view order history, and manage transactions.</li>
+            <li>Subscriptions: Renew and manage Microsoft services and subscriptions from one dashboard.</li>
+            <li>Device Management: Locate or lock lost Windows devices and easily arrange repairs.</li>
+            <li>Support: Quick access to Microsoft product experts for assistance and advice.</li>
+          </ul>
+          <ol class="article__list">
+            <li><span class="semibold">Security:</span> Enhanced with passwords, secret questions, and two-factor authentication.</li>
+            <li><span class="semibold">Privacy:</span> Access to search history across all devices, webpage visits, location data, and more.</li>
+            <li><span class="semibold">Family Features:</span> Stay connected with loved ones no matter where they are.</li>
+            <li><span class="semibold">Payments:</span> Easily update payment information, view order history, and manage transactions.</li>
+            <li><span class="semibold">Subscriptions:</span> Renew and manage Microsoft services and subscriptions from one dashboard.</li>
+            <li><span class="semibold">Device Management:</span> Locate or lock lost Windows devices and easily arrange repairs.</li>
+            <li><span class="semibold">Support:</span> Quick access to Microsoft product experts for assistance and advice.</li>
+          </ol>
+          <div class="article__img-wrapper">
+            <figure>
+              <picture>
+                <img class="article__img" data-import-article="img-lead" alt="" src="./assets/images/portrait-of-woman-270w.png" srcset="./assets/images/portrait-of-woman-166w.png 166w, ./assets/images/portrait-of-woman-270w.png 270w, ./assets/images/portrait-of-woman-434w.png 434w, ./assets/images/portrait-of-woman-770w.png 770w" sizes="(min-width: 1920px) 770px, (min-width: 1200px) 434px, (min-width: 768px) 270px,(min-width:361px) 345px, 166px" />
+              </picture>
+              <figcaption>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis n</figcaption>
+            </figure>
           </div>
-        </div>
-      </article>
-      <section class="faq-section">
-        <div class="container">
           <h2>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</h2>
           <dl class="faq__content">
             <dt class="faq__question">tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</dt>
             <dd class="faq__answer">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod</dd>
-
             <dt class="faq__question">Ted diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis ntincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</dt>
             <dd class="faq__answer">Ons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliq</dd>
           </dl>
         </div>
-      </section>
+      </article>
     </main>
     <footer class="footer">
       <div class="footer__topbar"></div>
