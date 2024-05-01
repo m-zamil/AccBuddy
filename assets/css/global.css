@@ -60,7 +60,7 @@ p .highlight {
   padding: 0 20px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 500px) {
   .container {
     padding: 0 48px;
   }

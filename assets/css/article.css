@@ -176,33 +176,8 @@ figcaption {
   margin-top: 80px;
 }
 @media (min-width: 361px) {
-  .article .article__lead {
-    margin-top: 22px;
-  }
   .article__nav {
     max-width: 475px;
-    padding-bottom: 34px;
-  }
-  .article h3 {
-    margin-top: 40px;
-  }
-  .article__table {
-    margin-top: 24px;
-  }
-  .article__table th {
-    padding: 26px 6px;
-  }
-  .article__table td {
-    padding: 20px 4px;
-  }
-  figcaption {
-    margin-top: 22px;
-  }
-  .faq__content {
-    margin-top: 20px;
-  }
-  .faq__answer {
-    margin-bottom: 18px;
   }
 }
 @media (min-width: 768px) {
