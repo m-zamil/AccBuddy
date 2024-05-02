@@ -1,0 +1,243 @@
+.footer {
+  background-color: #202020;
+  border-radius: 35px 35px 0px 0px;
+  padding: 18px 0;
+}
+.footer-logo {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  vertical-align: top;
+  display: inline-block;
+}
+.footer-logo span {
+  display: inline-block;
+}
+.footer-logo span:first-child {
+  color: white;
+}
+.footer-logo span:last-child {
+  color: #202020;
+  background-color: #72ccbf;
+  border-radius: 16.5px;
+  margin-left: 2px;
+  padding: 4px 9px;
+}
+.footer-account,
+.footer-cart {
+  display: flex;
+  float: right;
+}
+.footer-cart {
+  margin-right: 9px;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  padding: 25px 0 0;
+  width: 100%;
+}
+.footer-form input[type='search'] {
+  background-color: #dedee7;
+  border: 0;
+  border-radius: 50px;
+  padding: 8px 16px;
+  flex: 1;
+  margin-right: 14px;
+  font: inherit;
+  line-height: 1.1;
+}
+.footer-search-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+}
+.footer-nav-top ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 30px;
+  margin: 0;
+  padding: 16px 0 12px;
+  border-bottom: 1px solid #ffcc81;
+}
+.footer-nav-top ul a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #dedee7;
+}
+.footer-nav-bottom {
+  font-size: 12px;
+  line-height: 1;
+  color: #8b91a0;
+}
+.footer-nav-bottom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+  padding: 16px 0 14px;
+}
+.footer-nav-bottom ul a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b91a0;
+}
+.footer-info {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #8b91a0;
+}
+.footer-info a {
+  color: #72ccbf;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px 0 32px;
+    border-radius: 40px 40px 0px 0px;
+  }
+  .footer .container {
+    position: relative;
+  }
+  .footer-logo {
+    font-size: 24px;
+  }
+  .footer-logo span:last-child {
+    border-radius: 30px;
+    margin-left: 3px;
+    padding: 5px 11px;
+  }
+  .footer-account svg,
+  .footer-cart svg {
+    width: 40px;
+    height: auto;
+  }
+  .footer-cart {
+    margin-right: 12px;
+  }
+  .footer-form {
+    position: absolute;
+    top: 0;
+    width: 42%;
+    right: 164px;
+    padding-top: 0;
+  }
+  .footer-form input[type='search'] {
+    font-size: 20px;
+    line-height: 1.25;
+    margin-right: 10px;
+  }
+  .footer-search-btn svg {
+    width: 42px;
+    height: auto;
+    margin-top: 6px;
+  }
+
+  .footer-nav-top ul {
+    padding: 28px 0px 10px;
+    gap: 6px 52px;
+    width: 100%;
+  }
+  .footer-nav-top ul a {
+    font-size: 16px;
+  }
+  .footer-nav-bottom ul {
+    gap: 12px 27px;
+  }
+}
+@media (min-width: 1000px) {
+  .footer .container {
+    padding: 0;
+    margin: 0 133px;
+  }
+  .footer-form {
+    width: 48%;
+  }
+}
+@media (min-width: 1201px) {
+  .footer {
+    padding: 110px 0;
+    border-radius: 50px 50px 0 0;
+  }
+  .footer-logo {
+    font-size: 56px;
+  }
+  .footer-logo span:last-child {
+    border-radius: 100px;
+    margin-left: 18px;
+    padding: 8px 26px 14px;
+  }
+  .footer-cart {
+    margin-right: 34px;
+  }
+  .footer-account,
+  .footer-cart {
+    margin-top: 20px;
+  }
+  .footer-account svg,
+  .footer-cart svg {
+    width: 50.42px;
+  }
+  .footer-form {
+    margin-top: 20px;
+    right: 160px;
+  }
+  .footer-form input[type='search'] {
+    padding: 12px 26px 13px;
+  }
+  .footer-search-btn svg {
+    width: 50.75px;
+  }
+  .footer-nav-top ul {
+    gap: 6px 16px;
+    padding: 65px 0px 26px;
+  }
+  .footer-nav-top ul a {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .footer-nav-bottom ul {
+    width: 48.5%;
+    float: right;
+    padding-top: 12px;
+    gap: 14px 27px;
+  }
+  .footer-nav-bottom ul a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .footer-info {
+    font-size: 16px;
+    width: 47%;
+    margin-right: 2%;
+    margin-top: 14px;
+  }
+}
+@media (min-width: 1920px) {
+  .footer {
+    padding-bottom: 75px;
+  }
+  .footer .container {
+    padding: 0 133px;
+    margin: 0 auto;
+  }
+  .footer-cart {
+    margin-right: 50px;
+  }
+  .footer-form {
+    right: 22%;
+    max-width: 800px;
+  }
+  .footer-info {
+    width: 40%;
+  }
+  .footer-nav-bottom ul {
+    width: 49%;
+  }
+}

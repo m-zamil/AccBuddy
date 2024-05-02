@@ -21,6 +21,7 @@
 
 .breadcrumb > li + li:before {
   content: '/';
+  margin: 0 0.15em;
 }
 @media (min-width: 768px) {
   .breadcrumb {
