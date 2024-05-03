@@ -128,13 +128,11 @@ ol.article__list {
 ol.article__list li::marker {
   font-weight: bold;
 }
-.article__img-wrapper {
-  text-align: center;
-  margin-bottom: 42px;
-}
 .article__img {
   background-color: #e7e7ed;
   border-radius: 25px;
+  width: 100%;
+  margin-bottom: 42px;
 }
 figcaption {
   font-size: 10px;
@@ -257,9 +255,6 @@ figcaption {
   figcaption {
     font-size: 12px;
     margin-top: 36px;
-  }
-  .article__img-wrapper {
-    border-radius: 30px;
   }
   .article__img {
     border-radius: 30px;
