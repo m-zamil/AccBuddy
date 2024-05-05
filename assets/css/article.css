@@ -1,32 +1,46 @@
 /* ============ Article Styles ============ */
 
-.article p {
-  font-size: 14px;
-  line-height: 1.2;
-}
 .article h1 {
   font-size: 34px;
   font-weight: 600;
   line-height: 1;
   margin: 0;
-  margin-top: 24px;
-  margin-bottom: 10px;
+  padding: 25px 0 7px;
 }
 .article h2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
-  margin: 24px 0;
+  margin: 0;
+  padding: 20px 0 7px;
 }
 .article h3 {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.25;
-  margin-top: 48px;
+  margin: 0;
+  padding: 7px 0;
+}
+.article p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 7px 0 20px;
+}
+.article p + p {
+  margin-top: -13px;
+}
+.article ul,
+.article ol {
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 20px;
 }
 .article__author,
 .article__date {
   font-size: 10px;
+  margin: 7px 0;
+  display: inline-block;
 }
 .article__author {
   margin-left: 5px;
@@ -35,17 +49,16 @@
 .article .article__lead {
   font-size: 18px;
   font-weight: 300;
-  margin-top: 28px;
+  margin: 0;
+  padding: 7px 0 25px;
   line-height: 1.1;
-  margin-bottom: 46px;
 }
 .article__nav {
   padding: 26px 45px 40px;
   background-color: #e7e7ed;
   border-radius: 25px;
   position: relative;
-  margin-top: 32px;
-  margin-bottom: 46px;
+  margin: 7px 0 25px;
 }
 .article__nav::before {
   content: '';
@@ -74,9 +87,9 @@
 .article__table {
   border-radius: 25px;
   border-collapse: collapse;
-  margin-top: 32px;
   table-layout: fixed;
   width: 100%;
+  margin: 7px 0;
 }
 .article__table th {
   font-size: 10px;
@@ -109,21 +122,29 @@
 .article__table tr:nth-child(2n + 1) td {
   background-color: #e7e7ed;
 }
+.article table caption {
+  caption-side: bottom;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+  padding: 7px 0 20px;
+}
+.article table:has(caption) {
+  margin-bottom: 0;
+}
 .article__list {
   margin: 0;
   font-size: 14px;
   line-height: 1.1;
   font-weight: 300;
-  margin-top: 26px;
   padding-left: 1.3em;
 }
-.article__list li {
+.article__list li:not(:last-child) {
   margin-bottom: 12px;
 }
 ol.article__list {
   padding-left: 1.5em;
-  padding-top: 10px;
-  margin-bottom: 48px;
 }
 ol.article__list li::marker {
   font-weight: bold;
@@ -132,27 +153,31 @@ ol.article__list li::marker {
   background-color: #e7e7ed;
   border-radius: 25px;
   width: 100%;
-  margin-bottom: 42px;
+  margin-top: 7px;
+  margin-bottom: 25px;
 }
 figcaption {
   font-size: 10px;
-  margin-top: 16px;
   text-align: left;
+  padding-top: 7px;
+}
+.article__img + figcaption {
+  margin-top: -18px;
 }
 .faq__content {
   margin: 0;
-  margin-top: 30px;
 }
 .faq__question {
-  margin-bottom: 12px;
   font-size: 14px;
+  padding: 7px 0;
 }
 .faq__answer {
   font-size: 14px;
   margin: 0;
   padding-left: 24px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   border-left: 1px solid #202020;
-  margin-bottom: 24px;
 }
 .faq__question::before,
 .faq__answer::before {
@@ -176,29 +201,43 @@ figcaption {
 }
 @media (min-width: 768px) {
   .article h1 {
-    margin-top: 48px;
     font-size: 40px;
+    padding: 35px 0 10px;
   }
   .article h2 {
     font-size: 24px;
+    padding: 25px 0 10px;
   }
   .article h3 {
     font-size: 16px;
+    padding: 10px 0;
   }
   .article p {
     font-size: 16px;
+    padding: 10px 0 25px;
+  }
+  .article p + p {
+    margin-top: -15px;
+  }
+  .article ul,
+  .article ol {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
   }
   .article__author,
   .article__date {
     font-size: 12px;
     margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .article .article__lead {
     font-size: 20px;
-    margin-bottom: 66px;
+    padding: 10px 0 35px;
   }
   .article__nav {
-    margin-top: 22px;
+    margin: 10px 0 35px;
     max-width: unset;
     padding: 30px 52px 36px;
     border-radius: 30px;
@@ -211,12 +250,8 @@ figcaption {
     font-size: 12px;
     margin-bottom: 7px;
   }
-  .article__nav {
-    margin-bottom: 54px;
-  }
   .article__table {
-    margin-top: 44px;
-    margin-bottom: 60px;
+    margin: 10px 0;
   }
   .article__table th {
     font-size: 12px;
@@ -238,38 +273,40 @@ figcaption {
   .article__table tr:last-child td:last-child {
     border-bottom-right-radius: 30px;
   }
-  .article__list {
-    max-width: 50%;
-    font-size: 16px;
-  }
-  ul.article__list {
-    margin-top: 30px;
-  }
-  .article__list li {
-    margin-bottom: 16px;
-  }
-  ol.article__list {
-    margin-top: 42px;
-    margin-bottom: 70px;
-  }
-  figcaption {
+  .article table caption {
     font-size: 12px;
-    margin-top: 36px;
+    padding: 10px 0 25px;
+  }
+  .article__list {
+    font-size: 16px;
+    max-width: 50%;
+  }
+  .article__list li:not(:last-child) {
+    margin-bottom: 16px;
   }
   .article__img {
     border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  figcaption {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .article__img + figcaption {
+    margin-top: -25px;
   }
   .faq__content {
-    margin-top: 36px;
     width: 50%;
   }
-
   .faq__question {
     font-size: 16px;
+    padding: 10px 0;
   }
   .faq__answer {
     font-size: 16px;
-    margin-bottom: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .footer {
     margin-top: 122px;
@@ -282,34 +319,45 @@ figcaption {
   }
   .article h1 {
     font-size: 52px;
-    margin-top: 64px;
-    margin-bottom: 12px;
     line-height: 1.1;
+    padding: 50px 0 15px;
   }
   .article h2 {
     font-size: 32px;
+    padding: 35px 0 15px;
   }
   .article h3 {
     font-size: 22px;
+    padding: 15px 0;
   }
   .article p {
     font-size: 22px;
+    padding: 15px 0 35px;
+  }
+  .article p + p {
+    margin-top: -20px;
+  }
+  .article ul,
+  .article ol {
+    margin: 0;
+    padding-top: 15pxpx;
+    padding-bottom: 35px;
   }
   .article__author,
   .article__date {
     font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   .article .article__lead {
     font-size: 28px;
-    margin-top: 28px;
-    margin-bottom: 60px;
+    padding: 15px 0 50px;
   }
   .article__nav {
     padding: 42px 50px 38px 80px;
     max-width: fit-content;
     border-radius: 40px;
-    margin-bottom: 70px;
-    margin-top: 30px;
+    margin: 15px 0 50px;
   }
   .article__nav::before {
     width: 44px;
@@ -319,13 +367,8 @@ figcaption {
     font-size: 16px;
     margin-bottom: 11px;
   }
-  .article h3 {
-    font-size: 22px;
-    margin-top: 48px;
-  }
   .article__table {
-    margin-top: 24px;
-    margin-bottom: 70px;
+    margin: 15px 0;
   }
   .article__table th {
     font-size: 16px;
@@ -347,37 +390,44 @@ figcaption {
   .article__table tr:last-child td:last-child {
     border-bottom-right-radius: 40px;
   }
+  .article table caption {
+    font-size: 16px;
+    padding: 15px 0 35px;
+  }
   .article__list {
     font-size: 22px;
     max-width: 522px;
     padding-left: 36px;
   }
-  .article__list li {
+  .article__list li:not(:last-child) {
     margin-bottom: 20px;
-  }
-  ol.article__list {
-    margin-top: 50px;
-    margin-bottom: 96px;
   }
   .article__img {
     border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 50px;
   }
   figcaption {
     font-size: 16px;
-    margin-top: 30px;
+    padding-top: 15px;
+  }
+  .article__img + figcaption {
+    margin-top: -35px;
   }
   .faq__question,
   .faq__answer {
     font-size: 22px;
   }
+  .faq__question {
+    padding: 15px 0;
+  }
+  .faq__answer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .faq__content {
-    margin-top: 72px;
     max-width: 525px;
     width: unset;
-  }
-
-  .faq__question {
-    margin-bottom: 32px;
   }
   .footer {
     margin-top: 90px;
@@ -388,9 +438,6 @@ figcaption {
     margin: 0 auto;
     padding: 0 273px;
   }
-  .article__nav {
-    margin-bottom: 90px;
-  }
   .article__table th {
     padding: 30px 8px;
   }
@@ -400,24 +447,11 @@ figcaption {
   .article__list {
     max-width: 70%;
   }
-  ul.article__list {
-    margin-top: 38px;
-  }
-  ol.article__list {
-    margin-bottom: 170px;
-  }
   figcaption {
-    margin-top: 42px;
     max-width: 60%;
   }
   .faq__content {
     max-width: 70%;
-  }
-  .faq__question {
-    margin-bottom: 28px;
-  }
-  .faq__answer {
-    margin-bottom: 42px;
   }
   .footer {
     margin-top: 146px;
