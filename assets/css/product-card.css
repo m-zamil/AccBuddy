@@ -412,9 +412,13 @@ html {
   .pricing[data-out-of-stock] {
     padding-top: 58px;
   }
+  .offer-widget .pricing {
+    display: FLEX;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
   .pricing del {
     font-size: 32px;
-    transform: translateX(-100%);
   }
   .pricing del .price-whole {
     font-size: 54px;
