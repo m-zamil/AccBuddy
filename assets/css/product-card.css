@@ -1,0 +1,641 @@
+/* ========================== Article ========================== */
+html {
+  scroll-behavior: smooth;
+}
+/* general styles */
+.article h1 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  padding: 7px 0 7px;
+}
+.article h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  padding: 20px 0 7px;
+}
+.article h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+  padding: 7px 0;
+}
+.article p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 7px 0 20px;
+}
+.article p + p {
+  margin-top: -13px;
+}
+.article ul,
+.article ol {
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 20px;
+}
+.article .lead {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.1;
+  padding: 7px 0 25px;
+}
+
+@media (min-width: 768px) {
+  .article h1 {
+    font-size: 40px;
+    padding: 10px 0 10px;
+  }
+  .article h2 {
+    font-size: 24px;
+    padding: 25px 0 10px;
+  }
+  .article h3 {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .article p {
+    font-size: 16px;
+    padding: 10px 0 25px;
+  }
+  .article p + p {
+    margin-top: -15px;
+  }
+  .article ul,
+  .article ol {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  .article .lead {
+    font-size: 16px;
+    padding: 10px 0 35px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .article h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    padding: 15px 0 15px;
+  }
+  .article h2 {
+    font-size: 32px;
+    padding: 35px 0 15px;
+  }
+  .article h3 {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+  .article p {
+    font-size: 22px;
+    padding: 15px 0 35px;
+  }
+  .article p + p {
+    margin-top: -20px;
+  }
+  .article ul,
+  .article ol {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+  .article .lead {
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 15px 0 50px;
+  }
+}
+
+/* ====== Offer widget ====== */
+.offer-widget,
+.offer-btns {
+  max-width: 442px;
+  margin-left: auto;
+}
+.offer-widget {
+  background-color: #e7e7ed;
+  border-radius: 30px;
+  padding: 26px 20px 20px;
+}
+.offer-widget .pricing {
+  text-align: right;
+  padding: 0;
+}
+.pricing del {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  color: rgb(139, 145, 160, 0.5);
+  position: relative;
+  display: inline-block;
+  margin-right: 28px;
+}
+.pricing del .price-whole {
+  font-size: 35px;
+  font-weight: 400;
+}
+.pricing strong {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 1;
+}
+.pricing strong .price-whole {
+  font-size: 55px;
+  font-weight: 400;
+}
+.pricing del::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-15deg);
+  width: 100%;
+  height: 2px;
+  background-color: #ffcc81;
+}
+.offer-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.offer-form fieldset {
+  padding-top: 16px;
+}
+.offer-form fieldset label {
+  font-size: 8px;
+  line-height: 1.1;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.offer-form fieldset input {
+  font-size: 30px;
+  font-weight: 600;
+  width: 100%;
+  padding: 12px 26px;
+  border: 0;
+  border-radius: 100px;
+  line-height: 1;
+}
+.coupon-input {
+  position: relative;
+  display: block;
+}
+.coupon-input button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.coupon-input button svg {
+  vertical-align: middle;
+}
+.quantity-field-input {
+  position: relative;
+  display: block;
+}
+.quantity-field-input button {
+  line-height: 12px;
+  background: none;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 22px;
+}
+.inc-btn {
+  right: 0;
+}
+.dec-btn {
+  left: 0;
+}
+.quantity-field input {
+  text-align: center;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.quantity-field input::-webkit-outer-spin-button,
+.quantity-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.quantity-field input[type='number'] {
+  -moz-appearance: textfield;
+}
+.pricing[data-out-of-stock] {
+  position: relative;
+  padding-top: 24px;
+}
+[data-out-of-stock]::before {
+  content: 'last price:';
+  font-size: 20px;
+  color: rgb(139, 145, 160, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding-top: 30px;
+}
+[data-out-of-stock]::after {
+  content: 'Not available';
+  font-size: 20px;
+  color: rgb(139, 145, 160, 0.5);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+[data-out-of-stock] + .offer-form {
+  display: none;
+}
+[data-out-of-stock] del {
+  display: none;
+}
+[data-out-of-stock] strong {
+  font-size: 20px;
+  color: rgb(139, 145, 160, 0.5);
+}
+[data-out-of-stock] strong .price-whole {
+  font-size: 35px;
+  font-weight: 400;
+}
+.offer-btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+.offer-btns button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 22px;
+  cursor: pointer;
+}
+.paypal-btn {
+  background-color: #f6c305;
+  font-size: 9px;
+  vertical-align: middle;
+  gap: 10px;
+  flex: 2;
+}
+.paypal-btn svg {
+  height: 21px;
+  width: auto;
+}
+.paypal-btn span {
+  padding-top: 3px;
+}
+.add-to-cart-btn {
+  background-color: #202020;
+  margin: 0;
+  min-width: 115px;
+  flex: 1;
+}
+.add-to-cart-btn svg {
+  margin-top: -2px;
+}
+.offer-widget:has([data-out-of-stock]) + .offer-btns {
+  display: none;
+}
+@media (min-width: 768px) {
+  .offer-widget {
+    border-radius: 50px;
+    padding: 30px 24px 26px;
+    margin-top: 30px;
+  }
+  .offer-widget:has([data-out-of-stock]) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .pricing[data-out-of-stock] {
+    padding-top: 42px;
+  }
+  [data-out-of-stock]::after {
+    font-size: 28px;
+  }
+  [data-out-of-stock]::before {
+    font-size: 28px;
+    padding-top: 52px;
+  }
+
+  .pricing del {
+    font-size: 28px;
+  }
+  .pricing del::before {
+    height: 2.75px;
+  }
+  .pricing del .price-whole {
+    font-size: 48px;
+  }
+  .pricing strong {
+    font-size: 44px;
+  }
+  .pricing strong .price-whole {
+    font-size: 72px;
+  }
+  [data-out-of-stock] strong {
+    font-size: 28px;
+  }
+  [data-out-of-stock] strong .price-whole {
+    font-size: 48px;
+  }
+  .offer-form fieldset {
+    display: inline-block;
+    padding-top: 26px;
+  }
+  .offer-form .coupon-field {
+    width: 60%;
+    margin-right: calc(10% - 8px) !important;
+  }
+  .quantity-field {
+    width: 30%;
+  }
+  .offer-form fieldset label {
+    font-size: 12px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+  }
+  .offer-form fieldset input {
+    font-size: 24px;
+  }
+  .quantity-field-input button {
+    padding: 12px;
+  }
+  .offer-btns {
+    gap: 20px;
+  }
+  .offer-btns button {
+    height: 60px;
+    border-radius: 30px;
+  }
+  .paypal-btn span {
+    font-size: 12px;
+  }
+  .paypal-btn svg {
+    height: 28px;
+    width: auto;
+  }
+  .add-to-cart-btn svg {
+    height: 35px;
+    width: auto;
+  }
+}
+@media (min-width: 1201px) {
+  .offer-widget,
+  .offer-btns {
+    margin-left: 0;
+  }
+  .offer-widget {
+    margin-top: 46px;
+    max-width: 535px;
+    padding: 44px 28px 30px;
+  }
+  .offer-widget:has([data-out-of-stock]) {
+    padding: 34px 38px 30px;
+  }
+  .pricing[data-out-of-stock] {
+    padding-top: 58px;
+  }
+  .pricing del {
+    font-size: 32px;
+    transform: translateX(-100%);
+  }
+  .pricing del .price-whole {
+    font-size: 54px;
+  }
+  .pricing strong {
+    font-size: 50px;
+  }
+  [data-out-of-stock] strong {
+    font-size: 32px;
+  }
+  .pricing strong .price-whole {
+    font-size: 84px;
+  }
+  [data-out-of-stock] strong .price-whole {
+    font-size: 54px;
+  }
+  [data-out-of-stock]::after,
+  [data-out-of-stock]::before {
+    font-size: 32px;
+  }
+  .offer-form fieldset {
+    padding-top: 46px;
+  }
+  .offer-form fieldset label {
+    font-size: 16px;
+  }
+  .offer-form fieldset input {
+    font-size: 32px;
+    padding: 14px 26px;
+  }
+  .offer-form .coupon-field {
+    width: 54%;
+    margin-right: calc(16% - 8px) !important;
+  }
+  .coupon-btn svg {
+    width: 55px;
+    height: auto;
+  }
+  .quantity-field-input button {
+    padding: 16px;
+  }
+  .offer-btns {
+    margin-top: 42px;
+  }
+  .offer-btns button {
+    height: 68px;
+    border-radius: 40px;
+  }
+}
+/* =========== Product details =========== */
+.product-details h2 {
+  padding: 26px 0 18px;
+}
+.product-details .product-details-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  padding: 40px 0 40px;
+  border-bottom: 1px solid #8b91a0;
+  margin-bottom: 30px;
+}
+.product-details-nav ul li {
+  font-size: 14px;
+  font-weight: 600;
+}
+.product-details-nav ul li:not(:first-child) {
+  margin-top: 20px;
+}
+.product-details .lead-image-wrapper {
+  display: none;
+}
+.product-details ul {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.1;
+  padding-left: 26px;
+}
+.product-details ul strong {
+  font-weight: 600;
+}
+.product-details ul li {
+  margin-bottom: 8px;
+}
+.product-details table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  margin: 10px 0 20px;
+  text-align: left;
+}
+.product-details table th,
+.product-details table td {
+  border-right: 2px solid white;
+  margin: 0;
+  padding: 16px 22px;
+  vertical-align: top;
+}
+.product-details table th {
+  font-size: 10px;
+  font-weight: 600;
+}
+.product-details table td {
+  font-size: 10px;
+}
+.product-details table tr:first-child th:first-child {
+  border-top-left-radius: 30px;
+}
+.product-details table tr:first-child td:last-child {
+  border-top-right-radius: 30px;
+}
+.product-details table tr:last-child th:first-child {
+  border-bottom-left-radius: 30px;
+}
+.product-details table tr:last-child td:last-child {
+  border-bottom-right-radius: 30px;
+}
+.product-details table tr:nth-child(odd) th {
+  background-color: rgb(255, 204, 129, 0.5);
+}
+.product-details table tr:nth-child(even) th {
+  background-color: #ffcc81;
+}
+.product-details table tr:nth-child(odd) td {
+  background-color: rgb(231, 231, 237, 0.5);
+}
+.product-details table tr:nth-child(even) td {
+  background-color: #e7e7ed;
+}
+@media (min-width: 768px) {
+  .product-details .product-details-nav {
+    margin-top: 54px;
+  }
+  .product-details .product-details-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+  }
+  .product-details-nav ul li:not(:first-child) {
+    margin-top: 0;
+  }
+  .product-details ul {
+    font-size: 16px;
+  }
+  .product-details ul li {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .product-details table {
+    margin: 20px 0 40px;
+  }
+  .product-details table tr:first-child th:first-child {
+    border-top-left-radius: 40px;
+  }
+  .product-details table tr:first-child td:last-child {
+    border-top-right-radius: 40px;
+  }
+  .product-details table tr:last-child th:first-child {
+    border-bottom-left-radius: 40px;
+  }
+  .product-details table tr:last-child td:last-child {
+    border-bottom-right-radius: 40px;
+  }
+  .product-details table th,
+  .product-details table td {
+    font-size: 12px;
+  }
+  .product-details table th {
+    width: 33%;
+    padding: 24px;
+    padding-left: 60px;
+  }
+  .product-details table td {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .article.container {
+    padding: 0;
+    margin: 0 133px;
+  }
+  .article {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .product-details-right {
+    width: 40%;
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
+    padding-bottom: 50px;
+  }
+
+  .product-details .lead-image-wrapper {
+    display: flex;
+  }
+  .product-details-right .lead-image-wrapper {
+    display: none;
+  }
+  .product-details {
+    width: 54%;
+    order: -1;
+  }
+  .product-details .product-details-nav {
+    margin-top: 74px;
+  }
+  .product-details .product-details-nav ul {
+    padding-bottom: 40px;
+  }
+  .product-details ul li {
+    font-size: 22px;
+  }
+  .product-details table th,
+  .product-details table td {
+    font-size: 16px;
+    padding: 28px;
+  }
+  .product-details table th {
+    padding-left: 60px;
+  }
+}
