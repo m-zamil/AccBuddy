@@ -23,7 +23,7 @@
 [data-star]::before {
   display: block;
   content: '★★★★★';
-  color: #eee;
+  color: #ccc;
 }
 [data-star]::after {
   white-space: nowrap;

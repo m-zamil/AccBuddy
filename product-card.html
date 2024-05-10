@@ -125,35 +125,39 @@
             <form class="offer-form">
               <!-- Coupon field -->
               <fieldset class="coupon-field">
-                <label for="coupon"> Apply Coupon </label>
-                <span class="coupon-input">
-                  <input id="coupon" name="coupon" type="text" value="sdfvk42" />
-                  <button type="button" class="coupon-btn" title="apply coupon">
-                    <svg width="47" height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="32.1797" y1="1.8496" x2="45.0035" y2="14.6734" stroke="#FFCC81" stroke-width="3.96094" />
-                      <line x1="0.408203" y1="13.4902" x2="43.0307" y2="13.4902" stroke="#FFCC81" stroke-width="3.96094" />
-                      <line x1="31.9238" y1="25.0469" x2="44.7476" y2="12.223" stroke="#FFCC81" stroke-width="3.96094" />
-                    </svg>
-                  </button>
-                </span>
+                <label>
+                  <span class="label">Apply Coupon</span>
+                  <span class="coupon-input">
+                    <input name="coupon" type="text" value="sdfvk42" />
+                    <button type="button" class="coupon-btn" title="apply coupon">
+                      <svg width="47" height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="32.1797" y1="1.8496" x2="45.0035" y2="14.6734" stroke="#FFCC81" stroke-width="3.96094" />
+                        <line x1="0.408203" y1="13.4902" x2="43.0307" y2="13.4902" stroke="#FFCC81" stroke-width="3.96094" />
+                        <line x1="31.9238" y1="25.0469" x2="44.7476" y2="12.223" stroke="#FFCC81" stroke-width="3.96094" />
+                      </svg>
+                    </button>
+                  </span>
+                </label>
               </fieldset>
               <!-- Quantity field -->
               <fieldset class="quantity-field">
-                <label for="quantity">Quantity</label>
-                <span class="quantity-field-input">
-                  <button type="button" class="dec-btn"
-                    ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094" />
-                    </svg>
-                  </button>
-                  <input id="quantity" name="quantity" type="number" min="1" value="1" />
-                  <button type="button" class="inc-btn">
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094" />
-                      <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094" />
-                    </svg>
-                  </button>
-                </span>
+                <label for="quantity">
+                  <span class="label">Quantity</span>
+                  <span class="quantity-field-input">
+                    <button type="button" class="dec-btn"
+                      ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094" />
+                      </svg>
+                    </button>
+                    <input class="quantity" name="quantity" type="number" min="1" value="1" />
+                    <button type="button" class="inc-btn">
+                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094" />
+                        <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094" />
+                      </svg>
+                    </button>
+                  </span>
+                </label>
               </fieldset>
             </form>
           </div>
@@ -190,7 +194,7 @@
             </button>
           </div>
         </div>
-        <!-- ======  Product Details ====== -->
+        <!-- ======  Product Details Left====== -->
         <div class="product-details">
           <!-- ====== Product image slider Desktop ====== -->
           <div class="lead-image-wrapper">
@@ -214,7 +218,7 @@
             </ul>
           </nav>
           <!-- Benefits section -->
-          <section id="benefits">
+          <section class="benefits-section" data-target="benefits">
             <h2>Benefits</h2>
             <ul>
               <li><strong>Security:</strong> Enhanced with passwords, secret questions, and two-factor authentication. </li>
@@ -225,7 +229,7 @@
             </ul>
           </section>
           <!-- Description section -->
-          <section id="description">
+          <section class="description-section" data-target="description">
             <h2>Product description</h2>
             <h3>Scing elit, sed diam nonummy nibh euismod tincidunt </h3>
             <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
@@ -242,7 +246,7 @@
             </ul>
           </section>
           <!-- Specification section -->
-          <section id="specification">
+          <section class="specification-section" data-target="specification">
             <h2>Specification</h2>
             <h3>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt </h3>
             <table>
@@ -284,50 +288,61 @@
             </table>
           </section>
           <!-- Reviews section -->
-          <section id="reviews">
-            <h2>Reviews</h2>
-            <button>Button</button>
-            <p><span>Ftagit amet, cons ectetuer</span> <span data-star="4.6"></span><span data-rating="">4.6</span><span>/5 (50 reviews)</span></p>
+          <section class="reviews-section" data-target="reviews">
+            <div class="reviews-header">
+              <h2>Reviews</h2>
+              <button data-review-write-button="">write review</button>
+            </div>
+            <p class="reviews-info">
+              <span class="reviews-info-title">Ftagit amet, cons ectetuer</span>
+              <span class="reviews-info-data">
+                <span data-star="4.6"></span>
+                <span data-rating="">4.6</span>
+                <span data-reviews>/5 (50 reviews)</span>
+              </span>
+            </p>
             <div class="review-form-wrapper">
               <h2>Vmware Workstation 17 Pro Lifetime License</h2>
               <!-- Review form -->
-              <form action="" class="review-form">
-                <fieldset class="rating">
-                  <span>Cons ectetuer</span>
-                  <input type="radio" name="rating" title="star5" value="5" />
-                  <input type="radio" name="rating" title="star4" value="4" />
-                  <input type="radio" name="rating" title="star3" value="3" checked />
-                  <input type="radio" name="rating" title="star2" value="2" />
-                  <input type="radio" name="rating" title="star1" value="1" />
-                  <span>4.0</span>
-                </fieldset>
-                <input type="text" placeholder="Ftagit amet, cons ectetuer" />
-                <textarea id="w3review" name="w3review" rows="4" cols="40">
-Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel 
-            </textarea
-                >
-
-                <input type="text" name="name" id="" placeholder="Johny " />
-                <button type="submit">Submit</button>
-                <fieldset>
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper s</label>
-                </fieldset>
+              <form class="review-form" data-review-write-window>
+                <!-- Close button -->
+                <button class="close-btn" type="button" data-review-form-close>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
+                    <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
+                  </svg>
+                </button>
+                <div class="rating-wrapper">
+                  <span class="rating-title">Cons ectetuer</span>
+                  <span class="rating-number">4.0</span>
+                  <!-- Rating stars -->
+                  <div data-review-choose-rating class="rating-stars">
+                    <label><input type="radio" data-review-star="1" checked /></label>
+                    <label><input type="radio" data-review-star="2" checked /></label>
+                    <label><input type="radio" data-review-star="3" checked /></label>
+                    <label><input type="radio" data-review-star="4" checked /></label>
+                    <label><input type="radio" data-review-star="5" /></label>
+                  </div>
+                </div>
+                <input type="text" data-review-heading class="review-subject" placeholder="Subject" />
+                <textarea data-review-message class="review-message" rows="6" placeholder="Message"></textarea>
+                <input type="text" data-review-name class="review-name" placeholder="Name" />
+                <button class="review-submit-btn" type="submit" data-review-submit>submit</button>
+                <label class="review-checkbox">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper s<input type="checkbox" name="checkbox" /><span class="checkmark"></span></label>
               </form>
+              <div hidden data-review-write-done> Thanks review sent </div>
             </div>
           </section>
           <!-- Reviews cards -->
-          <section>
-            <div class="review-card">
-              <div class="reviewer-info">
-                <span><img src="" class="reviewer-avatar" alt="" /></span>
-                <span class="reviewer-name">Johny Appleseed</span>
-                <span class="review-date">March 29, 2024 </span>
-              </div>
-              <span data-star="4.0"></span><span data-rating="">4.0</span>
-              <h3>Ftagit amet, cons ectetuer</h3>
-              <p>Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
+          <section class="review-card">
+            <div class="reviewer-info">
+              <img class="reviewer-avatar" alt="" />
+              <span class="reviewer-name">Johny Appleseed</span>
+              <span class="review-date">March 29, 2024 </span>
             </div>
+            <span data-star="4.0"></span><span data-rating="">4.0</span>
+            <h3>Ftagit amet, cons ectetuer</h3>
+            <p>Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
           </section>
         </div>
       </article>
