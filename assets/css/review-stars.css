@@ -19,6 +19,7 @@
   position: relative;
   unicode-bidi: bidi-override;
   margin-right: 10px;
+  letter-spacing: 2px;
 }
 [data-star]::before {
   display: block;
