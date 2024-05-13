@@ -76,3 +76,6 @@ p .highlight {
     max-width: 1920px;
   }
 }
+.visually-hidden {
+  display: none !important;
+}
