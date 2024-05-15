@@ -79,3 +79,6 @@ p .highlight {
 .visually-hidden {
   display: none !important;
 }
+[hidden] {
+  display: none !important;
+}

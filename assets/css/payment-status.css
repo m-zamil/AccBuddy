@@ -1,0 +1,98 @@
+h1 {
+  font-size: 33px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+  padding-right: 50px;
+}
+p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0;
+}
+.status-heading {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+.status-heading::before {
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 0.75em;
+  height: 0.75em;
+  padding-top: 4px;
+  margin-right: 10px;
+}
+.status-heading.failed::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='31' height='31' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='1.79811' y1='2.00658' x2='28.8621' y2='29.0706' stroke='black' stroke-width='4.88695'/%3E%3Cline x1='2.0847' y1='29.073' x2='29.1487' y2='2.00898' stroke='black' stroke-width='4.88695'/%3E%3C/svg%3E%0A");
+}
+.status-heading.success::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='27' height='32' viewBox='0 0 27 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.0404 0.105469C20.9237 2.23805 17.8801 5.17912 15.0652 9.89712C12.77 13.7432 10.4639 18.8816 7.53096 25.685C6.73327 23.6422 6.03613 21.6553 5.4058 19.6368L5.32414 19.3763H0.771484L5.45574 31.2283H9.47323L9.56704 30.9955C16.1996 15.02 19.5875 7.73147 26.4711 3.93872L25.0404 0.105469Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+.status-card {
+  background-color: rgb(231, 231, 237, 0.5);
+  padding: 38px 32px 24px;
+  border-radius: 30px;
+}
+.status-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.status-card p {
+  line-height: 1.35;
+}
+.status-card span {
+  background-color: #ffcc81;
+  border-radius: 10px;
+  padding: 0 4px;
+  font-weight: 600;
+}
+.status-card-btn {
+  font-size: 14px;
+  text-align: center;
+  background-color: #ffcc81;
+  height: 40px;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 40px;
+  margin-top: 30px;
+  max-width: 275px;
+  margin-left: auto;
+}
+.footer {
+  margin-top: 105px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 1.2em;
+  }
+  p {
+    font-size: 16px;
+  }
+  .status-card {
+    border-radius: 40px;
+    padding: 55px 36px 28px;
+    max-width: 670px;
+  }
+  .status-card h2 {
+    margin-bottom: 32px;
+  }
+  .status-card-btn {
+    font-size: 16px;
+    padding: 13px 20px;
+    height: 46px;
+    max-width: 195px;
+  }
+}
+@media (min-width: 1201px) {
+  main {
+    min-height: calc(100vh - 1053px);
+  }
+}
