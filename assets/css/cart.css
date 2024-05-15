@@ -297,6 +297,7 @@ p {
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
+  text-decoration: none;
 }
 .pricing strong .price-whole,
 .pricing ins .price-whole {
