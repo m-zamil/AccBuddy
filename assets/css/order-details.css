@@ -94,12 +94,8 @@ p {
 .order-tracking {
   text-align: center;
   font-weight: 600;
-  background-color: #ffcc81;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 20px;
-  padding-left: 6px;
-  padding-right: 6px;
   margin-top: 28px;
 }
 
@@ -238,6 +234,50 @@ p {
   margin-left: auto;
   text-align: right;
 }
+.order-tracking {
+  position: relative;
+}
+.order-tracking-popup {
+  position: absolute;
+  color: rgb(231, 231, 237, 0.5);
+  background-color: #202020;
+  width: 100vw;
+  max-width: calc(100vw - 40px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  font-size: 14px;
+  text-align: left;
+  padding: 25px 20px;
+  z-index: 1;
+  margin-top: 10px;
+}
+.order-tracking-btn {
+  border: 0;
+  background-color: #ffcc81;
+  cursor: pointer;
+  border-radius: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.order-tracking-closebtn {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  cursor: pointer;
+}
+.order-tracking-key {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.order-tracking-text {
+  font-weight: 400;
+}
 .footer {
   margin-top: 105px;
 }
@@ -307,6 +347,14 @@ p {
 
   .pricing del {
     margin-right: 16px;
+  }
+  .order-tracking-popup {
+    right: 0;
+    top: 0;
+    left: unset;
+    transform: none;
+    max-width: 496px;
+    margin-top: 30px;
   }
   .cart-box {
     grid-template-columns: 106px 44px repeat(3, 1fr) 160px;
