@@ -52,6 +52,18 @@
 
 .cart {
   display: inline-block;
+  position: relative;
+}
+.cart-qty {
+  font-size: 10px;
+  font-weight: 800;
+  position: absolute;
+  right: 20px;
+  color: #ffcc81;
+  background-color: #202020;
+  line-height: 1;
+  z-index: 1;
+  padding-right: 1px;
 }
 
 .search-form {
@@ -208,6 +220,10 @@
     width: 30px;
     height: auto;
   }
+  .cart-qty {
+    font-size: 12px;
+    right: 23px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -247,6 +263,11 @@
 
   .cart svg {
     width: 43px;
+  }
+  .cart-qty {
+    font-size: 22px;
+    right: 34px;
+    padding-right: 2px;
   }
 
   .header-bottom-bar {
