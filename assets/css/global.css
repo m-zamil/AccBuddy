@@ -37,16 +37,13 @@ input:focus-visible {
 .highlight {
   font-weight: 600;
   background-color: #ffcc81;
-  border-radius: 5px;
-  padding: 0 0.5em;
+  border-radius: 1em;
+  padding: 0 0.4em;
 }
 .always-portrait {
   aspect-ratio: 2 / 1;
   object-fit: cover;
   object-position: center;
-}
-p .highlight {
-  padding: 0;
 }
 .bold {
   font-weight: 700;

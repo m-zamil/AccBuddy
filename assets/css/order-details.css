@@ -253,6 +253,8 @@ p {
   margin-top: 10px;
 }
 .order-tracking-btn {
+  font-size: 14px;
+  font-weight: 600;
   border: 0;
   background-color: #ffcc81;
   cursor: pointer;
@@ -348,11 +350,21 @@ p {
   .pricing del {
     margin-right: 16px;
   }
+  .order-tracking-btn {
+    font-size: 16px;
+    top: 22px;
+    right: 22px;
+  }
+  .order-tracking-closebtn svg {
+    width: 16px;
+    height: auto;
+  }
   .order-tracking-popup {
     right: 0;
     top: 0;
     left: unset;
     transform: none;
+    padding: 34px;
     max-width: 496px;
     margin-top: 30px;
   }
@@ -415,5 +427,24 @@ p {
     grid-area: 2 / 5 / 3 / 6;
     align-self: center;
     margin-right: auto;
+  }
+}
+@media (min-width: 1920px) {
+  p {
+    font-size: 22px;
+  }
+  .order-tracking-popup {
+    padding: 40px;
+    max-width: 600px;
+  }
+  .order-tracking-closebtn {
+    top: 36px;
+    right: 36px;
+  }
+  .order-tracking-closebtn svg {
+    width: 20px;
+  }
+  .order-tracking-key {
+    margin-bottom: 22px;
   }
 }
