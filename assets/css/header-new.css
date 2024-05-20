@@ -26,6 +26,7 @@
   color: white;
   letter-spacing: -0.02em;
   margin-left: 32px;
+  white-space: nowrap;
 }
 .logo span {
   display: inline-block;
@@ -293,20 +294,16 @@
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
   .header {
     border-radius: 0 0 40px 40px;
   }
   .header-topbar {
     padding: 25px 0 20px;
   }
-  .main-nav {
-    margin-top: 35px;
-  }
   .main-nav ul {
     gap: 35px;
   }
-
   .account svg,
   .cart svg {
     width: auto;
@@ -375,14 +372,13 @@
   .search-btn svg {
     width: 42px;
   }
-  .logo {
-    margin-right: 30px;
-  }
   .main-nav {
     align-self: center;
   }
   .main-nav ul {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 0;
+  }
+  .main-nav ul li {
+    white-space: nowrap;
   }
 }
