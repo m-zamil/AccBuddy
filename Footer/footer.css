@@ -218,9 +218,13 @@
   .footer {
     padding: 32px 0 40px;
   }
+  .footer-nav-top {
+    flex-grow: 1.5;
+  }
   .footer-nav-top ul {
     gap: 6px 30px;
     padding: 0;
+    justify-content: center;
   }
   .footer-nav-bottom ul {
     padding-top: 4px;
@@ -260,6 +264,6 @@
     gap: 100px;
   }
   .footer-form {
-    flex-grow: 2;
+    flex-grow: 1.5;
   }
 }
