@@ -14,9 +14,9 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./Header/header.css" />
     <link rel="stylesheet" href="./assets/css/breadcrumb.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./Footer/footer.css" />
 
     <link rel="stylesheet" href="./assets/css/order-details.css" />
   </head>
@@ -204,101 +204,93 @@
         </div>
       </section>
     </main>
+    <!-- ============= Footer ============= -->
     <footer class="footer">
       <div class="container">
-        <a href="/" class="footer-logo"><span>one</span><span>two</span></a>
-        <a href="/account" title="account" class="footer-account">
-          <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16.5004" cy="16.5873" r="16.5004" fill="#72CCBF" />
-            <path d="M16.8271 13.4346H16.1743H5.65625L9.21062 24.9681H16.1743H16.8271H23.7908L27.3452 13.4346H16.8271Z" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
-            <path d="M22.0582 10.5331C21.34 8.14298 19.1276 6.39844 16.5017 6.39844C13.8759 6.39844 11.6634 8.14298 10.9453 10.5331" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
-          </svg>
-        </a>
-        <a href="/cart" title="cart" class="footer-cart">
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="17.2582" cy="16.5873" r="16.5004" fill="#72CCBF" />
-            <path d="M25.5705 25.9896C23.6918 23.4326 20.6633 21.7715 17.2467 21.7715C13.8302 21.7715 10.8199 23.4217 8.9375 25.9678" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
-            <path d="M17.2529 17.0498C19.9771 17.0498 22.1855 14.8414 22.1855 12.1172C22.1855 9.39297 19.9771 7.18457 17.2529 7.18457C14.5287 7.18457 12.3203 9.39297 12.3203 12.1172C12.3203 14.8414 14.5287 17.0498 17.2529 17.0498Z" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
-          </svg>
-        </a>
-        <form class="footer-form">
-          <input type="Search" />
-          <button title="search" class="footer-search-btn">
-            <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="18.0938" y1="0.768479" x2="25.0975" y2="7.77212" stroke="#FFCC81" stroke-width="2" />
-              <line x1="0.800781" y1="7.15039" x2="24.0787" y2="7.15039" stroke="#FFCC81" stroke-width="2" />
-              <line x1="18.0702" y1="13.4374" x2="25.0739" y2="6.43378" stroke="#FFCC81" stroke-width="2" />
-            </svg>
-          </button>
-        </form>
-        <nav class="footer-nav-top">
-          <!-- <ul>
-            <li>
-              <a href="/products">Catalog</a>
-            </li>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
-          </ul> -->
-          <ul>
-            <li>
-              <a href="/products">catalog</a>
-            </li>
-            <li>
-              <a href="/blog">sale</a>
-            </li>
-            <li>
-              <a href="/blog">news</a>
-            </li>
-            <li>
-              <a href="/blog">articles</a>
-            </li>
-            <li>
-              <a href="/blog">about us</a>
-            </li>
-            <li>
-              <a href="/blog">contacts</a>
-            </li>
-            <li>
-              <a href="/blog">FAQ</a>
-            </li>
-          </ul>
-        </nav>
-        <nav class="footer-nav-bottom">
-          <!-- <ul>
-            <li>
-              <a href="/policies/terms-of-service/">Privacy policy</a>
-            </li>
-            <li>
-              <a href="/policies/privacy-policy">Terms of service</a>
-            </li>
-          </ul>-->
-          <ul>
-            <li>
-              <a href="/policies/terms-of-service/">Terms of Service</a>
-            </li>
-            <li>
-              <a href="/policies/shipping-policy">Shipping Policy</a>
-            </li>
-            <li>
-              <a href="/policies/privacy-policy">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="/policies/refund-policy">Refund Policy</a>
-            </li>
-            <li>
-              <a href="/policies/payment-policy">Payment Policy</a>
-            </li>
-            <li>
-              <a href="/policies/cookie-policy">Cookie Policy</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer-info">
-          <address>your company address</address>
-          <a href="mailto:support@AccBuddy.com">support@AccBuddy.com</a>
-          <br />
-          <small>© 2024 AccBuddy.com. All rights reserved.</small>
+        <div class="footer-top">
+          <a href="/" class="footer-logo"><span>one</span><span>two</span></a>
+          <div class="footer-utilities">
+            <a href="/account" title="account" class="footer-account">
+              <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16.5004" cy="16.5873" r="16.5004" fill="#72CCBF" />
+                <path d="M16.8271 13.4346H16.1743H5.65625L9.21062 24.9681H16.1743H16.8271H23.7908L27.3452 13.4346H16.8271Z" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
+                <path d="M22.0582 10.5331C21.34 8.14298 19.1276 6.39844 16.5017 6.39844C13.8759 6.39844 11.6634 8.14298 10.9453 10.5331" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
+              </svg>
+            </a>
+            <a href="/cart" title="cart" class="footer-cart">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="17.2582" cy="16.5873" r="16.5004" fill="#72CCBF" />
+                <path d="M25.5705 25.9896C23.6918 23.4326 20.6633 21.7715 17.2467 21.7715C13.8302 21.7715 10.8199 23.4217 8.9375 25.9678" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
+                <path d="M17.2529 17.0498C19.9771 17.0498 22.1855 14.8414 22.1855 12.1172C22.1855 9.39297 19.9771 7.18457 17.2529 7.18457C14.5287 7.18457 12.3203 9.39297 12.3203 12.1172C12.3203 14.8414 14.5287 17.0498 17.2529 17.0498Z" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
+              </svg>
+            </a>
+          </div>
+          <form class="footer-form">
+            <input type="Search" />
+            <button title="search" class="footer-search-btn">
+              <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="18.0938" y1="0.768479" x2="25.0975" y2="7.77212" stroke="#FFCC81" stroke-width="2" />
+                <line x1="0.800781" y1="7.15039" x2="24.0787" y2="7.15039" stroke="#FFCC81" stroke-width="2" />
+                <line x1="18.0702" y1="13.4374" x2="25.0739" y2="6.43378" stroke="#FFCC81" stroke-width="2" />
+              </svg>
+            </button>
+          </form>
+          <nav class="footer-nav-top">
+            <ul>
+              <li>
+                <a href="/products">catalog</a>
+              </li>
+              <li>
+                <a href="/blog">sale</a>
+              </li>
+              <li>
+                <a href="/blog">news</a>
+              </li>
+              <li>
+                <a href="/blog">articles</a>
+              </li>
+              <li>
+                <a href="/blog">about us</a>
+              </li>
+              <li>
+                <a href="/blog">contacts</a>
+              </li>
+              <li>
+                <a href="/blog">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <hr class="footer-hr" />
+        <div class="footer-bottom">
+          <nav class="footer-nav-bottom">
+            <ul>
+              <li>
+                <a href="/policies/terms-of-service/">Terms of Service</a>
+              </li>
+              <li>
+                <a href="/policies/shipping-policy">Shipping Policy</a>
+              </li>
+              <li>
+                <a href="/policies/privacy-policy">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/policies/refund-policy">Refund Policy</a>
+              </li>
+              <li>
+                <a href="/policies/payment-policy">Payment Policy</a>
+              </li>
+              <li>
+                <a href="/policies/cookie-policy">Cookie Policy</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-info">
+            <address>your company address</address>
+            <a href="mailto:support@AccBuddy.com">support@AccBuddy.com</a>
+            <br />
+            <small>© 2024 AccBuddy.com. All rights reserved.</small>
+          </div>
         </div>
       </div>
     </footer>
