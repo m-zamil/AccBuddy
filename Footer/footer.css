@@ -240,7 +240,8 @@
     margin-left: 0;
   }
   .footer-form {
-    width: 45%;
+    max-width: 45%;
+    flex: 1;
     margin-left: 0;
   }
   .footer-bottom {
