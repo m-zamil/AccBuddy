@@ -218,9 +218,6 @@
   .footer {
     padding: 32px 0 40px;
   }
-  .footer-nav-top {
-    flex-grow: 1.5;
-  }
   .footer-nav-top ul {
     gap: 6px 30px;
     padding: 0;
@@ -243,7 +240,7 @@
     margin-left: 0;
   }
   .footer-form {
-    width: auto;
+    width: 30%;
     margin-left: 0;
   }
   .footer-bottom {
@@ -262,8 +259,5 @@
   }
   .footer-top {
     gap: 100px;
-  }
-  .footer-form {
-    flex-grow: 1.5;
   }
 }
