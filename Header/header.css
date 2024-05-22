@@ -386,6 +386,7 @@
   .search-form {
     max-width: 750px;
     margin: 0 auto;
+    flex-grow: 0.75;
   }
   .main-nav {
     margin: 0 auto;

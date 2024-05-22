@@ -22,6 +22,8 @@ function showImage(thumbnail) {
 var thumbnails = document.querySelectorAll('.thumbs-container img');
 thumbnails.forEach(function (thumbnail, index) {
   thumbnail.addEventListener('click', function () {
+    document.querySelector('.thumbs-container img.active').classList.remove('active');
+    thumbnail.classList.add('active');
     showImage(thumbnail);
   });
 });

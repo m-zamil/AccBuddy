@@ -194,10 +194,6 @@
   [data-star]::after {
     padding: 10px 0;
   }
-  [data-star]::before,
-  [data-star]::after {
-    font-size: 24px;
-  }
   [data-rating] {
     font-size: 20px;
   }
@@ -207,10 +203,6 @@
   [data-star]::before,
   [data-star]::after {
     padding: 15px 0;
-  }
-  [data-star]::before,
-  [data-star]::after {
-    font-size: 27px;
   }
   [data-rating] {
     font-size: 22px;
