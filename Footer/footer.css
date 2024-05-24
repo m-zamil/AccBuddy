@@ -33,6 +33,23 @@
 .footer-utilities a {
   display: flex;
 }
+.footer-cart {
+  display: inline-block;
+  position: relative;
+}
+.footer-cart-qty {
+  font-size: 10px;
+  font-weight: 800;
+  position: absolute;
+  top: 1px;
+  right: 24px;
+  color: #ffcc81;
+  background-color: #202020;
+  line-height: 1;
+  z-index: 1;
+  padding-right: 1px;
+  text-align: right;
+}
 
 .footer-form {
   display: flex;
@@ -154,6 +171,12 @@
     width: 40px;
     height: auto;
   }
+  .footer-cart-qty {
+    font-size: 14px;
+    right: 30px;
+    top: -1px;
+    padding-right: 2px;
+  }
   .footer-form {
     width: 85%;
     margin-left: auto;
@@ -238,6 +261,11 @@
   .footer-utilities {
     order: 4;
     margin-left: 0;
+  }
+  .footer-cart-qty {
+    font-size: 16px;
+    padding-right: 2px;
+    top: -3px;
   }
   .footer-form {
     max-width: 45%;
