@@ -231,11 +231,11 @@ figcaption {
 .faq__content {
   margin: 0;
 }
-.faq__question {
+.faq__content dt {
   font-size: 14px;
   padding: 7px 0;
 }
-.faq__answer {
+.faq__content dd {
   font-size: 14px;
   margin: 0;
   padding-left: 24px;
@@ -243,16 +243,16 @@ figcaption {
   padding-bottom: 7px;
   border-left: 1px solid #202020;
 }
-.faq__question::before,
-.faq__answer::before {
+.faq__content dt::before,
+.faq__content dd::before {
   display: block;
   font-weight: 600;
   line-height: 1.5;
 }
-.faq__question::before {
+.faq__content dt::before {
   content: 'Question';
 }
-.faq__answer::before {
+.faq__content dd::before {
   content: 'Answer';
 }
 .footer {
@@ -343,11 +343,11 @@ figcaption {
   .faq__content {
     width: 50%;
   }
-  .faq__question {
+  .faq__content dt {
     font-size: 16px;
     padding: 10px 0;
   }
-  .faq__answer {
+  .faq__content dd {
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -437,14 +437,14 @@ figcaption {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .faq__question,
-  .faq__answer {
+  .faq__content dt,
+  .faq__content dd {
     font-size: 22px;
   }
-  .faq__question {
+  .faq__content dt {
     padding: 15px 0;
   }
-  .faq__answer {
+  .faq__content dd {
     padding-top: 15px;
     padding-bottom: 15px;
   }
