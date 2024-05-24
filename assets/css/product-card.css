@@ -504,6 +504,10 @@ body {
   padding: 16px 22px;
   vertical-align: top;
 }
+.product-details table th:last-child,
+.product-details table td:last-child {
+  border-right: 0;
+}
 .product-details table th {
   font-size: 10px;
   font-weight: 600;
