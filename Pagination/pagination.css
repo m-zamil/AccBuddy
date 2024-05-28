@@ -24,7 +24,7 @@
 .pag_list .pag_list_element_arrow_right {
   background-color: #ffcc81;
 }
-.pag_list li a {
+.pag_list li a span {
   display: flex;
   align-items: center;
 }
