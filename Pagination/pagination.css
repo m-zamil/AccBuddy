@@ -1,0 +1,46 @@
+.pag_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin: 40px 0;
+}
+.pag_list li {
+  background-color: rgb(255, 204, 129, 0.4);
+  border-radius: 10px;
+  padding: 5px 8px;
+  min-width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.pag_list .pag_list_current,
+.pag_list .pag_list_arrow_left,
+.pag_list .pag_list_arrow_right {
+  background-color: #ffcc81;
+}
+.pag_list li a {
+  display: flex;
+  align-items: center;
+}
+.pag_list li.pag_list_dots {
+  background-color: transparent;
+}
+.pag_list .pag_list_current,
+.pag_list li.pag_list_dots {
+  cursor: default;
+}
+@media (min-width: 768px) {
+  .pag_list {
+    font-size: 16px;
+  }
+  .pag_list li {
+    min-width: 38px;
+  }
+}
