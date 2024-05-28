@@ -1,7 +1,6 @@
 .pag_list {
   list-style: none;
   padding: 0;
-  margin: 0;
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
@@ -20,20 +19,20 @@
   justify-content: center;
   cursor: pointer;
 }
-.pag_list .pag_list_current,
-.pag_list .pag_list_arrow_left,
-.pag_list .pag_list_arrow_right {
+.pag_list .pag_list_element_number_current,
+.pag_list .pag_list_element_arrow_left,
+.pag_list .pag_list_element_arrow_right {
   background-color: #ffcc81;
 }
 .pag_list li a {
   display: flex;
   align-items: center;
 }
-.pag_list li.pag_list_dots {
+.pag_list li.pag_list_element_dots {
   background-color: transparent;
 }
-.pag_list .pag_list_current,
-.pag_list li.pag_list_dots {
+.pag_list .pag_list_element_number_current,
+.pag_list li.pag_list_element_dots {
   cursor: default;
 }
 @media (min-width: 768px) {
