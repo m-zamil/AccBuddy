@@ -85,6 +85,9 @@
   border-radius: 30px;
   padding: 25px 22px 20px;
   margin-bottom: 30px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product_heading {
   font-size: 14px;
@@ -177,13 +180,14 @@
   .catalog_products_list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 60px 22px;
     margin-top: 60px;
   }
   .catalog_products_list_element {
-    margin-bottom: 0;
     flex-basis: calc(50% - 11px);
     padding: 42px 22px 24px;
+    margin: 0;
   }
   .product {
     flex-direction: column;
@@ -239,6 +243,7 @@
 @media (min-width: 1600px) {
   .catalog_products_list_element {
     flex-basis: calc(25% - 20px);
+    max-width: 394px;
   }
   .catalog_products_list {
     gap: 74px 26px;
