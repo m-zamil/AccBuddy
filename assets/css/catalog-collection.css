@@ -189,3 +189,9 @@
     flex-basis: calc(50% - 11px);
   }
 }
+@media (min-width: 1201px) {
+  .catalog_products_list_element {
+    margin-bottom: 0;
+    flex-basis: calc(33% - 11px);
+  }
+}
