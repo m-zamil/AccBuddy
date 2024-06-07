@@ -95,68 +95,70 @@
       </ol>
     </nav>
     <main>
-      <section class="contact_us_section container">
-        <h1 class="h1">
-          <span>Contacts</span>
-        </h1>
-        <div class="contact_us_hero">
-          <div>
-            <h2 class="h2">
-              <span>We carefully read everything you write to us.</span>
-            </h2>
-            <p class="p contact_us_lead">
-              <span>If you have any wishes, suggestions, questions or complaints about our service, fill out the form on the right. If possible, write everything in detail. In case of a complaint, indicate the name of the product or add a link to its page in the text. We will definitely read and respond. Thank you.</span>
-            </p>
+      <section class="contact_us_section">
+        <div class="container">
+          <h1 class="h1">
+            <span>Contacts</span>
+          </h1>
+          <div class="contact_us_hero">
+            <div class="contact_us_hero_content">
+              <h2 class="h2">
+                <span>We carefully read everything you write to us.</span>
+              </h2>
+              <p class="p">
+                <span>If you have any wishes, suggestions, questions or complaints about our service, fill out the form on the right. If possible, write everything in detail. In case of a complaint, indicate the name of the product or add a link to its page in the text. We will definitely read and respond. Thank you.</span>
+              </p>
+            </div>
+            <form class="form_contact_us">
+              <div class="div_form_initial_state">
+                <div class="name_email_wrapper">
+                  <label class="label_input_name" hidden>
+                    <span hidden="">name: </span>
+                  </label>
+                  <input type="text" placeholder="name" name="name" class="input_name" required="" />
+                  <label class="label_input_email" hidden>
+                    <span hidden="">email: </span>
+                  </label>
+                  <input type="email" placeholder="email" name="email" class="input_email" required="" />
+                </div>
+                <label class="label_textarea_message"> <span hidden="">message: </span> </label>
+                <textarea placeholder="message" name="message" class="textarea_message" rows="11" required=""></textarea>
+                <div class="checkbox_submit_btn_wrapper">
+                  <label class="label_input_checkbox">
+                    <input type="checkbox" class="input_checkbox" required="" />
+                    <span>accept terms and conditions</span>
+                  </label>
+                  <button class="button_submit" type="button"><span>submit</span></button>
+                </div>
+              </div>
+              <div class="div_success_message" hidden="">
+                <span class="div_success_message_text">Your message has been successfully sent! </span>
+                <button class="button_message_close">
+                  <span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894"></line>
+                      <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894"></line>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
           </div>
-          <form class="form_contact_us">
-            <div class="div_form_initial_state">
-              <div class="name_email_wrapper">
-                <label class="label_input_name" hidden>
-                  <span hidden="">name: </span>
-                </label>
-                <input type="text" placeholder="name" name="name" class="input_name" required="" />
-                <label class="label_input_email" hidden>
-                  <span hidden="">email: </span>
-                </label>
-                <input type="email" placeholder="email" name="email" class="input_email" required="" />
-              </div>
-              <label class="label_textarea_message"> <span hidden="">message: </span> </label>
-              <textarea placeholder="message" name="message" class="textarea_message" rows="11" required=""></textarea>
-              <div class="checkbox_submit_btn_wrapper">
-                <label class="label_input_checkbox">
-                  <input type="checkbox" class="input_checkbox" required="" />
-                  <span>accept terms and conditions</span>
-                </label>
-                <button class="button_submit" type="button"><span>submit</span></button>
-              </div>
-            </div>
-            <div class="div_success_message" hidden="">
-              <span class="div_success_message_text">Your message has been successfully sent! </span>
-              <button class="button_message_close">
-                <span>
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894"></line>
-                    <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894"></line>
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </form>
-        </div>
 
-        <address class="address">
-          <div class="address_content">
-            <h3 class="h3"><span>Office:</span></h3>
-            <h4 class="h4"><span>AccBuddy LLC</span></h4>
-            <p class="p"><span>1325 Franklin Ave Garden City, NY 11530, USA</span></p>
-          </div>
-          <div class="phone_email_wrapper">
-            <h3 class="h3"><span>Phone</span></h3>
-            <p class="p phone_no"><span>+1 213 313 2211</span></p>
-            <h3 class="h3"><span>Email</span></h3>
-            <p class="p email_text"><span>support@accbuddy.com</span></p>
-          </div>
-        </address>
+          <address class="address">
+            <div class="address_content">
+              <h3 class="h3"><span>Office:</span></h3>
+              <h4 class="h4"><span>AccBuddy LLC</span></h4>
+              <p class="p"><span>1325 Franklin Ave Garden City, NY 11530, USA</span></p>
+            </div>
+            <div class="phone_email_wrapper">
+              <h3 class="h3"><span>Phone</span></h3>
+              <p class="p"><span>+1 213 313 2211</span></p>
+              <h3 class="h3"><span>Email</span></h3>
+              <p class="p"><span>support@accbuddy.com</span></p>
+            </div>
+          </address>
+        </div>
       </section>
     </main>
     <!-- ============= Footer ============= -->
