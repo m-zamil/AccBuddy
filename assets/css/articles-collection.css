@@ -40,7 +40,7 @@
   margin: 0 0 76px;
   list-style: none;
 }
-.catalog_products_list_element {
+.catalog_articles_list_element {
   margin-top: 38px;
 }
 .article_heading {
@@ -88,7 +88,7 @@
     margin: 38px auto;
     max-width: 90%;
   }
-  .catalog_products_list_element {
+  .catalog_articles_list_element {
     margin-top: 52px;
   }
   .article_heading {
@@ -117,7 +117,7 @@
     flex-wrap: wrap;
     gap: 10%;
   }
-  .catalog_products_list_element {
+  .catalog_articles_list_element {
     flex-basis: 45%;
   }
   .article_lead_image {
