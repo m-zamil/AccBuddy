@@ -324,18 +324,18 @@
             </span>
           </p>
 
-          <div class="review-form-wrapper">
+          <form class="form_write_review">
             <!-- Review form -->
-            <div class="review-form" data-review-write-window>
+            <div class="div_form_initial_state">
               <!-- Close button -->
-              <button class="close-btn" type="button" data-review-form-close>
+              <button class="button_form_close" type="button" data-review-form-close>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
                   <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
                 </svg>
               </button>
               <h2 data-review-form-title class="review-form-title">Vmware Workstation 17 Pro Lifetime License</h2>
-              <div class="rating-wrapper">
+              <fieldset class="review_stars_input_fieldset">
                 <!-- Rating stars -->
                 <div data-review-choose-rating class="rating-stars">
                   <label><input type="radio" data-review-star="1" checked /></label>
@@ -344,14 +344,14 @@
                   <label><input type="radio" data-review-star="4" checked /></label>
                   <label><input type="radio" data-review-star="5" /></label>
                 </div>
-              </div>
-              <input type="text" data-review-heading class="review-subject" placeholder="Subject" />
-              <textarea data-review-message class="review-message" rows="6" placeholder="Message"></textarea>
-              <input type="text" data-review-name class="review-name" placeholder="Name" />
-              <button class="review-submit-btn" type="submit" data-review-submit>submit</button>
+              </fieldset>
+              <input type="text" data-review-heading class="input_subject" placeholder="Subject" />
+              <textarea data-review-message class="textarea_message" rows="6" placeholder="Message"></textarea>
+              <input type="text" data-review-name class="input_name" placeholder="Name" />
+              <button class="button_submit" type="submit" data-review-submit>submit</button>
             </div>
-            <div hidden data-review-write-done class="review-write-done">
-              <button data-review-form-close class="close-btn">
+            <div hidden data-review-write-done class="div_success_message">
+              <button data-review-form-close class="button_message_close">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
                   <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
@@ -359,7 +359,7 @@
               </button>
               Thanks review sent
             </div>
-          </div>
+          </form>
 
           <!-- Reviews cards list -->
           <ul class="reviews-cards-list">

@@ -680,10 +680,10 @@ body {
 }
 /* ========================== Write Review Mobile ========================== */
 
-.review-form-wrapper {
+.form_write_review {
   position: relative;
 }
-.review-form {
+.div_form_initial_state {
   background-color: #e7e7ed;
   border-radius: 30px;
   padding: 0 12px 32px;
@@ -697,7 +697,8 @@ body {
   font-weight: 600;
   line-height: 1;
 }
-.close-btn {
+.button_form_close,
+.button_message_close {
   position: absolute;
   top: 18px;
   right: 18px;
@@ -714,7 +715,10 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-.rating-wrapper {
+.review_stars_input_fieldset {
+  border: none;
+  margin: 0;
+  min-width: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -745,9 +749,9 @@ body {
 .rating-stars > label:has(input[type='radio']:checked):before {
   color: #ffcc81;
 }
-.review-subject,
-.review-name,
-.review-message {
+.input_subject,
+.input_name,
+.textarea_message {
   border-radius: 20px;
   border: 0;
   font-size: 14px;
@@ -755,13 +759,13 @@ body {
   width: 100%;
   margin: 18px 0 0;
 }
-.review-subject {
+.input_subject {
   font-weight: 600;
 }
-.review-message:focus-visible {
+.textarea_message:focus-visible {
   outline-color: #ffcc81;
 }
-.review-submit-btn {
+.button_submit {
   background-color: #ffcc81;
   border: 0;
   border-radius: 20px;
@@ -823,7 +827,7 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.review-write-done {
+.div_success_message {
   position: absolute;
   top: 0;
   left: 0;
@@ -838,7 +842,7 @@ body {
   border-radius: 30px;
   border: 10px solid #e7e7ed;
 }
-.review-write-done::before {
+.div_success_message::before {
   content: '';
   width: 22px;
   height: 22px;
@@ -878,11 +882,12 @@ body {
   .reviews-info [data-rating] {
     font-size: 24px;
   }
-  .review-form {
+  .div_form_initial_state {
     border-radius: 40px;
     padding: 14px 26px 52px;
   }
-  .close-btn {
+  .button_form_close,
+  .button_message_close {
     top: 28px;
     right: 21px;
   }
@@ -892,7 +897,8 @@ body {
     margin-top: 0;
     max-width: 90%;
   }
-  .close-btn svg {
+  .button_form_close svg,
+  .button_message_close svg {
     width: 25px;
     height: auto;
   }
@@ -909,24 +915,24 @@ body {
   .rating-stars {
     width: auto;
   }
-  .review-subject,
-  .review-name,
-  .review-message {
+  .input_subject,
+  .input_name,
+  .textarea_message {
     font-size: 16px;
     padding: 15px 20px;
     border-radius: 30px;
   }
-  .review-submit-btn {
+  .button_submit {
     padding: 15px 20px;
     border-radius: 30px;
     font-size: 16px;
   }
 
-  .review-name,
-  .review-submit-btn {
+  .input_name,
+  .button_submit {
     width: 48%;
   }
-  .review-name {
+  .input_name {
     margin-right: calc(4% - 10px);
   }
   .review-checkbox {
@@ -935,11 +941,11 @@ body {
     font-size: 12px;
   }
 
-  .review-write-done {
+  .div_success_message {
     font-size: 24px;
     border-width: 16px;
   }
-  .review-write-done::before {
+  .div_success_message::before {
     width: 24px;
     height: 24px;
   }
@@ -966,7 +972,7 @@ body {
   .reviews-info [data-rating] {
     font-size: 24px;
   }
-  .review-form {
+  .div_form_initial_state {
     padding: 26px 26px 46px;
     border-radius: 50px;
     margin-bottom: 70px;
@@ -974,15 +980,17 @@ body {
   .review-form-title {
     padding-left: 20px;
   }
-  .close-btn {
+  .button_form_close,
+  .button_message_close {
     top: 40px;
     right: 36px;
   }
-  .close-btn svg {
+  .button_form_close svg,
+  .button_message_close svg {
     width: 30px;
     height: auto;
   }
-  .rating-wrapper {
+  .review_stars_input_fieldset {
     gap: 24px;
     padding-top: 20px;
   }
@@ -996,18 +1004,18 @@ body {
   .rating-number {
     font-size: 32px;
   }
-  .review-subject,
-  .review-name,
-  .review-message {
+  .input_subject,
+  .input_name,
+  .textarea_message {
     margin-top: 26px;
   }
-  .review-subject,
-  .review-name,
-  .review-message {
+  .input_subject,
+  .input_name,
+  .textarea_message {
     padding: 20px 28px;
     border-radius: 40px;
   }
-  .review-submit-btn {
+  .button_submit {
     padding: 20px 28px;
     border-radius: 40px;
   }
@@ -1027,10 +1035,10 @@ body {
     height: 14px;
   }
 
-  .review-write-done {
+  .div_success_message {
     font-size: 32px;
   }
-  .review-write-done::before {
+  .div_success_message::before {
     width: 30px;
     height: 30px;
     top: -4px;
