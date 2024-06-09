@@ -264,10 +264,10 @@ body {
   padding: 22px 30px;
   display: flex;
 }
-.inc-btn {
+.button_product_qty_increase {
   right: 0;
 }
-.dec-btn {
+.button_product_qty_decrease {
   left: 0;
 }
 .fieldset_product_qty input {
@@ -303,27 +303,27 @@ body {
   padding: 10px 22px;
   cursor: pointer;
 }
-.paypal-btn {
+.paypal_buy_now_button {
   background-color: #f6c305;
   font-size: 9px;
   vertical-align: middle;
   gap: 10px;
   flex: 2;
 }
-.paypal-btn svg {
+.paypal_buy_now_button svg {
   height: 21px;
   width: auto;
 }
-.paypal-btn span {
+.paypal_buy_now_button span {
   padding-top: 3px;
 }
-.add-to-cart-btn {
+.add-cart-button {
   background-color: #202020;
   margin: 0;
   min-width: 115px;
   flex: 1;
 }
-.add-to-cart-btn svg {
+.add-cart-button svg {
   margin-top: -2px;
 }
 .offer-widget:has([data-out-of-stock]) + .offer-btns {
@@ -388,7 +388,7 @@ body {
     padding: 20px 24px;
   }
   /* Coupon fieldset */
-  .offer-widget-fields .coupon-field {
+  .offer-widget-fields .coupon_fieldset {
     width: 52%;
     margin-right: calc(14% - 8px) !important;
   }
@@ -408,14 +408,14 @@ body {
     height: 60px;
     border-radius: 30px;
   }
-  .paypal-btn span {
+  .paypal_buy_now_button span {
     font-size: 12px;
   }
-  .paypal-btn svg {
+  .paypal_buy_now_button svg {
     height: 28px;
     width: auto;
   }
-  .add-to-cart-btn svg {
+  .add-cart-button svg {
     height: 35px;
     width: auto;
   }
@@ -442,7 +442,7 @@ body {
     padding: 10px 18px;
   }
   /* Coupon fieldset */
-  .offer-widget-fields .coupon-field {
+  .offer-widget-fields .coupon_fieldset {
     width: 54%;
     margin-right: calc(11% - 8px) !important;
   }
