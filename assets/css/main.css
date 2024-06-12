@@ -66,7 +66,7 @@
   background-color: #ffcc81;
 }
 
-.promo_product_header_section .product_price del .price_whole {
+.promo_product_header_section .product_price del .product_price_integer {
   font-size: 26px;
   font-weight: 400;
 }
@@ -79,8 +79,8 @@
   margin-left: 10px;
 }
 
-.promo_product_header_section .product_price ins .price_whole,
-.promo_product_header_section .product_price strong .price_whole {
+.promo_product_header_section .product_price ins .product_price_integer,
+.promo_product_header_section .product_price strong .product_price_integer {
   font-size: 45px;
   font-weight: 400;
 }
@@ -122,15 +122,15 @@
   .promo_product_header_section .product_price del {
     font-size: 18px;
   }
-  .promo_product_header_section .product_price del .price_whole {
+  .promo_product_header_section .product_price del .product_price_integer {
     font-size: 28px;
   }
   .promo_product_header_section .product_price ins,
   .promo_product_header_section .product_price strong {
     font-size: 28px;
   }
-  .promo_product_header_section .product_price ins .price_whole,
-  .promo_product_header_section .product_price strong .price_whole {
+  .promo_product_header_section .product_price ins .product_price_integer,
+  .promo_product_header_section .product_price strong .product_price_integer {
     font-size: 48px;
   }
   .promo_product_header_section .promo_cta {
@@ -338,7 +338,7 @@
   height: 2px;
   background-color: #ffcc81;
 }
-.catalog_products_list_element .product_price del .price-whole {
+.catalog_products_list_element .product_price del .product_price_integer {
   font-size: 26px;
   font-weight: 400;
 }
@@ -349,8 +349,8 @@
   text-decoration: none;
   margin-left: 10px;
 }
-.catalog_products_list_element .product_price ins .price-whole,
-.catalog_products_list_element .product_price strong .price-whole {
+.catalog_products_list_element .product_price ins .product_price_integer,
+.catalog_products_list_element .product_price strong .product_price_integer {
   font-size: 45px;
   font-weight: 400;
 }
@@ -424,15 +424,15 @@
   .catalog_products_list_element .product_price del {
     font-size: 18px;
   }
-  .catalog_products_list_element .product_price del .price-whole {
+  .catalog_products_list_element .product_price del .product_price_integer {
     font-size: 28px;
   }
   .catalog_products_list_element .product_price ins,
   .catalog_products_list_element .product_price strong {
     font-size: 28px;
   }
-  .catalog_products_list_element .product_price ins .price-whole,
-  .catalog_products_list_element .product_price strong .price-whole {
+  .catalog_products_list_element .product_price ins .product_price_integer,
+  .catalog_products_list_element .product_price strong .product_price_integer {
     font-size: 48px;
   }
   .catalog_products_list_element .add-cart-button {
