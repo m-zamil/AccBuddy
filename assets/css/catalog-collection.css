@@ -236,8 +236,10 @@
   }
   .catalog_products_list {
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
   }
   .catalog_products_list_element {
+    max-width: 100%;
     margin-bottom: 0;
     padding: 42px 30px 30px;
   }
