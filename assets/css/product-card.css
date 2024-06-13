@@ -144,7 +144,7 @@ body {
   display: inline-block;
   margin-right: 16px;
 }
-.product_price del .price-whole {
+.product_price del .product_price_integer {
   font-size: 28px;
   font-weight: 400;
 }
@@ -157,8 +157,8 @@ body {
   font-weight: 600;
   line-height: 1;
 }
-.product_price strong .price-whole,
-.product_price ins .price-whole {
+.product_price strong .product_price_integer,
+.product_price ins .product_price_integer {
   font-size: 48px;
   font-weight: 400;
 }
@@ -195,8 +195,8 @@ body {
   font-size: 20px;
   color: rgb(139, 145, 160, 0.5);
 }
-[data-out-of-stock] strong .price-whole,
-[data-out-of-stock] ins .price-whole {
+[data-out-of-stock] strong .product_price_integer,
+[data-out-of-stock] ins .product_price_integer {
   font-size: 35px;
   font-weight: 400;
 }
@@ -346,15 +346,15 @@ body {
   .product_price del {
     font-size: 18px;
   }
-  .product_price del .price-whole {
+  .product_price del .product_price_integer {
     font-size: 28px;
   }
   .product_price strong,
   .product_price ins {
     font-size: 28px;
   }
-  .product_price strong .price-whole,
-  .product_price ins .price-whole {
+  .product_price strong .product_price_integer,
+  .product_price ins .product_price_integer {
     font-size: 48px;
   }
 
@@ -366,8 +366,8 @@ body {
   [data-out-of-stock] ins {
     font-size: 18px;
   }
-  [data-out-of-stock] strong .price-whole,
-  [data-out-of-stock] ins .price-whole {
+  [data-out-of-stock] strong .product_price_integer,
+  [data-out-of-stock] ins .product_price_integer {
     font-size: 28px;
   }
   /* Fieldsets */
