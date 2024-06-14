@@ -260,7 +260,8 @@
   }
 }
 /* ======================== Catalog Products Banner ======================== */
-.promo_collection_products_main_section {
+
+.promo_collection_products_section {
   margin-top: 96px;
 }
 .catalog_products_banner {
@@ -303,7 +304,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.promo_collection_products_main_section:not(:first-of-type) .catalog_products_list_element {
+.promo_collection_products_section:not(:first-of-type) .catalog_products_list_element {
   border-color: transparent;
 }
 .catalog_products_list_element .product_heading {
@@ -371,7 +372,7 @@
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  .promo_collection_products_main_section {
+  .promo_collection_products_section {
     margin-top: 102px;
   }
   .catalog_products_banner {
@@ -444,7 +445,7 @@
   }
 }
 @media (min-width: 1201px) {
-  .promo_collection_products_main_section {
+  .promo_collection_products_section {
     margin-top: 114px;
   }
   .catalog_products_banner {
