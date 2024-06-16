@@ -37,7 +37,7 @@
   display: inline-block;
   position: relative;
 }
-.footer-cart-qty {
+.footer .anchor-cart-qty {
   font-size: 10px;
   font-weight: 800;
   position: absolute;
@@ -171,7 +171,7 @@
     width: 40px;
     height: auto;
   }
-  .footer-cart-qty {
+  .footer .anchor-cart-qty  {
     font-size: 14px;
     right: 30px;
     top: -1px;
@@ -262,7 +262,7 @@
     order: 4;
     margin-left: 0;
   }
-  .footer-cart-qty {
+  .footer .anchor-cart-qty  {
     font-size: 16px;
     padding-right: 2px;
     top: -3px;
