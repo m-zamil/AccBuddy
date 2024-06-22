@@ -23,6 +23,13 @@ main {
   margin-bottom: 10px;
   width: 100%;
 }
+.auth_error_message {
+  color: red;
+  text-align: center;
+  font-size: 10px;
+  display: block;
+  margin: 0 auto 1em;
+}
 .find_order_status_button {
   font-size: 14px;
   background-color: #ffcc81;
@@ -58,6 +65,10 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.auth_section:has(form[data-red]) {
+  background-color: #f4e0e0;
+  border: 1px solid red;
+}
 .footer {
   margin-top: 72px;
 }
@@ -83,6 +94,11 @@ main {
     padding: 15px 20px;
     border-radius: 30px;
     margin-bottom: 14px;
+  }
+  .auth_error_message {
+    font-size: 12px;
+    max-width: 205px;
+    margin-right: 0;
   }
   .wrapper_other_auth_options {
     display: flex;
@@ -130,12 +146,21 @@ main {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+  .order_status_form {
+    position: relative;
+  }
   .order_status_form input {
     width: 48%;
     margin-bottom: 22px;
   }
   .order_status_form input:first-child {
     margin-right: calc(4% - 4px);
+  }
+  .auth_error_message {
+    position: absolute;
+    right: 220px;
+    bottom: 18px;
+    margin-bottom: 0;
   }
   .wrapper_other_auth_options {
     flex-direction: row;
