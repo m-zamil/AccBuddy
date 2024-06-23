@@ -23,7 +23,7 @@ main {
   margin-bottom: 10px;
   width: 100%;
 }
-.auth_error_message {
+.track_order_error_message {
   color: red;
   text-align: center;
   font-size: 10px;
@@ -67,7 +67,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.auth_section:has(form[data-red]) {
+.auth_section:has(form[data-order-status-form-red]) {
   background-color: #f4e0e0;
   border: 1px solid red;
 }
@@ -97,7 +97,7 @@ main {
     border-radius: 30px;
     margin-bottom: 14px;
   }
-  .auth_error_message {
+  .track_order_error_message {
     font-size: 12px;
     max-width: 205px;
     margin-right: 0;
@@ -159,7 +159,7 @@ main {
   .order_status_form input:first-child {
     margin-right: calc(4% - 4px);
   }
-  .auth_error_message {
+  .track_order_error_message {
     position: absolute;
     right: 220px;
     bottom: 18px;
