@@ -74,6 +74,28 @@ input:focus-visible {
     max-width: 1920px;
   }
 }
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 500px) {
+  .main {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main {
+    padding: 0 133px;
+  }
+}
+@media (min-width: 1920px) {
+  .main {
+    max-width: 1920px;
+  }
+}
 .visually-hidden {
   display: none !important;
 }
