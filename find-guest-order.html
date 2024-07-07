@@ -88,28 +88,26 @@
         </form>
       </div>
     </header>
-    <main>
-      <div class="container">
-        <div class="content_wrapper">
-          <section class="auth_section">
-            <h1 class="h1">Find a guest order</h1>
-            <form class="order_status_form" data-red="">
-              <input class="order_number_input" type="text" placeholder="Order number" />
-              <input type="email" placeholder="email" name="email" class="input_email" />
-              <span class="auth_error_message" hidden="">order not found</span>
-              <button class="find_order_status_button">Find</button>
-            </form>
+    <main class="container">
+      <div class="content_wrapper">
+        <section class="auth_section">
+          <h1 class="h1">Find a guest order</h1>
+          <form class="order_status_form" data-red="">
+            <input class="order_number_input" type="text" placeholder="Order number" />
+            <input type="email" placeholder="email" name="email" class="input_order_email" />
+            <span class="track_order_error_message" hidden="">order not found</span>
+            <button class="find_order_status_button">Find</button>
+          </form>
+        </section>
+        <div class="wrapper_other_auth_options">
+          <section class="other_auth_options">
+            <h2 class="h2">New user?</h2>
+            <a class="signup_anchor">Sign up</a>
           </section>
-          <div class="wrapper_other_auth_options">
-            <section class="other_auth_options">
-              <h2 class="h2">New user?</h2>
-              <a class="anchor">Sign up</a>
-            </section>
-            <section class="other_auth_options">
-              <h2 class="h2">Registered?</h2>
-              <a class="anchor">Sign in</a>
-            </section>
-          </div>
+          <section class="other_auth_options">
+            <h2 class="h2">Registered?</h2>
+            <a class="signin_anchor">Sign in</a>
+          </section>
         </div>
       </div>
     </main>
