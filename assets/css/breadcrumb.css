@@ -7,14 +7,14 @@
   line-height: 1;
 }
 
-.breadcrumb > li {
+.breadcrumb_li {
   display: inline;
   font-weight: 600;
   line-height: 2;
 }
 
-.breadcrumb a,
-.breadcrumb span {
+.breadcrumb_anchor,
+.breadcrumb_current {
   background-color: #ffcc81;
   border-radius: 5px;
   padding: 0 4px;
@@ -22,7 +22,7 @@
   line-height: 1.275;
 }
 
-.breadcrumb > li + li:before {
+.breadcrumb_li + .breadcrumb_li:before {
   content: '/';
   margin: 0 0.15em;
 }
@@ -31,13 +31,13 @@
     padding-top: 75px;
     padding: 50px 0 30px;
   }
-  .breadcrumb > li {
+  .breadcrumb_li {
     font-size: 12px;
   }
 }
 @media (min-width: 1201px) {
-  .breadcrumb a,
-  .breadcrumb span {
+  .breadcrumb_anchor,
+  .breadcrumb_current {
     padding: 0 5px;
   }
 }
