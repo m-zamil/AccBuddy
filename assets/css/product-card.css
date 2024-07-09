@@ -959,12 +959,8 @@ body {
   .reviews-section {
     max-width: 1920px;
     margin: 0 auto;
-  }
-  .reviews-section .container {
-    padding-right: 46%;
-  }
-  .reviews-section {
     margin-top: 64px;
+    padding-right: 46%;
   }
   .reviews-header button {
     padding: 16px 70px;

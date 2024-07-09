@@ -123,13 +123,13 @@
           <!-- ====== Product image slider mobile ====== -->
           <div class="lead-image-wrapper">
             <picture class="lead-image">
-              <img class="product_lead_img" data-leadimg="" src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" />
+              <img class="product_lead_img" data-leadimg="" src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" sizes="(max-width: 1200px) 100vw, 50vw" />
             </picture>
             <div class="wrapper_thumbnails">
-              <img class="active" src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" alt="" />
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" srcset="" alt="" />
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" srcset="" alt="" />
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" srcset="" alt="" />
+              <img class="active" src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" srcset="" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" srcset="" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" srcset="" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
             </div>
           </div>
           <p class="product_lead_paragraph">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer Lorem ipsum dolor sit amet, cons ectetuer </p>
@@ -240,13 +240,13 @@
           <!-- ====== Product image slider Desktop ====== -->
           <div class="lead-image-wrapper">
             <picture class="lead-image">
-              <img class="product_lead_img" data-leadimg="" src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" />
+              <img class="product_lead_img" data-leadimg="" src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" sizes="(max-width: 1200px) 100vw, 50vw" />
             </picture>
             <div class="wrapper_thumbnails">
-              <img src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" alt="" />
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" srcset="" alt="" />
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" srcset="" alt="" />
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" srcset="" alt="" />
+              <img src="./assets/images/photoshop-elements-sm.jpg" srcset="./assets/images/photoshop-elements-sm.jpg 254w, ./assets/images/photoshop-elements-md.jpg 329w, ./assets/images/photoshop-elements-lg.jpg 361w" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" srcset="" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" srcset="" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" srcset="" sizes="(max-width: 1200px) 100vw, 50vw" alt="" />
             </div>
           </div>
           <!-- Product details nav -->
@@ -333,75 +333,73 @@
 
       <!-- Reviews section -->
       <section class="reviews-section" data-target="reviews">
-        <div class="container">
-          <div class="reviews-header">
-            <h2>Reviews</h2>
-            <button data-review-write-button="">write review</button>
-          </div>
-          <p class="reviews-info">
-            <span class="reviews-info-title">Ftagit amet, cons ectetuer</span>
-            <span class="reviews-info-data">
-              <span class="rating_star" data-star="4.6"></span>
-              <strong data-rating="">4.6</strong>
-              <strong>/5 (</strong>
-              <strong data-reviews="">50</strong>
-              <span> reviews)</span>
-            </span>
-          </p>
-
-          <form class="form_write_review">
-            <!-- Review form -->
-            <div class="div_form_initial_state">
-              <!-- Close button -->
-              <button class="button_form_close" type="button" data-review-form-close>
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
-                  <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
-                </svg>
-              </button>
-              <h2 data-review-form-title class="review-form-title">Vmware Workstation 17 Pro Lifetime License</h2>
-              <fieldset class="review_stars_input_fieldset">
-                <!-- Rating stars -->
-                <div data-review-choose-rating class="rating-stars">
-                  <label><input type="radio" data-review-star="1" checked /></label>
-                  <label><input type="radio" data-review-star="2" checked /></label>
-                  <label><input type="radio" data-review-star="3" checked /></label>
-                  <label><input type="radio" data-review-star="4" checked /></label>
-                  <label><input type="radio" data-review-star="5" /></label>
-                </div>
-              </fieldset>
-              <input type="text" data-review-heading class="input_subject" placeholder="Subject" />
-              <textarea data-review-message class="textarea_message" rows="6" placeholder="Message"></textarea>
-              <input type="text" data-review-name class="input_name" placeholder="Name" />
-              <button class="button_submit" type="submit" data-review-submit>submit</button>
-            </div>
-            <div hidden data-review-write-done class="div_success_message">
-              <button data-review-form-close class="button_message_close">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
-                  <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
-                </svg>
-              </button>
-              Thanks review sent
-            </div>
-          </form>
-
-          <!-- Reviews cards list -->
-          <ul class="reviews-cards-list">
-            <li>
-              <article class="review-card">
-                <header class="reviewer-info">
-                  <img class="reviewer-avatar" alt="" />
-                  <span class="reviewer-name">Johny Appleseed</span>
-                  <span class="review-date">March 29, 2024 </span>
-                </header>
-                <span class="rating_star" data-star="4.0"></span><span class="rating_summary">4.0</span>
-                <h3>Ftagit amet, cons ectetuer</h3>
-                <p>Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
-              </article>
-            </li>
-          </ul>
+        <div class="reviews-header">
+          <h2>Reviews</h2>
+          <button data-review-write-button="">write review</button>
         </div>
+        <p class="reviews-info">
+          <span class="reviews-info-title">Ftagit amet, cons ectetuer</span>
+          <span class="reviews-info-data">
+            <span class="rating_star" data-star="4.6"></span>
+            <strong data-rating="">4.6</strong>
+            <strong>/5 (</strong>
+            <strong data-reviews="">50</strong>
+            <span> reviews)</span>
+          </span>
+        </p>
+
+        <form class="form_write_review">
+          <!-- Review form -->
+          <div class="div_form_initial_state">
+            <!-- Close button -->
+            <button class="button_form_close" type="button" data-review-form-close>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
+                <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
+              </svg>
+            </button>
+            <h2 data-review-form-title class="review-form-title">Vmware Workstation 17 Pro Lifetime License</h2>
+            <fieldset class="review_stars_input_fieldset">
+              <!-- Rating stars -->
+              <div data-review-choose-rating class="rating-stars">
+                <label><input type="radio" data-review-star="1" checked /></label>
+                <label><input type="radio" data-review-star="2" checked /></label>
+                <label><input type="radio" data-review-star="3" checked /></label>
+                <label><input type="radio" data-review-star="4" checked /></label>
+                <label><input type="radio" data-review-star="5" /></label>
+              </div>
+            </fieldset>
+            <input type="text" data-review-heading class="input_subject" placeholder="Subject" />
+            <textarea data-review-message class="textarea_message" rows="6" placeholder="Message"></textarea>
+            <input type="text" data-review-name class="input_name" placeholder="Name" />
+            <button class="button_submit" type="submit" data-review-submit>submit</button>
+          </div>
+          <div hidden data-review-write-done class="div_success_message">
+            <button data-review-form-close class="button_message_close">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
+                <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
+              </svg>
+            </button>
+            Thanks review sent
+          </div>
+        </form>
+
+        <!-- Reviews cards list -->
+        <ul class="reviews-cards-list">
+          <li>
+            <article class="review-card">
+              <header class="reviewer-info">
+                <img class="reviewer-avatar" srcset="" sizes="(max-width: 1200px) 10vw, 5vw" alt="" />
+                <span class="reviewer-name">Johny Appleseed</span>
+                <span class="review-date">March 29, 2024 </span>
+              </header>
+              <span class="rating_star" data-star="4.0"></span><span class="rating_summary">4.0</span>
+              <h3>Ftagit amet, cons ectetuer</h3>
+              <p>Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
+            </article>
+          </li>
+        </ul>
       </section>
       <!-- ============ Cart Popup ============ ============ -->
       <div class="cart-popup container">
@@ -420,7 +418,7 @@
           <div class="cart-items-wrapper">
             <!-- Cart Box -->
             <div class="cart-item">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="cart-item__thumb" />
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" srcset="" sizes="(max-width: 1200px) 40vw, 10vw" alt="" class="cart-item__thumb" />
               <h3 class="cart-item__name">Vmware Workstation 17 Pro Lifetime License</h3>
               <p class="cart-item__price">
                 <strong>$21,99</strong>
@@ -452,7 +450,7 @@
             </div>
             <!-- Cart Box -->
             <div class="cart-item">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="cart-item__thumb" />
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" srcset="" sizes="(max-width: 1200px) 40vw, 10vw" alt="" class="cart-item__thumb" />
               <h3 class="cart-item__name">Vmware Workstation 17 Pro Lifetime License</h3>
               <p class="cart-item__price">
                 <del>$21,99</del>
