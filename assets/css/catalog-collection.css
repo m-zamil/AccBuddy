@@ -196,7 +196,7 @@
     justify-content: space-between;
     height: 100%;
   }
-  .product_anchor {
+  .wrapper_product {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
