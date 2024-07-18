@@ -1,4 +1,4 @@
-.breadcrumb_ol{
+.breadcrumb_ol {
   margin: 0;
   padding: 30px 0;
   padding-left: 0;
@@ -6,41 +6,41 @@
   font-size: 10px;
   line-height: 1;
 }
-
-.breadcrumb_li {
+.breadcrumb_ol > li {
   display: inline;
   font-weight: 600;
   line-height: 2;
 }
-
-.breadcrumb_anchor,
-.breadcrumb_current {
+.breadcrumb_ol a,
+.breadcrumb_ol span {
   background-color: #ffcc81;
   border-radius: 5px;
   padding: 0 4px;
   display: inline-block;
   line-height: 1.275;
 }
-
-.breadcrumb_li + .breadcrumb_li:before {
-  content: '/';
+.breadcrumb_ol > li + li:before {
+  content: "/";
   margin: 0 0.15em;
 }
 @media (min-width: 768px) {
-  .breadcrumb_ol{
+  .breadcrumb_ol {
     padding-top: 75px;
     padding: 50px 0 30px;
   }
-  .breadcrumb_li {
+  .breadcrumb_ol > li {
     font-size: 12px;
   }
 }
 @media (min-width: 1201px) {
-  .breadcrumb_anchor,
-  .breadcrumb_current {
+  .breadcrumb_ol a,
+  .breadcrumb_ol span {
     padding: 0 5px;
   }
 }
+
+
+
 
 
 .breadcrumb_nav {
