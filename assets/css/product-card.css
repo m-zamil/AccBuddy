@@ -1177,3 +1177,192 @@ body {
     padding-bottom: 12px;
   }
 }
+
+/* =============================== price compare section */
+.price_compare_section {
+  margin-top: 66px;
+}
+.price_compare_section .price_compare_site_list {
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  padding: 18px;
+  background-color: #202020;
+  border-radius: 50px;
+}
+.price_compare_site {
+  background-color: white;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  padding: 12px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price_compare_site:last-child {
+  margin-bottom: 0;
+}
+.price_compare_site .price_compare_site_name {
+  padding: 0;
+}
+.price_compare_site_anchor {
+  display: flex;
+  align-items: center;
+}
+.price_compare_site_logo {
+  width: 58px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.compare_price_site_name_value {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 10ch;
+}
+.price_compare_site .price {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 0;
+}
+.price_compare_site .price ins,
+.price_compare_site .price strong,
+.price_compare_site .price del {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .price_compare_site_list {
+    display: flex;
+    gap: 14px;
+    flex-wrap: nowrap;
+  }
+  .price_compare_section .price_compare_site_list {
+    padding: 15px;
+  }
+  .price_compare_site {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .price_compare_site {
+    margin-bottom: 0;
+  }
+  .price_compare_site_logo {
+    width: 68px;
+  }
+  .compare_price_site_name_value {
+    font-size: 16px;
+  }
+  .price_compare_site .price {
+    margin-left: auto;
+  }
+  .price_compare_site .price strong,
+  .price_compare_site .price ins,
+  .price_compare_site .price del {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1201px) {
+  .price_compare_section .price_compare_heading {
+    padding: 0;
+  }
+  .price_compare_site_list {
+    flex-wrap: wrap;
+  }
+  .price_compare_site {
+    width: 200px;
+  }
+}
+/* ================================= Product Attributes Fieldset */
+.product_attributes_fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 66px;
+}
+.product_attributes_legend {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f1f1f;
+  padding: 10px 0 0;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.product_attribute_radio {
+  display: none;
+}
+.product_attribute_value {
+  font-size: 14px;
+  font-weight: 600;
+}
+.product_attribute_label {
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: 2px solid #e7e7ed;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.product_attribute_label:has(.product_attribute_value_image) {
+  padding: 10px;
+  padding-right: 30px;
+}
+.product_attribute_value_image {
+  width: 46px;
+  height: 46px;
+}
+.product_attribute_label:has(.product_attribute_value_image:last-child) {
+  padding: 10px;
+}
+.product_attribute_radio:disabled + .product_attribute_label .product_attribute_value_image {
+  opacity: 0.35;
+}
+.product_attribute_radio:disabled + .product_attribute_label {
+  cursor: not-allowed;
+}
+.product_attribute_radio:checked + label {
+  outline: 4px solid #72ccbf;
+  border-color: transparent;
+}
+.product_attribute_radio:not(:checked) + label {
+  outline: 2px solid transparent;
+}
+.product_attribute_radio:disabled + label {
+  color: #8b91a0;
+  background-color: #efeff3;
+}
+@media (min-width: 768px) {
+  .product_attributes_fieldset {
+    margin-top: 112px;
+  }
+  .product_attributes_legend {
+    font-size: 24px;
+  }
+  .product_attribute_value {
+    font-size: 16px;
+  }
+  .product_attribute_label {
+    padding: 16px 40px;
+    border-radius: 25px;
+    gap: 10px;
+  }
+  .product_attribute_label:has(.product_attribute_value_image) {
+    padding: 12px;
+    padding-right: 38px;
+  }
+  .product_attribute_value_image {
+    width: 58px;
+    height: 58px;
+  }
+  .product_attribute_label:has(.product_attribute_value_image:last-child) {
+    padding: 12px;
+  }
+}
