@@ -447,74 +447,77 @@
       </article>
 
       <!-- Reviews section -->
-      <section class="reviews-section" data-target="reviews">
-        <div class="reviews-header">
-          <h2>Reviews</h2>
-          <button data-review-write-button="">write review</button>
+      <section class="reviews_section">
+        <div class="wrapper_reviews_header">
+          <h2 class="reviews_h2">Reviews</h2>
+          <button data-review-write-button="" class="create_review_button">write review</button>
         </div>
-        <p class="reviews-info">
-          <span class="reviews-info-title">Ftagit amet, cons ectetuer</span>
-          <span class="reviews-info-data">
+        <p class="wrapper_reviews_info">
+          <span class="reviews_txt_bold">verified reviews</span>
+          <span class="wr_reviews_data">
             <span class="rating_star" data-star="4.6"></span>
-            <strong data-rating="">4.6</strong>
-            <strong>/5 (</strong>
-            <strong data-reviews="">50</strong>
-            <span> reviews)</span>
+            <span class="rating_summary" data-rating="">4.6</span>
+            <span class="reviews_txt_regular">/5 (</span>
+            <span class="reviews_count">50</span>
+            <span class="reviews_txt_regular"> reviews)</span>
           </span>
         </p>
 
-        <form class="form_write_review">
+        <form class="write_review_form">
           <!-- Review form -->
-          <div class="div_form_initial_state">
+          <div class="reviews_form_initial_state">
             <!-- Close button -->
-            <button class="button_form_close" type="button" data-review-form-close>
+            <button class="close_review_form" type="button" data-review-form-close>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
                 <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
               </svg>
             </button>
-            <h2 data-review-form-title class="review-form-title">Vmware Workstation 17 Pro Lifetime License</h2>
+            <span class="write_review_product_name">Vmware Workstation 17 Pro Lifetime License</span>
             <fieldset class="review_stars_input_fieldset">
+              <span class="reviews_txt_bold">Select rating</span>
               <!-- Rating stars -->
               <div data-review-choose-rating class="rating-stars">
-                <label><input type="radio" data-review-star="1" checked /></label>
-                <label><input type="radio" data-review-star="2" checked /></label>
-                <label><input type="radio" data-review-star="3" checked /></label>
-                <label><input type="radio" data-review-star="4" checked /></label>
-                <label><input type="radio" data-review-star="5" /></label>
+                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
               </div>
+              <strong class="review_form_rating_choosed">5.0</strong>
             </fieldset>
-            <input type="text" data-review-heading class="input_subject" placeholder="Subject" />
-            <textarea data-review-message class="textarea_message" rows="6" placeholder="Message"></textarea>
-            <input type="text" data-review-name class="input_name" placeholder="Name" />
-            <button class="button_submit" type="submit" data-review-submit>submit</button>
+            <input type="text" data-review-heading class="review_form_subject_input" placeholder="Subject" />
+            <textarea data-review-message class="review_form_textarea" rows="6" placeholder="Message"></textarea>
+            <input type="text" data-review-name class="write_review_author_input" placeholder="Name" />
+            <button class="review_form_submit" type="submit" data-review-submit>submit</button>
           </div>
-          <div hidden data-review-write-done class="div_success_message">
-            <button data-review-form-close class="button_message_close">
+          <div hidden data-review-write-done class="review_form_sent">
+            <button data-review-form-close class="close_review_form">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
                 <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
               </svg>
             </button>
-            Thanks review sent
+            <span class="review_form_sent_msg">your review sent.</span>
           </div>
         </form>
 
         <!-- Reviews cards list -->
-        <ul class="reviews-cards-list">
-          <li>
+        <ul class="product_reviews_list">
+          <li class="product_review">
             <article class="review-card">
               <header class="reviewer-info">
                 <img class="reviewer-avatar" srcset="" sizes="(max-width: 1200px) 10vw, 5vw" alt="" />
-                <span class="reviewer-name">Johny Appleseed</span>
-                <span class="review-date">March 29, 2024 </span>
+                <span class="review_author_name">Johny Appleseed</span>
+                <time class="product_review_time">March 29, 2024 </time>
               </header>
               <span class="rating_star" data-star="4.0"></span><span class="rating_summary">4.0</span>
-              <h3>Ftagit amet, cons ectetuer</h3>
-              <p>Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
+              <h3 class="product_review_heading">Ftagit amet, cons ectetuer</h3>
+              <p class="reviews_txt_regular">Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
             </article>
           </li>
         </ul>
+        <button class="load_more_reviews">load more</button>
       </section>
       <!-- ============ Cart Popup ============ ============ -->
       <div class="cart-popup container">

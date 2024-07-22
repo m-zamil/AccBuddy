@@ -643,19 +643,19 @@ body {
   }
 }
 /* ========================== Reviews ========================== */
-.reviews-section {
+.reviews_section {
   margin-top: 50px;
 }
-.reviews-header {
+.wrapper_reviews_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 26px 0 6px;
 }
-.reviews-header h2 {
+.reviews_h2 {
   padding: 0;
 }
-.reviews-header button {
+.create_review_button {
   background-color: #ffcc81;
   border: 0;
   font-size: 14px;
@@ -663,42 +663,45 @@ body {
   border-radius: 40px;
   cursor: pointer;
 }
-.reviews-info {
+.wrapper_reviews_info {
   flex-wrap: wrap;
   font-size: 14px;
 }
-.reviews-info-title {
+.reviews_txt_bold {
   font-weight: 600;
 }
-.reviews-info [data-rating] {
+.wrapper_reviews_info [data-rating] {
   font-size: 20px;
   font-weight: 600;
   margin-right: 6px;
 }
-.reviews-info-data {
+.wr_reviews_data {
   white-space: nowrap;
 }
 /* ========================== Write Review Mobile ========================== */
 
-.form_write_review {
+.write_review_form {
   position: relative;
 }
-.div_form_initial_state {
+.reviews_form_initial_state {
   background-color: #e7e7ed;
   border-radius: 30px;
   padding: 0 12px 32px;
   margin-bottom: 52px;
 }
-.review-form-title {
+.write_review_product_name {
   max-width: 85%;
   padding-left: 8px;
   padding-top: 26px;
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
+  display: block;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
-.button_form_close,
-.button_message_close {
+.close_review_form,
+.close_review_form {
   position: absolute;
   top: 18px;
   right: 18px;
@@ -721,14 +724,15 @@ body {
   min-width: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
-  padding: 10px 0;
+  padding: 10px;
 }
 .rating-stars {
   width: 100%;
   text-align: center;
+  order: 3;
 }
 .rating-stars input[type='radio'] {
   position: absolute;
@@ -749,9 +753,9 @@ body {
 .rating-stars > label:has(input[type='radio']:checked):before {
   color: #ffcc81;
 }
-.input_subject,
-.input_name,
-.textarea_message {
+.review_form_subject_input,
+.write_review_author_input,
+.review_form_textarea {
   border-radius: 20px;
   border: 0;
   font-size: 14px;
@@ -759,13 +763,13 @@ body {
   width: 100%;
   margin: 18px 0 0;
 }
-.input_subject {
+.review_form_subject_input {
   font-weight: 600;
 }
-.textarea_message:focus-visible {
+.review_form_textarea:focus-visible {
   outline-color: #ffcc81;
 }
-.button_submit {
+.review_form_submit {
   background-color: #ffcc81;
   border: 0;
   border-radius: 20px;
@@ -827,7 +831,7 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.div_success_message {
+.review_form_sent {
   position: absolute;
   top: 0;
   left: 0;
@@ -842,7 +846,7 @@ body {
   border-radius: 30px;
   border: 10px solid #e7e7ed;
 }
-.div_success_message::before {
+.review_form_sent::before {
   content: '';
   width: 22px;
   height: 22px;
@@ -860,45 +864,46 @@ body {
 /* ========================== Write Review Tablet ========================== */
 
 @media (min-width: 768px) {
-  .reviews-header button {
+  .create_review_button {
     font-size: 16px;
     padding: 12px 50px;
   }
-  .reviews-info {
+  .wrapper_reviews_info {
     font-size: 16px;
     display: flex;
     align-items: center;
   }
-  .reviews-info-title {
+  .reviews_txt_bold {
     margin-right: 22px;
   }
-  .reviews-info [data-star]::before,
-  .reviews-info [data-star]::after {
+  .wrapper_reviews_info [data-star]::before,
+  .wrapper_reviews_info [data-star]::after {
     padding: 0;
   }
-  .reviews-info [data-rating] {
+  .wrapper_reviews_info [data-rating] {
     padding: 0;
   }
-  .reviews-info [data-rating] {
+  .wrapper_reviews_info [data-rating] {
     font-size: 24px;
   }
-  .div_form_initial_state {
+  .reviews_form_initial_state {
     border-radius: 40px;
     padding: 14px 26px 52px;
   }
-  .button_form_close,
-  .button_message_close {
+  .close_review_form,
+  .close_review_form {
     top: 28px;
     right: 21px;
   }
-  .review-form-title {
+  .write_review_product_name {
     font-size: 24px;
     padding-right: 100px;
     margin-top: 0;
     max-width: 90%;
+    margin-bottom: 20px;
   }
-  .button_form_close svg,
-  .button_message_close svg {
+  .close_review_form svg,
+  .close_review_form svg {
     width: 25px;
     height: auto;
   }
@@ -912,27 +917,34 @@ body {
     flex: 1;
     text-align: right;
   }
+  .review_stars_input_fieldset {
+    padding: 22px 10px;
+  }
   .rating-stars {
+    order: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
     width: auto;
   }
-  .input_subject,
-  .input_name,
-  .textarea_message {
+  .review_form_subject_input,
+  .write_review_author_input,
+  .review_form_textarea {
     font-size: 16px;
     padding: 15px 20px;
     border-radius: 30px;
   }
-  .button_submit {
+  .review_form_submit {
     padding: 15px 20px;
     border-radius: 30px;
     font-size: 16px;
   }
 
-  .input_name,
-  .button_submit {
+  .write_review_author_input,
+  .review_form_submit {
     width: 48%;
   }
-  .input_name {
+  .write_review_author_input {
     margin-right: calc(4% - 10px);
   }
   .review-checkbox {
@@ -941,11 +953,11 @@ body {
     font-size: 12px;
   }
 
-  .div_success_message {
+  .review_form_sent {
     font-size: 24px;
     border-width: 16px;
   }
-  .div_success_message::before {
+  .review_form_sent::before {
     width: 24px;
     height: 24px;
   }
@@ -956,39 +968,40 @@ body {
 /* ========================== Write Review Desktop ========================== */
 
 @media (min-width: 1201px) {
-  .reviews-section {
+  .reviews_section {
     max-width: 1920px;
     margin: 0 auto;
     margin-top: 64px;
     padding-right: 46%;
   }
-  .reviews-header button {
+  .create_review_button {
     padding: 16px 70px;
   }
-  .reviews-info [data-rating] {
+  .wrapper_reviews_info [data-rating] {
     font-size: 24px;
   }
-  .div_form_initial_state {
+  .reviews_form_initial_state {
     padding: 26px 26px 46px;
     border-radius: 50px;
     margin-bottom: 70px;
   }
-  .review-form-title {
+  .write_review_product_name {
     padding-left: 20px;
   }
-  .button_form_close,
-  .button_message_close {
+  .close_review_form,
+  .close_review_form {
     top: 40px;
     right: 36px;
   }
-  .button_form_close svg,
-  .button_message_close svg {
+  .close_review_form svg,
+  .close_review_form svg {
     width: 30px;
     height: auto;
   }
   .review_stars_input_fieldset {
     gap: 24px;
-    padding-top: 20px;
+    padding-top: 32px;
+    padding-left: 20px;
   }
   .rating-title,
   .rating-number {
@@ -1000,18 +1013,18 @@ body {
   .rating-number {
     font-size: 32px;
   }
-  .input_subject,
-  .input_name,
-  .textarea_message {
+  .review_form_subject_input,
+  .write_review_author_input,
+  .review_form_textarea {
     margin-top: 26px;
   }
-  .input_subject,
-  .input_name,
-  .textarea_message {
+  .review_form_subject_input,
+  .write_review_author_input,
+  .review_form_textarea {
     padding: 20px 28px;
     border-radius: 40px;
   }
-  .button_submit {
+  .review_form_submit {
     padding: 20px 28px;
     border-radius: 40px;
   }
@@ -1031,10 +1044,10 @@ body {
     height: 14px;
   }
 
-  .div_success_message {
+  .review_form_sent {
     font-size: 32px;
   }
-  .div_success_message::before {
+  .review_form_sent::before {
     width: 30px;
     height: 30px;
     top: -4px;
@@ -1045,7 +1058,7 @@ body {
 }
 
 /* ========================== Review Card Mobile ========================== */
-.reviews-cards-list {
+.product_reviews_list {
   padding-left: 0;
   list-style: none;
 }
@@ -1063,12 +1076,12 @@ body {
   object-fit: cover;
   margin-right: 8px;
 }
-.reviewer-name {
+.review_author_name {
   font-size: 10px;
   font-weight: 600;
   margin-right: 12px;
 }
-.review-date {
+.product_review_time {
   font-size: 10px;
 }
 .review-card [data-star]::before,
@@ -1111,10 +1124,10 @@ body {
     height: 32px;
     margin-right: 10px;
   }
-  .reviewer-name {
+  .review_author_name {
     font-size: 12px;
   }
-  .review-date {
+  .product_review_time {
     font-size: 12px;
   }
   .review-card [data-star]::before,
@@ -1158,7 +1171,7 @@ body {
     height: 42px;
     margin-right: 14px;
   }
-  .reviewer-name {
+  .review_author_name {
     margin-right: 18px;
   }
   .review-card [data-star]::before,
