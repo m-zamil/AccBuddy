@@ -292,6 +292,7 @@ body {
   margin: 0;
   margin-left: auto;
   margin-top: 35px;
+  padding-bottom: 26px;
 }
 .buy_buttons button {
   height: 40px;
@@ -403,6 +404,7 @@ body {
   .buy_buttons {
     gap: 20px;
     margin-top: 22px;
+    padding-bottom: 50px;
   }
   .buy_buttons button {
     height: 60px;
@@ -1193,6 +1195,9 @@ body {
 .price_compare_section {
   margin-top: 66px;
 }
+.price_compare_section .price_compare_heading {
+  padding: 0;
+}
 .price_compare_section .price_compare_site_list {
   list-style: none;
   margin-top: 30px;
@@ -1245,6 +1250,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .price_compare_section {
+    margin-top: 102px;
+  }
   .price_compare_site_list {
     display: flex;
     gap: 14px;
@@ -1252,6 +1260,7 @@ body {
   }
   .price_compare_section .price_compare_site_list {
     padding: 15px;
+    margin-top: 40px;
   }
   .price_compare_site {
     flex-wrap: wrap;
@@ -1276,9 +1285,6 @@ body {
   }
 }
 @media (min-width: 1201px) {
-  .price_compare_section .price_compare_heading {
-    padding: 0;
-  }
   .price_compare_site_list {
     flex-wrap: wrap;
   }
@@ -1295,13 +1301,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
-  margin-top: 66px;
+  margin: 40px 0;
 }
 .product_attributes_legend {
   font-size: 20px;
   font-weight: 600;
   color: #1f1f1f;
-  padding: 10px 0 0;
   margin-bottom: 30px;
   width: 100%;
 }
@@ -1352,7 +1357,7 @@ body {
 }
 @media (min-width: 768px) {
   .product_attributes_fieldset {
-    margin-top: 112px;
+    margin: 64px 0;
   }
   .product_attributes_legend {
     font-size: 24px;
