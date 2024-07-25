@@ -201,27 +201,27 @@ body {
   font-weight: 400;
 }
 /* Fieldsets */
-.offer-widget-fields {
+.wrapper_coupon_qty_fields {
   padding-top: 12px;
 }
-[data-out-of-stock] + .offer-widget-fields {
+[data-out-of-stock] + .wrapper_coupon_qty_fields {
   display: none;
 }
-.offer-widget-fields fieldset {
+.wrapper_coupon_qty_fields fieldset {
   border: 0;
   padding: 0;
   margin: 0;
 }
-.offer-widget-fields fieldset {
+.wrapper_coupon_qty_fields fieldset {
   padding-top: 16px;
 }
-.offer-widget-fields fieldset label {
+.wrapper_coupon_qty_fields fieldset label {
   font-size: 10px;
   line-height: 1.1;
   padding-bottom: 10px;
   display: inline-block;
 }
-.offer-widget-fields fieldset input {
+.wrapper_coupon_qty_fields fieldset input {
   font-size: 30px;
   font-weight: 600;
   width: 100%;
@@ -264,23 +264,23 @@ body {
   padding: 22px 30px;
   display: flex;
 }
-.product_qty_increase {
+.wrapper_coupon_qty_fields .product_qty_increase {
   right: 0;
 }
-.product_qty_decrease {
+.wrapper_coupon_qty_fields .product_qty_decrease {
   left: 0;
 }
-.product_qty_input {
+.wrapper_coupon_qty_fields .product_qty_input {
   text-align: center;
   padding-left: 48px;
   padding-right: 48px;
 }
-.product_qty_input::-webkit-outer-spin-button,
-.product_qty_input::-webkit-inner-spin-button {
+.wrapper_coupon_qty_fields .product_qty_input::-webkit-outer-spin-button,
+.wrapper_coupon_qty_fields .product_qty_input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.product_qty_input[type='number'] {
+.wrapper_coupon_qty_fields .product_qty_input[type='number'] {
   -moz-appearance: textfield;
 }
 /* Offer buttons */
@@ -371,16 +371,16 @@ body {
     font-size: 28px;
   }
   /* Fieldsets */
-  .offer-widget-fields fieldset {
+  .wrapper_coupon_qty_fields fieldset {
     display: inline-block;
     padding: 0;
   }
-  .offer-widget-fields fieldset label {
+  .wrapper_coupon_qty_fields fieldset label {
     font-size: 12px;
     padding-bottom: 8px;
     padding-left: 12px;
   }
-  .offer-widget-fields fieldset input {
+  .wrapper_coupon_qty_fields fieldset input {
     font-size: 24px;
     padding: 14px 26px;
   }
@@ -388,7 +388,7 @@ body {
     padding: 20px 24px;
   }
   /* Coupon fieldset */
-  .offer-widget-fields .coupon_fieldset {
+  .wrapper_coupon_qty_fields .coupon_fieldset {
     width: 52%;
     margin-right: calc(14% - 8px) !important;
   }
@@ -396,7 +396,7 @@ body {
     right: 12px;
   }
   /* quantity fieldset */
-  .product_qty_fieldset {
+  .wrapper_coupon_qty_fields .product_qty_fieldset {
     width: 35%;
   }
   /* Offer buttons */
@@ -433,16 +433,16 @@ body {
   .price strong {
     margin-left: auto;
   }
-  .offer-widget-fields {
+  .wrapper_coupon_qty_fields {
     padding-top: 16px;
   }
   /* Fieldsets */
-  .offer-widget-fields fieldset input {
+  .wrapper_coupon_qty_fields fieldset input {
     font-size: 28px;
     padding: 10px 18px;
   }
   /* Coupon fieldset */
-  .offer-widget-fields .coupon_fieldset {
+  .wrapper_coupon_qty_fields .coupon_fieldset {
     width: 54%;
     margin-right: calc(11% - 8px) !important;
   }
