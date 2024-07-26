@@ -5,7 +5,7 @@
 .cart_popup_section {
   border-radius: 30px;
   position: absolute;
-  top: 125px;
+  top: 187px;
   right: 0;
 }
 .wrapper_cart_popup_header {
@@ -295,13 +295,18 @@
   margin: 0 auto;
   cursor: pointer;
 }
+@media (min-width: 425px) {
+  .cart_popup_section {
+    top: 173px;
+  }
+}
 
 @media (min-width: 768px) {
   .cart_popup_section .container {
     margin: 0 48px;
   }
   .cart_popup_section {
-    top: 140px;
+    top: 193px;
   }
   .cart-header h2 {
     font-size: 24px;
@@ -444,9 +449,9 @@
     max-width: 675px;
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
   .cart_popup_section {
-    top: 96px;
+    top: 144px;
   }
 }
 @media (min-width: 1920px) {
