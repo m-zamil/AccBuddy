@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./Header/header.css" />
     <link rel="stylesheet" href="./assets/css/breadcrumb.css" />
     <link rel="stylesheet" href="./Footer/footer.html" />
-
     <link rel="stylesheet" href="./assets/css/cart.css" />
   </head>
   <body>
@@ -100,37 +99,38 @@
         ><li><span>cart</span></li>
       </ol>
     </nav>
-    <main>
-      <section class="container">
+    <main class="main">
+      <section class="cart_section">
         <h1>Cart</h1>
         <!-- Cart Content -->
-        <div class="cart-content-wrapper">
+        <div class="wrapper_cart_content">
           <!-- ============ Cart items ============ -->
-          <div class="cart-boxes-wrapper">
+          <ul class="cart_items_list">
             <!-- Cart Box -->
-            <div class="cart-box">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="prod-thumb" />
-              <h3 class="prod-name">Vmware Workstation 17 Pro Lifetime License</h3>
-              <p class="prod-price">
-                <strong>$21,99</strong>
+            <li class="cart_item">
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="product_lead_img" srcset="" sizes="(max-width: 1200px) 106px, 96px" />
+              <strong class="cart_product_heading">Vmware Workstation 17 Pro Lifetime License</strong>
+              <p class="price_cart_item">
+                <del class="price_old"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></del>
+                <ins class="price_discount"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></ins>
+                <!-- <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></strong> -->
               </p>
-              <fieldset class="quantity-field">
-                <span class="quantity-field-input">
-                  <button type="button" class="dec-btn"
-                    ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094"></line>
-                    </svg>
-                  </button>
-                  <input class="quantity" name="quantity" type="number" min="1" value="1" />
-                  <button type="button" class="inc-btn">
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094"></line>
-                      <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094"></line>
-                    </svg>
-                  </button>
-                </span>
+              <span class="cart_product_variables"><span class="cart_product_variables_key">color</span><span class="cart_product_variables_separator">: </span><span class="cart_product_variables_value">black</span></span>
+              <fieldset class="product_qty_fieldset">
+                <button type="button" class="product_qty_decrease"
+                  ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094"></line>
+                  </svg>
+                </button>
+                <input class="product_qty_input" name="quantity" type="number" min="1" value="1" />
+                <button type="button" class="product_qty_increase">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094"></line>
+                    <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094"></line>
+                  </svg>
+                </button>
               </fieldset>
-              <button class="delete-btn">
+              <button class="cart_item_remove_button">
                 <svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24.7636 32.7253C26.1427 32.7253 27.2293 31.6806 27.2711 30.3014L28.0651 6.43864H31.1994V4.76699H22.3815V2.96996C22.3815 1.54906 21.2113 0.378906 19.7904 0.378906H11.9337C10.5128 0.378906 9.3426 1.54906 9.3426 2.96996V4.76699H0.525391V6.43864H3.65974L4.45377 30.3014C4.49556 31.6806 5.58213 32.7253 6.96124 32.7253H24.7636ZM11.0143 2.96996C11.0143 2.46847 11.4322 2.05056 11.9337 2.05056H19.7904C20.2919 2.05056 20.7098 2.46847 20.7098 2.96996V4.76699H11.0143V2.96996ZM6.12467 30.2597L5.33064 6.43864H26.3516L25.5576 30.2597C25.5576 30.7194 25.1815 31.0537 24.7218 31.0537H6.9605C6.54259 31.0537 6.16646 30.7194 6.12467 30.2597Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
                   <path d="M15.0234 12.3711H16.6953V24.8686H15.0234V12.3711Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
@@ -138,32 +138,37 @@
                   <path d="M20.0391 12.3711H21.711V24.8686H20.0391V12.3711Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
                 </svg>
               </button>
-            </div>
-            <!-- Cart Box -->
-            <div class="cart-box">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="prod-thumb" />
-              <h3 class="prod-name">Vmware Workstation 17 Pro Lifetime License</h3>
-              <p class="prod-price">
-                <del>$21,99</del>
-                <ins>$21,99</ins>
+              <p class="price_cart_item_total">
+                <del class="price_old"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></del>
+                <ins class="price_discount"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></ins>
+                <!-- <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></strong> -->
               </p>
-              <fieldset class="quantity-field">
-                <span class="quantity-field-input">
-                  <button type="button" class="dec-btn"
-                    ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094"></line>
-                    </svg>
-                  </button>
-                  <input class="quantity" name="quantity" type="number" min="1" value="1" />
-                  <button type="button" class="inc-btn">
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094"></line>
-                      <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094"></line>
-                    </svg>
-                  </button>
-                </span>
+            </li>
+            <!-- Cart Box -->
+            <li class="cart_item">
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="product_lead_img" srcset="" sizes="(max-width: 1200px) 106px, 96px" />
+              <strong class="cart_product_heading">Vmware Workstation 17 Pro Lifetime License</strong>
+              <p class="price_cart_item">
+                <del class="price_old"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></del>
+                <ins class="price_discount"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></ins>
+                <!-- <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></strong> -->
+              </p>
+              <span class="cart_product_variables"><span class="cart_product_variables_key">color</span><span class="cart_product_variables_separator">: </span><span class="cart_product_variables_value">black</span></span>
+              <fieldset class="product_qty_fieldset">
+                <button type="button" class="product_qty_decrease"
+                  ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094"></line>
+                  </svg>
+                </button>
+                <input class="product_qty_input" name="quantity" type="number" min="1" value="1" />
+                <button type="button" class="product_qty_increase">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094"></line>
+                    <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094"></line>
+                  </svg>
+                </button>
               </fieldset>
-              <button class="delete-btn">
+              <button class="cart_item_remove_button">
                 <svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24.7636 32.7253C26.1427 32.7253 27.2293 31.6806 27.2711 30.3014L28.0651 6.43864H31.1994V4.76699H22.3815V2.96996C22.3815 1.54906 21.2113 0.378906 19.7904 0.378906H11.9337C10.5128 0.378906 9.3426 1.54906 9.3426 2.96996V4.76699H0.525391V6.43864H3.65974L4.45377 30.3014C4.49556 31.6806 5.58213 32.7253 6.96124 32.7253H24.7636ZM11.0143 2.96996C11.0143 2.46847 11.4322 2.05056 11.9337 2.05056H19.7904C20.2919 2.05056 20.7098 2.46847 20.7098 2.96996V4.76699H11.0143V2.96996ZM6.12467 30.2597L5.33064 6.43864H26.3516L25.5576 30.2597C25.5576 30.7194 25.1815 31.0537 24.7218 31.0537H6.9605C6.54259 31.0537 6.16646 30.7194 6.12467 30.2597Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
                   <path d="M15.0234 12.3711H16.6953V24.8686H15.0234V12.3711Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
@@ -171,32 +176,37 @@
                   <path d="M20.0391 12.3711H21.711V24.8686H20.0391V12.3711Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
                 </svg>
               </button>
-            </div>
-            <!-- Cart Box -->
-            <div class="cart-box">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="prod-thumb" />
-              <h3 class="prod-name">Vmware Workstation 17 Pro Lifetime License</h3>
-              <p class="prod-price">
-                <del>$21,99</del>
-                <ins>$21,99</ins>
+              <p class="price_cart_item_total">
+                <del class="price_old"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></del>
+                <ins class="price_discount"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></ins>
+                <!-- <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></strong> -->
               </p>
-              <fieldset class="quantity-field">
-                <span class="quantity-field-input">
-                  <button type="button" class="dec-btn"
-                    ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094"></line>
-                    </svg>
-                  </button>
-                  <input class="quantity" name="quantity" type="number" min="1" value="1" />
-                  <button type="button" class="inc-btn">
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094"></line>
-                      <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094"></line>
-                    </svg>
-                  </button>
-                </span>
+            </li>
+            <!-- Cart Box -->
+            <li class="cart_item">
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="product_lead_img" srcset="" sizes="(max-width: 1200px) 106px, 96px" />
+              <strong class="cart_product_heading">Vmware Workstation 17 Pro Lifetime License</strong>
+              <p class="price_cart_item">
+                <del class="price_old"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></del>
+                <ins class="price_discount"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></ins>
+                <!-- <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></strong> -->
+              </p>
+              <span class="cart_product_variables"><span class="cart_product_variables_key">color</span><span class="cart_product_variables_separator">: </span><span class="cart_product_variables_value">black</span></span>
+              <fieldset class="product_qty_fieldset">
+                <button type="button" class="product_qty_decrease"
+                  ><svg width="18" height="5" viewBox="0 0 18 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.466797" y1="2.41601" x2="17.833" y2="2.41601" stroke="#FFCC81" stroke-width="3.96094"></line>
+                  </svg>
+                </button>
+                <input class="product_qty_input" name="quantity" type="number" min="1" value="1" />
+                <button type="button" class="product_qty_increase">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.78125" y1="9.41797" x2="18.1475" y2="9.41796" stroke="#FFCC81" stroke-width="3.96094"></line>
+                    <line x1="9.53515" y1="18.2227" x2="9.53515" y2="0.856413" stroke="#FFCC81" stroke-width="3.96094"></line>
+                  </svg>
+                </button>
               </fieldset>
-              <button class="delete-btn">
+              <button class="cart_item_remove_button">
                 <svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24.7636 32.7253C26.1427 32.7253 27.2293 31.6806 27.2711 30.3014L28.0651 6.43864H31.1994V4.76699H22.3815V2.96996C22.3815 1.54906 21.2113 0.378906 19.7904 0.378906H11.9337C10.5128 0.378906 9.3426 1.54906 9.3426 2.96996V4.76699H0.525391V6.43864H3.65974L4.45377 30.3014C4.49556 31.6806 5.58213 32.7253 6.96124 32.7253H24.7636ZM11.0143 2.96996C11.0143 2.46847 11.4322 2.05056 11.9337 2.05056H19.7904C20.2919 2.05056 20.7098 2.46847 20.7098 2.96996V4.76699H11.0143V2.96996ZM6.12467 30.2597L5.33064 6.43864H26.3516L25.5576 30.2597C25.5576 30.7194 25.1815 31.0537 24.7218 31.0537H6.9605C6.54259 31.0537 6.16646 30.7194 6.12467 30.2597Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
                   <path d="M15.0234 12.3711H16.6953V24.8686H15.0234V12.3711Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
@@ -204,47 +214,62 @@
                   <path d="M20.0391 12.3711H21.711V24.8686H20.0391V12.3711Z" fill="#202020" stroke="#202020" stroke-width="0.613603" />
                 </svg>
               </button>
-            </div>
-          </div>
+              <p class="price_cart_item_total">
+                <del class="price_old"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></del>
+                <ins class="price_discount"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></ins>
+                <!-- <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></strong> -->
+              </p>
+            </li>
+          </ul>
           <!-- ============ Checkout Summary ============ -->
-          <div class="checkout-summary">
-            <p class="subtotal"
-              ><span>Subtotal:</span> <span><del>$54,00</del><ins>$43,99</ins></span></p
-            >
-            <p class="tax"><span>Tax:</span> <span>$1,99</span></p>
-            <p class="shipping"><span>Shipping:</span> <span>electronic - free</span></p>
+          <div class="checkout_summary">
+            <p class="cart_price_subtotal">
+              <span class="cart_text_regular">Subtotal</span>
+              <span>
+                <del class="price_old"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></del>
+                <ins class="price_discount"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></ins>
+                <!-- <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">24.99</span></strong> -->
+              </span>
+            </p>
+            <p class="cart_price_tax">
+              <span class="cart_text_greyed">Tax</span>
+              <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">2.99</span></strong> </p
+            ><p class="cart_price_shipping">
+              <span class="cart_text_greyed">Shipping</span>
+              <strong class="price_normal"><span class="product_price_currency">$</span><span class="product_price_value">1.39</span></strong>
+            </p>
             <hr />
-            <div class="cpn-prc-wrapper">
+            <div class="wrapper_coupon_price">
               <!-- Coupon field -->
-              <fieldset class="coupon-field">
-                <label>
-                  <span class="label">Apply Coupon</span>
-                  <span class="coupon-input">
-                    <input name="coupon" type="text" value="sdfvk42" />
-                    <button type="button" class="coupon-btn" title="apply coupon">
-                      <svg width="47" height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="32.1797" y1="1.8496" x2="45.0035" y2="14.6734" stroke="#FFCC81" stroke-width="3.96094" />
-                        <line x1="0.408203" y1="13.4902" x2="43.0307" y2="13.4902" stroke="#FFCC81" stroke-width="3.96094" />
-                        <line x1="31.9238" y1="25.0469" x2="44.7476" y2="12.223" stroke="#FFCC81" stroke-width="3.96094" />
-                      </svg>
-                    </button>
-                  </span>
-                </label>
+              <fieldset class="coupon_fieldset">
+                <label for="coupon_input" class="coupon_label">Apply Coupon</label>
+                <span class="wr_coupon_input">
+                  <input name="coupon" type="text" id="coupon_input" class="coupon_input" placeholder="coupon" />
+                  <button type="button" class="coupon_add_button">
+                    <svg width="47" height="27" viewBox="0 0 47 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="32.1797" y1="1.8496" x2="45.0035" y2="14.6734" stroke="#FFCC81" stroke-width="3.96094" />
+                      <line x1="0.408203" y1="13.4902" x2="43.0307" y2="13.4902" stroke="#FFCC81" stroke-width="3.96094" />
+                      <line x1="31.9238" y1="25.0469" x2="44.7476" y2="12.223" stroke="#FFCC81" stroke-width="3.96094" />
+                    </svg>
+                  </button>
+                </span>
               </fieldset>
               <!-- Pricing -->
-              <p class="pricing">
-                <!-- Before Discount -->
-                <del><span>$</span><span class="price-whole">27</span><span>,00</span></del>
-
-                <!-- After Discount -->
-                <!-- <ins><span>$</span><span class="price-whole">21</span><span>,99</span></ins> -->
-                <!-- Not Discounted -->
-                <strong><span>$</span><span class="price-whole">21</span><span>,99</span></strong>
+              <p class="cart_price_total">
+                <del class="price_old">
+                  <span class="product_price_currency">$</span><span class="product_price_value"><span class="product_price_integer">24</span><span class="product_price_separator">.</span><span class="product_price_decimal">99</span></span>
+                </del>
+                <ins class="price_discount">
+                  <span class="product_price_currency">$</span><span class="product_price_value"><span class="product_price_integer">24</span><span class="product_price_separator">.</span><span class="product_price_decimal">99</span></span>
+                </ins>
+                <!-- <strong class="price_normal">
+                  <span class="product_price_currency">$</span><span class="product_price_value"><span class="product_price_integer">24</span><span class="product_price_separator">.</span><span class="product_price_decimal">99</span></span>
+                </strong> -->
               </p>
             </div>
 
-            <button class="paypal-btn"
-              ><span>Buy now with</span>
+            <button class="buy_now_paypal">
+              <span class="buy_paypal_btn_txt">Buy now with</span>
               <svg width="106" height="29" viewBox="0 0 106 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M34.4671 6.4375C34.251 6.4375 34.067 6.59442 34.0333 6.80885L31.5283 22.6965C31.4938 22.9183 31.645 23.1262 31.8668 23.1615C31.8874 23.1648 31.9087 23.1664 31.9301 23.1664H34.9009C35.117 23.1664 35.301 23.0087 35.3347 22.7951L36.0708 18.1293C36.1045 17.9157 36.2886 17.758 36.5046 17.758H39.206C42.3625 17.758 45.0408 15.4551 45.5305 12.3348C46.0242 9.18813 43.5652 6.44407 40.0809 6.4375H34.4671ZM37.355 9.98424H39.5165C41.2961 9.98424 41.8753 11.0342 41.6921 12.1951C41.5088 13.3585 40.6092 14.2154 38.888 14.2154H36.6887L37.3558 9.98424H37.355ZM51.5731 11.0646C50.823 11.0671 49.9596 11.2207 48.9909 11.6249C46.7677 12.5517 45.7005 14.4668 45.247 15.8626C45.247 15.8626 43.8043 20.1217 47.0643 22.4623C47.0643 22.4623 50.0877 24.7151 53.4915 22.3235L53.4332 22.6973C53.3987 22.9191 53.5499 23.127 53.7717 23.1623C53.7922 23.1656 53.8128 23.1672 53.8341 23.1672H56.6546C56.8707 23.1672 57.0547 23.0095 57.0884 22.7959L58.8038 11.9158C58.8392 11.6939 58.688 11.4853 58.4653 11.4508C58.4448 11.4475 58.4234 11.4458 58.4021 11.4458H55.5816C55.3655 11.4458 55.1807 11.6036 55.1478 11.8172L55.0558 12.403C55.0558 12.403 53.8243 11.0572 51.5731 11.0663V11.0646ZM51.6652 14.5013C51.9889 14.5013 52.2854 14.5456 52.5508 14.6311C53.7676 15.0213 54.4577 16.1904 54.2581 17.4581C54.0116 19.0183 52.7324 20.1677 51.0909 20.1677C50.7672 20.1677 50.4714 20.1233 50.2052 20.0379C48.9885 19.6476 48.2942 18.4785 48.4939 17.2108C48.7404 15.6506 50.0236 14.5013 51.6652 14.5013Z"

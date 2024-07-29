@@ -832,7 +832,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #72ccbf;
+  background-color: #cae0e2;
   font-size: 20px;
   font-weight: 600;
   display: flex;
@@ -900,7 +900,7 @@ body {
   }
   .close_review_form svg,
   .close_review_form svg {
-    width: 25px;
+    width: 22px;
     height: auto;
   }
   .rating-title {
@@ -1030,14 +1030,6 @@ body {
     margin-top: 0;
     order: 3;
     flex: 1;
-  }
-  .review_form_sent {
-    font-size: 32px;
-  }
-  .review_form_sent::before {
-    width: 30px;
-    height: 30px;
-    top: -4px;
   }
   .footer {
     margin-top: 180px;
