@@ -383,9 +383,6 @@ p {
 .checkout_summary .cart_price_total {
   margin-left: auto;
 }
-.footer {
-  margin-top: 105px;
-}
 
 @media (min-width: 768px) {
   h1 {
@@ -539,9 +536,26 @@ p {
   .wrapper_cart_content > :last-child {
     flex: 1;
   }
+  .cart_section .cart_items_list {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1920px) {
   .cart_section .cart_item {
     grid-template-columns: max-content 44px 200px 100px max-content 2fr;
+  }
+}
+/* Footer */
+.page_footer {
+  margin-top: 45px;
+}
+@media (min-width: 768px) {
+  .page_footer {
+    margin-top: 90px;
+  }
+}
+@media (min-width: 1201px) {
+  .page_footer {
+    margin-top: 155px;
   }
 }

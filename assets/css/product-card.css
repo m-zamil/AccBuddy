@@ -852,10 +852,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.footer {
-  margin-top: 106px;
-}
 /* ========================== Write Review Tablet ========================== */
 
 @media (min-width: 768px) {
@@ -963,9 +959,6 @@ body {
     width: 24px;
     height: 24px;
   }
-  .footer {
-    margin-top: 150px;
-  }
 }
 /* ========================== Write Review Desktop ========================== */
 
@@ -1030,9 +1023,6 @@ body {
     margin-top: 0;
     order: 3;
     flex: 1;
-  }
-  .footer {
-    margin-top: 180px;
   }
 }
 
@@ -1372,5 +1362,19 @@ body {
   }
   .product_attribute_label:has(.product_attribute_value_image:last-child) {
     padding: 12px;
+  }
+}
+/* Footer */
+.page_footer {
+  margin-top: 150px;
+}
+@media (min-width: 768px) {
+  .page_footer {
+    margin-top: 225px;
+  }
+}
+@media (min-width: 1201px) {
+  .page_footer {
+    margin-top: 245px;
   }
 }
