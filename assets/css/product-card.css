@@ -672,7 +672,7 @@ body {
 .reviews_txt_bold {
   font-weight: 600;
 }
-.wrapper_reviews_info [data-rating] {
+.wrapper_reviews_info .rating_summary {
   font-size: 20px;
   font-weight: 600;
   margin-right: 6px;
@@ -871,10 +871,10 @@ body {
   .wrapper_reviews_info [data-star]::after {
     padding: 0;
   }
-  .wrapper_reviews_info [data-rating] {
+  .wrapper_reviews_info .rating_summary {
     padding: 0;
   }
-  .wrapper_reviews_info [data-rating] {
+  .wrapper_reviews_info .rating_summary {
     font-size: 24px;
   }
   .reviews_form_initial_state {
@@ -972,7 +972,7 @@ body {
   .create_review_button {
     padding: 16px 70px;
   }
-  .wrapper_reviews_info [data-rating] {
+  .wrapper_reviews_info .rating_summary {
     font-size: 24px;
   }
   .reviews_form_initial_state {
@@ -1059,7 +1059,7 @@ body {
 }
 .review_card [data-star]::before,
 .review_card [data-star]::after,
-.review_card [data-rating] {
+.review_card .rating_summary {
   padding: 12px 0;
 }
 .review_card [data-star] {
@@ -1114,13 +1114,13 @@ body {
   }
   .review_card [data-star]::before,
   .review_card [data-star]::after,
-  .review_card [data-rating] {
+  .review_card .rating_summary {
     padding: 14px 0 0;
   }
   .review_card [data-star] {
     margin-right: 10px;
   }
-  .review_card [data-rating] {
+  .review_card .rating_summary {
     font-size: 14px;
   }
   .product_review_heading {
@@ -1158,10 +1158,10 @@ body {
   }
   .review_card [data-star]::before,
   .review_card [data-star]::after,
-  .review_card [data-rating] {
+  .review_card .rating_summary {
     padding: 18px 0;
   }
-  .review_card [data-rating] {
+  .review_card .rating_summary {
     font-size: 22px;
   }
   .product_review_heading {
