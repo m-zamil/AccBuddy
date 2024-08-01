@@ -32,6 +32,9 @@ textarea,
 button {
   font-family: inherit;
 }
+button {
+  color: inherit;
+}
 input:focus-visible {
   outline-color: #ffcc81;
 }
