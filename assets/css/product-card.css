@@ -455,6 +455,7 @@ body {
   /* Offer buttons */
   .buy_buttons {
     margin-left: 0;
+    padding-bottom: 0;
   }
 }
 /* ========================== Product details ========================== */
@@ -634,9 +635,15 @@ ul.product_benefits_list .product_benefits_list_element:last-child {
   .product-details-right {
     width: 40%;
     position: sticky;
+    bottom: 10px;
+    height: max-content;
+    transition: top 0.5s, bottom 0.5s;
+  }
+  .product-details-right.scrolling-down {
+    top: -210px;
+  }
+  .product-details-right.scrolling-up {
     top: 10px;
-    align-self: flex-start;
-    padding-bottom: 50px;
   }
 
   .product-details .lead-image-wrapper {
