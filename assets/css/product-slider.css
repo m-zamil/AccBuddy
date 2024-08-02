@@ -1,6 +1,5 @@
 .lead-image {
   margin: 20px auto 0;
-  background-color: #e7e7ed;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -55,19 +54,21 @@
   background-color: #e7e7ed;
   object-fit: contain;
 }
-.wrapper_thumbnails img.active {
+.wrapper_thumbnails img[data-thumbnail-checked] {
   border-color: #202020;
 }
 
 @media (min-width: 768px) {
   .wrapper_thumbnails img {
+    min-height: 77px;
     height: 77px;
+    min-width: 112px;
     width: 112px;
     border-radius: 16px;
     border: 1px solid #8b91a0;
     background-color: transparent;
   }
-  .wrapper_thumbnails img.active {
+  .wrapper_thumbnails img[data-thumbnail-checked] {
     border-color: transparent;
     border-width: 0;
     outline: 5px solid #72ccbf;
