@@ -817,5 +817,35 @@
     <!-- Slider Script -->
     <script src="./assets/js/product-slider.js"></script>
     <script src="./assets/js/product-card.js"></script>
+    <!-- ====== Scroll Behaviour of sticky right column: when scrolling upward sticky top when scrolling down sticky bottom ====== -->
+    <script>
+      let lastScrollTop = 0;
+      const stickyEl = document.querySelector('.product-details-right');
+
+      window.addEventListener(
+        'scroll',
+        () => {
+          let st = window.pageYOffset || document.documentElement.scrollTop;
+          let direction = '';
+
+          if (st > lastScrollTop) {
+            console.log(stickyEl.scrollHeight);
+            if (window.innerHeight <= stickyEl.scrollHeight) {
+              stickyEl.style.top = `calc(-${stickyEl.scrollHeight}px + 100vh - 10px`;
+            }
+            stickyEl.classList.add('scrolling-down');
+            stickyEl.classList.remove('scrolling-up');
+          } else if (st < lastScrollTop) {
+            stickyEl.style.top = '10px';
+            stickyEl.classList.add('scrolling-up');
+            stickyEl.classList.remove('scrolling-down');
+          } else {
+            stickyEl.classList.remove('scrolling-up', 'scrolling-down');
+          }
+          lastScrollTop = st <= 0 ? 0 : st;
+        },
+        false
+      );
+    </script>
   </body>
 </html>
