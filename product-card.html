@@ -488,88 +488,87 @@
               </tr>
             </table>
           </section>
+          <!-- Reviews section -->
+          <section class="reviews_section">
+            <div class="wrapper_reviews_header">
+              <h2 class="reviews_h2">Reviews</h2>
+              <button class="create_review_button">Write review</button>
+            </div>
+            <p class="wrapper_reviews_info">
+              <span class="reviews_txt_bold">verified reviews</span>
+              <span class="wr_reviews_data">
+                <span class="rating_star" data-star="4.6"></span>
+                <span class="rating_summary">4.6</span>
+                <span class="review_text">/5 (</span>
+                <span class="reviews_count">50</span>
+                <span class="review_text"> reviews)</span>
+              </span>
+            </p>
+
+            <form class="write_review_form">
+              <!-- Review form -->
+              <div class="reviews_form_initial_state">
+                <span class="write_review_product_name">Vmware Workstation 17 Pro Lifetime License</span>
+                <!-- Close button -->
+                <button class="close_review_form" type="button">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
+                    <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
+                  </svg>
+                </button>
+                <fieldset class="review_stars_input_fieldset">
+                  <span class="reviews_txt_bold">Select rating</span>
+                  <!-- Rating stars -->
+                  <div class="wrapper_review_form_stars">
+                    <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                    <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                    <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                    <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                    <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
+                  </div>
+                  <strong class="review_form_rating_choosed">5.0</strong>
+                </fieldset>
+                <input type="text" class="review_form_subject_input" placeholder="Subject" />
+                <textarea class="review_form_textarea" rows="6" placeholder="Message"></textarea>
+                <div class="wrapper_submit_checkbox_author">
+                  <input type="text" class="write_review_author_input" placeholder="Name" />
+                  <button class="review_form_submit" type="submit">submit</button>
+                  <label class="wrapper_review_form_checkbox">
+                    <input type="checkbox" class="review_form_checkbox" required />
+                    <small class="review_form_terms_txt">by clicking checkbox you accept our terms and conditions</small>
+                  </label>
+                </div>
+              </div>
+              <div hidden class="review_form_sent">
+                <span class="review_form_sent_msg">your review sent.</span>
+                <button class="close_review_form">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
+                    <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+
+            <!-- Reviews cards list -->
+            <ul class="product_reviews_list">
+              <li class="product_review">
+                <article class="review_card">
+                  <header class="reviewer_info">
+                    <img class="reviewer_avatar" srcset="" sizes="(max-width: 1200px) 25px, 58px" alt="" />
+                    <span class="review_author_name">Johny Appleseed</span>
+                    <time class="product_review_time">March 29, 2024 </time>
+                  </header>
+                  <span class="rating_star" data-star="4.0"></span><span class="rating_summary">4.0</span>
+                  <h3 class="product_review_heading">Ftagit amet, cons ectetuer</h3>
+                  <p class="review_text">Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
+                </article>
+              </li>
+            </ul>
+            <button class="load_more_reviews">Load more</button>
+          </section>
         </div>
       </article>
-
-      <!-- Reviews section -->
-      <section class="reviews_section">
-        <div class="wrapper_reviews_header">
-          <h2 class="reviews_h2">Reviews</h2>
-          <button class="create_review_button">Write review</button>
-        </div>
-        <p class="wrapper_reviews_info">
-          <span class="reviews_txt_bold">verified reviews</span>
-          <span class="wr_reviews_data">
-            <span class="rating_star" data-star="4.6"></span>
-            <span class="rating_summary">4.6</span>
-            <span class="review_text">/5 (</span>
-            <span class="reviews_count">50</span>
-            <span class="review_text"> reviews)</span>
-          </span>
-        </p>
-
-        <form class="write_review_form">
-          <!-- Review form -->
-          <div class="reviews_form_initial_state">
-            <span class="write_review_product_name">Vmware Workstation 17 Pro Lifetime License</span>
-            <!-- Close button -->
-            <button class="close_review_form" type="button">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
-                <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
-              </svg>
-            </button>
-            <fieldset class="review_stars_input_fieldset">
-              <span class="reviews_txt_bold">Select rating</span>
-              <!-- Rating stars -->
-              <div class="wrapper_review_form_stars">
-                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
-                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
-                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
-                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
-                <label class="review_form_star_label"><input class="review_form_star_input" type="radio" /></label>
-              </div>
-              <strong class="review_form_rating_choosed">5.0</strong>
-            </fieldset>
-            <input type="text" class="review_form_subject_input" placeholder="Subject" />
-            <textarea class="review_form_textarea" rows="6" placeholder="Message"></textarea>
-            <div class="wrapper_submit_checkbox_author">
-              <input type="text" class="write_review_author_input" placeholder="Name" />
-              <button class="review_form_submit" type="submit">submit</button>
-              <label class="wrapper_review_form_checkbox">
-                <input type="checkbox" class="review_form_checkbox" required />
-                <small class="review_form_terms_txt">by clicking checkbox you accept our terms and conditions</small>
-              </label>
-            </div>
-          </div>
-          <div hidden class="review_form_sent">
-            <span class="review_form_sent_msg">your review sent.</span>
-            <button class="close_review_form">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="1.68129" y1="1.76305" x2="16.4065" y2="16.4883" stroke="#202020" stroke-width="2.65894" />
-                <line x1="1.83824" y1="16.4896" x2="16.5635" y2="1.76436" stroke="#202020" stroke-width="2.65894" />
-              </svg>
-            </button>
-          </div>
-        </form>
-
-        <!-- Reviews cards list -->
-        <ul class="product_reviews_list">
-          <li class="product_review">
-            <article class="review_card">
-              <header class="reviewer_info">
-                <img class="reviewer_avatar" srcset="" sizes="(max-width: 1200px) 25px, 58px" alt="" />
-                <span class="review_author_name">Johny Appleseed</span>
-                <time class="product_review_time">March 29, 2024 </time>
-              </header>
-              <span class="rating_star" data-star="4.0"></span><span class="rating_summary">4.0</span>
-              <h3 class="product_review_heading">Ftagit amet, cons ectetuer</h3>
-              <p class="review_text">Oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel </p>
-            </article>
-          </li>
-        </ul>
-        <button class="load_more_reviews">Load more</button>
-      </section>
     </main>
     <aside class="aside">
       <!-- ============ Cart Popup ============ ============ -->
