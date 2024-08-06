@@ -85,7 +85,7 @@
   }
 }
 @media (min-width: 1201px) {
-  .lead-image-wrapper {
+  .product_gallery {
     gap: 40px;
   }
   .lead-image {
