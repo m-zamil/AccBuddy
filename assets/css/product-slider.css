@@ -54,7 +54,8 @@
   background-color: #e7e7ed;
   object-fit: contain;
 }
-.wrapper_thumbnails img[data-thumbnail-checked] {
+.wrapper_thumbnails label:has(input[checked]) img,
+.wrapper_thumbnails label:has(input:checked) img {
   border-color: #202020;
 }
 
@@ -68,7 +69,8 @@
     border: 1px solid #8b91a0;
     background-color: transparent;
   }
-  .wrapper_thumbnails img[data-thumbnail-checked] {
+  .wrapper_thumbnails label:has(input[checked]) img,
+  .wrapper_thumbnails label:has(input:checked) img {
     border-color: transparent;
     border-width: 0;
     outline: 5px solid #72ccbf;
