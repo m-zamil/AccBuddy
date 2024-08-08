@@ -481,16 +481,16 @@ body {
 .product-details .product_gallery {
   display: none;
 }
-.product-details ul {
+.product_description_list {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.1;
   padding-left: 26px;
 }
-.product-details ul strong {
+.product_description_list strong {
   font-weight: 600;
 }
-.product-details ul li {
+.product_description_list li {
   margin-bottom: 8px;
 }
 .product-details table {
@@ -559,10 +559,10 @@ ul.product_benefits_list .product_benefits_list_element:last-child {
   margin-bottom: 16px;
 }
 @media (min-width: 768px) {
-  .product-details ul {
+  .product_description_list {
     font-size: 16px;
   }
-  .product-details ul li {
+  .product_description_list li {
     font-size: 16px;
     margin-bottom: 12px;
   }
@@ -1323,6 +1323,8 @@ ul.product_benefits_list .product_benefits_list_element:last-child {
   }
   .price_compare_site_list .price_compare_site {
     width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 /* ================================= Product Attributes Fieldset */

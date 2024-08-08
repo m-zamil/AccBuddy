@@ -61,13 +61,16 @@
 
 @media (min-width: 768px) {
   .wrapper_thumbnails img {
-    min-height: 77px;
-    height: 77px;
-    min-width: 112px;
-    width: 112px;
     border-radius: 16px;
     border: 1px solid #8b91a0;
     background-color: transparent;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    min-height: auto;
+    aspect-ratio: 1 / 1;
   }
   .wrapper_thumbnails label:has(input[checked]) img,
   .wrapper_thumbnails label:has(input:checked) img {
