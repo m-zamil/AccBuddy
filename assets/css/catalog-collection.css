@@ -137,7 +137,8 @@
   font-size: 45px;
   font-weight: 400;
 }
-.add-cart-button {
+.add-cart-button,
+.view_product_button {
   font-size: 14px;
   background-color: #ffcc81;
   border: 0;
@@ -222,7 +223,8 @@
   .product_price strong .price-whole {
     font-size: 48px;
   }
-  .add-cart-button {
+  .add-cart-button,
+  .view_product_button {
     font-size: 16px;
   }
 }
