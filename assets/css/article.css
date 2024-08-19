@@ -92,31 +92,35 @@
     padding-bottom: 35px;
   }
 }
-.article__author,
-.article__date {
+.article_author,
+.article_publish_time {
   font-size: 10px;
   margin: 7px 0;
   display: inline-block;
 }
-.article__author {
+.article_author {
   margin-left: 5px;
   margin-right: 8px;
+  font-weight: 600;
+  background-color: #ffcc81;
+  border-radius: 1em;
+  padding: 0 0.4em;
 }
-.article .article__lead {
+.article .article_p_lead {
   font-size: 18px;
   font-weight: 300;
   margin: 0;
   padding: 7px 0 25px;
   line-height: 1.1;
 }
-.article__nav {
+.table_of_contents {
   padding: 26px 45px 38px;
   background-color: #e7e7ed;
   border-radius: 25px;
   position: relative;
   margin: 7px 0 25px;
 }
-.article__nav::before {
+.table_of_contents::before {
   content: '';
   display: block;
   position: absolute;
@@ -128,17 +132,17 @@
   background-color: #ffcc81;
   border-radius: 25px 0 0 25px;
 }
-.article__nav ul {
+.table_of_contents ul {
   margin: 0;
   padding: 0;
   padding-left: 0.75em;
 }
-.article__nav ul li {
+.table_of_contents ul li {
   font-size: 10px;
   line-height: 1.1;
   margin-bottom: 6px;
 }
-.article__nav ul li:last-child {
+.table_of_contents ul li:last-child {
   margin-bottom: 0;
 }
 .article__table {
@@ -228,14 +232,14 @@ figcaption {
   margin-bottom: 7px;
   width: 100%;
 }
-.faq__content {
+.article_faq_element {
   margin: 0;
 }
-.faq__content dt {
+.article_faq_element dt {
   font-size: 14px;
   padding: 7px 0;
 }
-.faq__content dd {
+.article_faq_element dd {
   font-size: 14px;
   margin: 0;
   padding-left: 24px;
@@ -243,49 +247,49 @@ figcaption {
   padding-bottom: 7px;
   border-left: 1px solid #202020;
 }
-.faq__content dt::before,
-.faq__content dd::before {
+.article_faq_element dt::before,
+.article_faq_element dd::before {
   display: block;
   font-weight: 600;
   line-height: 1.5;
 }
-.faq__content dt::before {
+.article_faq_element dt::before {
   content: 'Question';
 }
-.faq__content dd::before {
+.article_faq_element dd::before {
   content: 'Answer';
 }
 .footer {
   margin-top: 80px;
 }
 @media (min-width: 361px) {
-  .article__nav {
+  .table_of_contents {
     max-width: 475px;
   }
 }
 @media (min-width: 768px) {
-  .article__author,
-  .article__date {
+  .article_author,
+  .article_publish_time {
     font-size: 12px;
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .article .article__lead {
+  .article .article_p_lead {
     font-size: 20px;
     padding: 10px 0 35px;
   }
-  .article__nav {
+  .table_of_contents {
     margin: 10px 0 35px;
     max-width: unset;
     padding: 30px 52px 30px;
     border-radius: 30px;
   }
-  .article__nav::before {
+  .table_of_contents::before {
     border-radius: 30px 0 0 30px;
     width: 33px;
   }
-  .article__nav ul li {
+  .table_of_contents ul li {
     font-size: 12px;
     margin-bottom: 7px;
   }
@@ -340,14 +344,14 @@ figcaption {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .faq__content {
+  .article_faq_element {
     width: 50%;
   }
-  .faq__content dt {
+  .article_faq_element dt {
     font-size: 16px;
     padding: 10px 0;
   }
-  .faq__content dd {
+  .article_faq_element dd {
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -361,27 +365,27 @@ figcaption {
   .article.container {
     margin: 0 77px;
   }
-  .article__author,
-  .article__date {
+  .article_author,
+  .article_publish_time {
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .article .article__lead {
+  .article .article_p_lead {
     font-size: 28px;
     padding: 15px 0 50px;
   }
-  .article__nav {
+  .table_of_contents {
     padding: 30px 50px 30px 80px;
     max-width: fit-content;
     border-radius: 40px;
     margin: 15px 0 50px;
   }
-  .article__nav::before {
+  .table_of_contents::before {
     width: 44px;
     border-radius: 40px 0 0 40px;
   }
-  .article__nav ul li {
+  .table_of_contents ul li {
     font-size: 16px;
     margin-bottom: 11px;
   }
@@ -437,18 +441,18 @@ figcaption {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .faq__content dt,
-  .faq__content dd {
+  .article_faq_element dt,
+  .article_faq_element dd {
     font-size: 22px;
   }
-  .faq__content dt {
+  .article_faq_element dt {
     padding: 15px 0;
   }
-  .faq__content dd {
+  .article_faq_element dd {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .faq__content {
+  .article_faq_element {
     max-width: 525px;
     width: unset;
   }
@@ -473,7 +477,7 @@ figcaption {
   figcaption {
     max-width: 60%;
   }
-  .faq__content {
+  .article_faq_element {
     max-width: 70%;
   }
   .footer {
