@@ -194,35 +194,43 @@
 .article table:has(caption) {
   margin-bottom: 0;
 }
-.article__list {
+.article_list,
+.article_num_list {
   margin: 0;
   font-size: 14px;
   line-height: 1.1;
   font-weight: 300;
   padding-left: 1.3em;
 }
-.article__list li:not(:last-child) {
+.article_list li:not(:last-child),
+.article_num_list li:not(:last-child) {
   margin-bottom: 12px;
 }
-ol.article__list {
+.article_num_list {
   padding-left: 1.5em;
 }
-ol.article__list li::marker {
+.article_num_list li::marker {
   font-weight: bold;
 }
-.img-lead {
+.article_lead_img,
+.article_img {
   background-color: #e7e7ed;
   border-radius: 25px;
-  width: 100%;
   margin-top: 7px;
   margin-bottom: 25px;
+}
+.article_lead_img {
+  width: 100%;
+}
+.article_img {
+  display: block;
 }
 figcaption {
   font-size: 10px;
   text-align: left;
   padding-top: 7px;
 }
-.img-lead + figcaption {
+.article_lead_img + figcaption {
   margin-top: -18px;
 }
 .img-article {
@@ -320,14 +328,17 @@ figcaption {
     font-size: 12px;
     padding: 10px 0 25px;
   }
-  .article__list {
+  .article_list,
+  .article_num_list {
     font-size: 16px;
     max-width: 50%;
   }
-  .article__list li:not(:last-child) {
+  .article_list li:not(:last-child),
+  .article_num_list li:not(:last-child) {
     margin-bottom: 16px;
   }
-  .img-lead {
+  .article_lead_img,
+  .article_img {
     border-radius: 30px;
     margin-top: 10px;
     margin-bottom: 35px;
@@ -336,7 +347,7 @@ figcaption {
     font-size: 12px;
     padding-top: 10px;
   }
-  .img-lead + figcaption {
+  .article_lead_img + figcaption {
     margin-top: -25px;
   }
   .img-article {
@@ -362,6 +373,16 @@ figcaption {
 }
 
 @media (min-width: 1201px) {
+  .breadcrumb_nav {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main {
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .article.container {
     margin: 0 77px;
   }
@@ -416,15 +437,18 @@ figcaption {
     font-size: 16px;
     padding: 15px 0 35px;
   }
-  .article__list {
+  .article_list,
+  .article_num_list {
     font-size: 22px;
     max-width: 522px;
     padding-left: 36px;
   }
-  .article__list li:not(:last-child) {
+  .article_list li:not(:last-child),
+  .article_num_list li:not(:last-child) {
     margin-bottom: 20px;
   }
-  .img-lead {
+  .article_lead_img,
+  .article_img {
     border-radius: 50px;
     margin-top: 15px;
     margin-bottom: 50px;
@@ -433,7 +457,7 @@ figcaption {
     font-size: 16px;
     padding-top: 15px;
   }
-  .img-lead + figcaption {
+  .article_lead_img + figcaption {
     margin-top: -35px;
   }
   .img-article {
@@ -471,7 +495,8 @@ figcaption {
   .article__table td {
     padding: 19px 30px;
   }
-  .article__list {
+  .article_list,
+  .article_num_list {
     max-width: 70%;
   }
   figcaption {
