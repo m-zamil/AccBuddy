@@ -373,11 +373,6 @@ figcaption {
 }
 
 @media (min-width: 1201px) {
-  .breadcrumb_nav {
-    max-width: 1360px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .main {
     max-width: 1360px;
     margin-left: auto;
