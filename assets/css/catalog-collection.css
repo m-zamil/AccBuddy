@@ -108,6 +108,11 @@
   text-align: right;
   margin: 0 16px 4px;
 }
+.price del,
+.price ins,
+.price strong {
+  white-space: nowrap;
+}
 .price del {
   font-size: 16px;
   font-weight: 600;
@@ -151,7 +156,7 @@
   width: 100%;
   padding: 12px;
 }
-.footer {
+.page_footer {
   margin-top: 140px;
 }
 @media (min-width: 768px) {
@@ -257,7 +262,7 @@
   .catalog_product {
     max-width: 394px;
   }
-  .footer {
+  .page_footer {
     margin-top: 180px;
   }
 }

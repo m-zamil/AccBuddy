@@ -78,7 +78,7 @@
   border: 0;
   cursor: pointer;
 }
-.footer {
+.page_footer {
   margin-top: 140px;
 }
 @media (min-width: 768px) {
@@ -151,7 +151,7 @@
   .catalog_articles_list {
     margin-bottom: 85px;
   }
-  .footer {
+  .page_footer {
     margin-top: 180px;
   }
 }

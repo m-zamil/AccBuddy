@@ -98,7 +98,7 @@
   padding: 12px;
   margin-left: auto;
 }
-.footer {
+.page_footer {
   margin-top: 140px;
 }
 @media (min-width: 768px) {
@@ -173,7 +173,7 @@
   }
 }
 @media (min-width: 1600px) {
-  .footer {
+  .page_footer {
     margin-top: 180px;
   }
 }
