@@ -52,12 +52,12 @@
 .promo_product_section .product_lead_img {
   width: 100%;
 }
-.promo_product_section .product_price {
+.promo_product_section .price {
   text-align: right;
   margin: 46px 38px 4px;
 }
 
-.promo_product_section .product_price del {
+.promo_product_section .price del {
   font-size: 16px;
   font-weight: 600;
   color: rgb(139, 145, 160, 0.5);
@@ -65,7 +65,7 @@
   text-decoration: none;
 }
 
-.promo_product_section .product_price del::before {
+.promo_product_section .price del::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -77,21 +77,21 @@
   background-color: #ffcc81;
 }
 
-.promo_product_section .product_price del .product_price_integer {
+.promo_product_section .price del .product_price_integer {
   font-size: 26px;
   font-weight: 400;
 }
 
-.promo_product_section .product_price ins,
-.promo_product_section .product_price strong {
+.promo_product_section .price ins,
+.promo_product_section .price strong {
   font-size: 26px;
   font-weight: 600;
   text-decoration: none;
   margin-left: 10px;
 }
 
-.promo_product_section .product_price ins .product_price_integer,
-.promo_product_section .product_price strong .product_price_integer {
+.promo_product_section .price ins .product_price_integer,
+.promo_product_section .price strong .product_price_integer {
   font-size: 45px;
   font-weight: 400;
 }
@@ -126,22 +126,22 @@
   .promo_product_section .product_heading a {
     font-size: 62px;
   }
-  .promo_product_section .product_price {
+  .promo_product_section .price {
     margin: 52px 4px 16px;
     text-align: left;
   }
-  .promo_product_section .product_price del {
+  .promo_product_section .price del {
     font-size: 18px;
   }
-  .promo_product_section .product_price del .product_price_integer {
+  .promo_product_section .price del .product_price_integer {
     font-size: 28px;
   }
-  .promo_product_section .product_price ins,
-  .promo_product_section .product_price strong {
+  .promo_product_section .price ins,
+  .promo_product_section .price strong {
     font-size: 28px;
   }
-  .promo_product_section .product_price ins .product_price_integer,
-  .promo_product_section .product_price strong .product_price_integer {
+  .promo_product_section .price ins .product_price_integer,
+  .promo_product_section .price strong .product_price_integer {
     font-size: 48px;
   }
   .promo_product_section .promo_cta {
@@ -179,7 +179,7 @@
     object-fit: contain;
     height: 100%;
   }
-  .promo_product_section .product_price {
+  .promo_product_section .price {
     margin-top: 100px;
   }
 }
