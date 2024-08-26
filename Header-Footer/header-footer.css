@@ -4,6 +4,12 @@
   background-color: #202020;
   border-radius: 0 0 35px 35px;
 }
+
+.footer_email {
+  margin-left: 10px;
+  }
+
+  
 .header-topbar {
   display: flex;
   align-items: center;
