@@ -12,75 +12,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/global.css" />
-    <link rel="stylesheet" href="./Header/header.css" />
+    <link rel="stylesheet" href="./Header-Footer/header-footer.css" />
     <link rel="stylesheet" href="./assets/css/breadcrumb.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./Pagination/pagination.css" />
-    <link rel="stylesheet" href="./Footer/footer.css" />
   </head>
   <body>
     <!-- ====== Header ======-->
-    <header class="header" data-parentid="">
+    <header class="page_header" data-parentid="">
       <div class="container">
         <div class="menu-btn">
-          <button data-hamburger-menu-open="" class="toggle-btn open">
+          <button data-hamburger-menu-open="" class="hamburger_open_button">
             <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="0.84375" y1="1.03809" x2="25.8242" y2="1.03809" stroke="#72CCBF" stroke-width="2" />
               <line x1="0.84375" y1="9.03711" x2="25.8242" y2="9.03711" stroke="#72CCBF" stroke-width="2" />
               <line x1="0.84375" y1="17.0449" x2="25.8242" y2="17.0449" stroke="#72CCBF" stroke-width="2" />
             </svg>
           </button>
-          <button data-hamburger-menu-close="" class="toggle-btn close">
+          <button data-hamburger-menu-close="" class="hamburger_close_button">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="1.01164" y1="18.4853" x2="18.6755" y2="0.821418" stroke="#72CCBF" stroke-width="2" />
               <line x1="18.8984" y1="18.5489" x2="1.2345" y2="0.885047" stroke="#72CCBF" stroke-width="2" />
             </svg>
           </button>
         </div>
-        <a href="https://AccBuddy.com/" data-logo="" class="logo">
-          <span class="logo-word-1">Acc</span>
-          <span class="logo-word-2">Buddy</span>
+        <a href="https://AccBuddy.com/" data-logo="" class="logo_anchor_2">
+          <span class="logo_word_2_1">Acc</span>
+          <span class="logo_word_2_2">Buddy</span>
         </a>
         <div class="nav-utilities">
-          <a href="/account/" title="account" data-account="" class="account">
+          <a href="/account/" title="account" data-account="" class="user_icon_anchor">
             <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.0604 20.3206C15.2265 17.8246 12.2703 16.2031 8.93522 16.2031C5.60019 16.2031 2.66167 17.814 0.824219 20.2993" stroke="#72CCBF" stroke-width="2" stroke-miterlimit="10" />
               <path d="M8.93601 11.5937C11.5952 11.5937 13.7509 9.43798 13.7509 6.77878C13.7509 4.11958 11.5952 1.96387 8.93601 1.96387C6.2768 1.96387 4.12109 4.11958 4.12109 6.77878C4.12109 9.43798 6.2768 11.5937 8.93601 11.5937Z" stroke="#72CCBF" stroke-width="2" stroke-miterlimit="10" />
             </svg>
           </a>
-          <a href="/cart/" title="cart" data-cart="" class="cart">
-            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.2286 8.34277H12.5913H2.32422L5.79379 19.6012H12.5913H13.2286H20.0261L23.4957 8.34277H13.2286Z" stroke="#72CCBF" stroke-width="2" stroke-miterlimit="10" />
-              <path d="M18.3321 5.51162C17.6311 3.17851 15.4715 1.47559 12.9082 1.47559C10.345 1.47559 8.18537 3.17851 7.48438 5.51162" stroke="#72CCBF" stroke-width="2" stroke-miterlimit="10" />
-            </svg>
+          <a href="https://{site}/cart/" class="cart_icon_anchor">
+            <span data-cart-icon-qty="" class="quantity_cart_icon">42</span>
+            <span class="cart_icon_svg">
+              <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.2286 8.34277H12.5913H2.32422L5.79379 19.6012H12.5913H13.2286H20.0261L23.4957 8.34277H13.2286Z" stroke="#72CCBF" stroke-width="2" stroke-miterlimit="10"></path>
+                <path d="M18.3321 5.51162C17.6311 3.17851 15.4715 1.47559 12.9082 1.47559C10.345 1.47559 8.18537 3.17851 7.48438 5.51162" stroke="#72CCBF" stroke-width="2" stroke-miterlimit="10"></path>
+              </svg>
+            </span>
           </a>
         </div>
         <hr class="nav-hr" />
-        <nav data-header-nav="" class="main-nav">
-          <ul>
-            <li>
-              <a href="/products/">Catalog</a>
+        <nav data-header-nav="" class="main_navigation">
+          <ul class="list_main_navigation">
+            <li class="li_main_navigation">
+              <a class="anchor_main_navigation" href="/products/">Catalog</a>
             </li>
-            <li>
-              <a href="/blog/">Sale</a>
+            <li class="li_main_navigation">
+              <a class="anchor_main_navigation" href="/blog/">Sale</a>
             </li>
-            <li>
-              <a href="/blog/">Blog</a>
+            <li class="li_main_navigation">
+              <a class="anchor_main_navigation" href="/blog/">Blog</a>
             </li>
-            <li>
-              <a href="/blog/">News</a>
+            <li class="li_main_navigation">
+              <a class="anchor_main_navigation" href="/blog/">News</a>
             </li>
-            <li>
-              <a href="/blog/">About</a>
+            <li class="li_main_navigation">
+              <a class="anchor_main_navigation" href="/blog/">About</a>
             </li>
-            <li>
-              <a href="/blog/">Contacts</a>
+            <li class="li_main_navigation">
+              <a class="anchor_main_navigation" href="/blog/">Contacts</a>
             </li>
           </ul>
         </nav>
-        <form data-header-search="" class="search-form">
-          <input type="Search" />
-          <button class="search-btn" title="search">
+        <form data-header-search="" class="search_form_header">
+          <input type="Search" class="input_header_search" />
+          <button class="submit_header_search" title="search">
             <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="17.3087" y1="0.868089" x2="24.3123" y2="7.87173" stroke="#FFCC81" stroke-width="2" />
               <line x1="0.0156249" y1="7.25" x2="23.2936" y2="7.25" stroke="#FFCC81" stroke-width="2" />
@@ -91,14 +93,6 @@
       </div>
     </header>
     <!-- ============ Breadcrumb ============ -->
-    <!-- <nav class="container">
-      <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><span>How to Set Up and Use a Microsoft Account</span></li>
-      </ol>
-      
-    </nav> -->
     <nav class="container">
       <ol class="breadcrumb_ol">
         <li class="breadcrumb_li">
@@ -172,7 +166,9 @@
             <h3 class="product_heading">
               <a class="product_anchor">Vmware Workstation 17 Pro Lifetime License</a>
             </h3>
-            <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            <a href="#" class="product_anchor">
+              <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            </a>
             <p class="price"
               ><del class="price_old"
                 ><span class="price_value"><span class="product_price_integer"></span><span class="product_price_separator"></span><span class="product_price_decimal"></span></span></del
@@ -188,7 +184,9 @@
             <h3 class="product_heading">
               <a class="product_anchor"><span>Vmware Workstation 17 Pro Lifetime License</span></a>
             </h3>
-            <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            <a href="#" class="product_anchor">
+              <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            </a>
             <p class="price"
               ><del class="price_old"
                 ><span class="price_value"><span class="product_price_integer"></span><span class="product_price_separator"></span><span class="product_price_decimal"></span></span></del
@@ -204,7 +202,9 @@
             <h3 class="product_heading">
               <a class="product_anchor">Vmware Workstation 17 Pro Lifetime License</a>
             </h3>
-            <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            <a href="#" class="product_anchor">
+              <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            </a>
             <p class="price"
               ><del class="price_old"
                 ><span class="price_value"><span class="product_price_integer"></span><span class="product_price_separator"></span><span class="product_price_decimal"></span></span></del
@@ -220,7 +220,9 @@
             <h3 class="product_heading">
               <a class="product_anchor"><span>Vmware Workstation 17 Pro Lifetime License</span></a>
             </h3>
-            <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            <a href="#" class="product_anchor">
+              <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
+            </a>
             <p class="price"
               ><del class="price_old"
                 ><span class="price_value"><span class="product_price_integer"></span><span class="product_price_separator"></span><span class="product_price_decimal"></span></span></del
@@ -262,7 +264,7 @@
       </section>
       <!-- ============ Related Articles Collection Section ============ -->
       <section class="related_articles_collection">
-        <h2 class="hero_articles_heading"><span>Articles</span></h2>
+        <h2 class="related_articles_heading">Articles</h2>
         <ul class="catalog_articles_list">
           <li class="catalog_article">
             <article class="article">
@@ -278,14 +280,14 @@
           </li>
           <li class="catalog_article">
             <article class="article">
-              <a class="anchor"> <h3 class="article_heading">Ut wisi enim ad minim veniam, quis nostrud exerci</h3></a>
+              <h3 class="article_heading"><a href="#" class="article_anchor">Ut wisi enim ad minim veniam, quis nostrud exerci</a></h3>
               <p class="article_p_lead">Microsoft Word, a renowned text editor, remains a crucial tool for millions of users worldwide. The latest version offers numerous features and capabilities designed to enhance writing efficiency and facilitate professional results. The introduction of new features broadens the editor's capabilities, making it more user-friendly and intuitive for individuals of all experience levels.</p>
               <a class="anchor"><button class="view_article_button">read more</button></a>
             </article>
           </li>
           <li class="catalog_article">
             <article class="article">
-              <a class="anchor"> <h3 class="article_heading">Ut wisi enim ad minim veniam, quis nostrud exerci</h3></a>
+              <h3 class="article_heading"><a href="#" class="article_anchor">Ut wisi enim ad minim veniam, quis nostrud exerci</a></h3>
               <img class="article_lead_img" src="https://accbuddy.com/blog/new-features-word/kie_article_lead_image_640w.png" sizes="(max-width:5920px) 50vw, 1050px" alt="null" data-src="320.png,480.png,640.png" srcset="https://accbuddy.com/blog/new-features-word/kie_article_lead_image_320w.png 320w, https://accbuddy.com/blog/new-features-word/kie_article_lead_image_480w.png 480w, https://accbuddy.com/blog/new-features-word/kie_article_lead_image_640w.png 640w" />
               <p class="article_p_lead">Microsoft Word, a renowned text editor, remains a crucial tool for millions of users worldwide. The latest version offers numerous features and capabilities designed to enhance writing efficiency and facilitate professional results. The introduction of new features broadens the editor's capabilities, making it more user-friendly and intuitive for individuals of all experience levels.</p>
               <a class="anchor"><button class="view_article_button">read more</button></a>
@@ -293,14 +295,14 @@
           </li>
           <li class="catalog_article">
             <article class="article">
-              <a class="anchor"> <h3 class="article_heading">Ut wisi enim ad minim veniam, quis nostrud exerci</h3></a>
+              <h3 class="article_heading"><a href="#" class="article_anchor">Ut wisi enim ad minim veniam, quis nostrud exerci</a></h3>
               <p class="article_p_lead">Microsoft Word, a renowned text editor, remains a crucial tool for millions of users worldwide. The latest version offers numerous features and capabilities designed to enhance writing efficiency and facilitate professional results. The introduction of new features broadens the editor's capabilities, making it more user-friendly and intuitive for individuals of all experience levels.</p>
               <a class="anchor"><button class="view_article_button">read more</button></a>
             </article>
           </li>
           <li class="catalog_article">
             <article class="article">
-              <a class="anchor"> <h3 class="article_heading">Ut wisi enim ad minim veniam, quis nostrud exerci</h3></a>
+              <h3 class="article_heading"><a href="#" class="article_anchor">Ut wisi enim ad minim veniam, quis nostrud exerci</a></h3>
               <p class="article_p_lead">Microsoft Word, a renowned text editor, remains a crucial tool for millions of users worldwide. The latest version offers numerous features and capabilities designed to enhance writing efficiency and facilitate professional results. The introduction of new features broadens the editor's capabilities, making it more user-friendly and intuitive for individuals of all experience levels.</p>
               <a class="anchor"><button class="view_article_button">read more</button></a>
             </article>
@@ -360,9 +362,6 @@
                 ><span class="price_currency">$</span><span class="price_value"><span class="product_price_integer">0</span><span class="product_price_separator">.</span><span class="product_price_decimal">00</span></span></strong
               ></p
             >
-            <div class="wrapper_anchor_product">
-              <a href="#" class="product_anchor">view product</a>
-            </div>
             <div class="wrapper_anchor_product"><a class="product_anchor">view product</a></div>
           </li>
           <li class="catalog_product">
@@ -370,13 +369,15 @@
               <a class="product_anchor"><span>Vmware Workstation 17 Pro Lifetime License</span></a>
             </h3>
             <img class="product_lead_img" src="https://dummyimage.com/400x70/008000/ffffff&amp;text=IMG_lead" />
-            <p class="product_price">
-              <strong>
-                <span>$</span>
-                <span class="product_price_integer">21</span>
-                <span>,99</span>
-              </strong>
-            </p>
+            <p class="price"
+              ><del class="price_old"
+                ><span class="price_value"><span class="product_price_integer"></span><span class="product_price_separator"></span><span class="product_price_decimal"></span></span></del
+              ><ins class="price_discount"
+                ><span class="price_currency">$</span><span class="price_value"><span class="product_price_integer"></span><span class="product_price_separator"></span><span class="product_price_decimal"></span></span></ins
+              ><strong class="price_normal"
+                ><span class="price_currency">$</span><span class="price_value"><span class="product_price_integer">0</span><span class="product_price_separator">.</span><span class="product_price_decimal">00</span></span></strong
+              ></p
+            >
             <div class="wrapper_anchor_product"><a class="product_anchor">view product</a></div>
           </li>
           <li class="catalog_product">
@@ -418,29 +419,35 @@
       </section>
     </main>
     <!-- ============= Footer ============= -->
-    <footer class="footer">
+    <footer class="page_footer">
       <div class="container">
         <div class="footer-top">
-          <a href="/" class="footer-logo"><span>one</span><span>two</span></a>
+          <a href="/" class="logo_anchor_2">
+            <span class="logo_word_2_1">one</span>
+            <span class="logo_word_2_2">two</span>
+          </a>
           <div class="footer-utilities">
-            <a href="/account" title="account" class="footer-account">
-              <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16.5004" cy="16.5873" r="16.5004" fill="#72CCBF" />
-                <path d="M16.8271 13.4346H16.1743H5.65625L9.21062 24.9681H16.1743H16.8271H23.7908L27.3452 13.4346H16.8271Z" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
-                <path d="M22.0582 10.5331C21.34 8.14298 19.1276 6.39844 16.5017 6.39844C13.8759 6.39844 11.6634 8.14298 10.9453 10.5331" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
-              </svg>
-            </a>
-            <a href="/cart" title="cart" class="footer-cart">
+            <a href="/account" title="account" class="user_icon_anchor">
               <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="17.2582" cy="16.5873" r="16.5004" fill="#72CCBF" />
                 <path d="M25.5705 25.9896C23.6918 23.4326 20.6633 21.7715 17.2467 21.7715C13.8302 21.7715 10.8199 23.4217 8.9375 25.9678" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
                 <path d="M17.2529 17.0498C19.9771 17.0498 22.1855 14.8414 22.1855 12.1172C22.1855 9.39297 19.9771 7.18457 17.2529 7.18457C14.5287 7.18457 12.3203 9.39297 12.3203 12.1172C12.3203 14.8414 14.5287 17.0498 17.2529 17.0498Z" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
               </svg>
             </a>
+            <a href="/cart" title="cart" class="cart_icon_anchor">
+              <span data-cart-icon-qty="" class="quantity_cart_icon">42</span>
+              <span class="cart_icon_svg">
+                <svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16.5004" cy="16.5873" r="16.5004" fill="#72CCBF" />
+                  <path d="M16.8271 13.4346H16.1743H5.65625L9.21062 24.9681H16.1743H16.8271H23.7908L27.3452 13.4346H16.8271Z" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
+                  <path d="M22.0582 10.5331C21.34 8.14298 19.1276 6.39844 16.5017 6.39844C13.8759 6.39844 11.6634 8.14298 10.9453 10.5331" stroke="black" stroke-width="2.53884" stroke-miterlimit="10" />
+                </svg>
+              </span>
+            </a>
           </div>
-          <form class="footer-form">
-            <input type="Search" />
-            <button title="search" class="footer-search-btn">
+          <form class="search_form_header">
+            <input type="Search" class="input_header_search" />
+            <button title="search" class="submit_header_search">
               <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="18.0938" y1="0.768479" x2="25.0975" y2="7.77212" stroke="#FFCC81" stroke-width="2" />
                 <line x1="0.800781" y1="7.15039" x2="24.0787" y2="7.15039" stroke="#FFCC81" stroke-width="2" />
@@ -448,66 +455,67 @@
               </svg>
             </button>
           </form>
-          <nav class="footer-nav-top">
-            <ul>
-              <li>
-                <a href="/products">catalog</a>
+          <nav class="main_navigation">
+            <ul class="list_main_navigation">
+              <li class="li_main_navigation">
+                <a class="anchor_main_navigation" href="/products">catalog</a>
               </li>
-              <li>
-                <a href="/blog">sale</a>
+              <li class="li_main_navigation">
+                <a class="anchor_main_navigation" href="/blog">sale</a>
               </li>
-              <li>
-                <a href="/blog">news</a>
+              <li class="li_main_navigation">
+                <a class="anchor_main_navigation" href="/blog">news</a>
               </li>
-              <li>
-                <a href="/blog">articles</a>
+              <li class="li_main_navigation">
+                <a class="anchor_main_navigation" href="/blog">articles</a>
               </li>
-              <li>
-                <a href="/blog">about us</a>
+              <li class="li_main_navigation">
+                <a class="anchor_main_navigation" href="/blog">about us</a>
               </li>
-              <li>
-                <a href="/blog">contacts</a>
+              <li class="li_main_navigation">
+                <a class="anchor_main_navigation" href="/blog">contacts</a>
               </li>
-              <li>
-                <a href="/blog">FAQ</a>
+              <li class="li_main_navigation">
+                <a class="anchor_main_navigation" href="/blog">FAQ</a>
               </li>
             </ul>
           </nav>
         </div>
         <hr class="footer-hr" />
         <div class="footer-bottom">
-          <nav class="footer-nav-bottom">
-            <ul>
-              <li>
-                <a href="/policies/terms-of-service/">Terms of Service</a>
+          <nav class="navigation_secondary">
+            <ul class="list_secondary_navigation">
+              <li class="li_secondary_navigation">
+                <a class="anchor_secondary_navigation" href="/policies/terms-of-service/">Terms of Service</a>
               </li>
-              <li>
-                <a href="/policies/shipping-policy">Shipping Policy</a>
+              <li class="li_secondary_navigation">
+                <a class="anchor_secondary_navigation" href="/policies/shipping-policy">Shipping Policy</a>
               </li>
-              <li>
-                <a href="/policies/privacy-policy">Privacy Policy</a>
+              <li class="li_secondary_navigation">
+                <a class="anchor_secondary_navigation" href="/policies/privacy-policy">Privacy Policy</a>
               </li>
-              <li>
-                <a href="/policies/refund-policy">Refund Policy</a>
+              <li class="li_secondary_navigation">
+                <a class="anchor_secondary_navigation" href="/policies/refund-policy">Refund Policy</a>
               </li>
-              <li>
-                <a href="/policies/payment-policy">Payment Policy</a>
+              <li class="li_secondary_navigation">
+                <a class="anchor_secondary_navigation" href="/policies/payment-policy">Payment Policy</a>
               </li>
-              <li>
-                <a href="/policies/cookie-policy">Cookie Policy</a>
+              <li class="li_secondary_navigation">
+                <a class="anchor_secondary_navigation" href="/policies/cookie-policy">Cookie Policy</a>
               </li>
             </ul>
           </nav>
           <div class="footer-info">
-            <address>your company address</address>
-            <a href="mailto:support@AccBuddy.com">support@AccBuddy.com</a>
-            <br />
-            <small>© 2024 AccBuddy.com. All rights reserved.</small>
+            <address class="footer_address">
+              <span class="footer_contact_address">{company_address}</span> <br />
+              <a class="footer_email" href="mailto:{company_email}">{company_email}</a>
+            </address>
+            <small class="footer_copyright">© 2024 {site}. All rights reserved.</small>
           </div>
         </div>
       </div>
     </footer>
     <!-- ====== Header Script ====== -->
-    <script src="./Header/header.js"></script>
+    <script src="./Header-Footer/header.js"></script>
   </body>
 </html>

@@ -205,6 +205,13 @@
   right: 0;
   padding-right: 30px;
 }
+.cart_product_variables_value {
+  padding-left: 4px;
+}
+.cart_popup_section .wrapper_cart_product_variables {
+  gap: 8px;
+  flex-wrap: wrap;
+}
 
 /*cart_item_remove_button*/
 .cart_popup_section .cart_item_remove_button {
