@@ -11,7 +11,7 @@ body {
     content: ":";
   }
 .product_attribute_value {
-text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 
