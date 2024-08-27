@@ -209,6 +209,7 @@
   padding-left: 4px;
 }
 .cart_popup_section .wrapper_cart_product_variables {
+  display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
