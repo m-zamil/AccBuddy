@@ -10,9 +10,6 @@ body {
 .product_attributes_legend::after {    
     content: ":";
   }
-.product_attribute_value {
-  text-transform: capitalize;
-}
 
 
 
