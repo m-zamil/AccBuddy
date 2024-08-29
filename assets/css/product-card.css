@@ -6,6 +6,14 @@ body {
   font-size: 14px;
 }
 /* general styles */
+
+.product_attributes_legend::after {    
+    content: ":";
+  }
+
+
+
+
 .product_article h1 {
   font-size: 34px;
   font-weight: 600;
