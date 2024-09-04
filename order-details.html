@@ -100,93 +100,103 @@
         ><li><span>order details</span></li>
       </ol>
     </nav>
-    <main>
-      <section class="container">
-        <h1>Order #871541</h1>
-        <time class="order-time" datetime="March 29, 2024 ">March 29, 2024 </time>
+    <main class="main">
+      <section class="order_details_section">
+        <h1 class="heading_order_details">Order <span class="order_number">#871541</span></h1>
+        <span class="order_date"><time datetime="March 29, 2024 ">March 29, 2024 </time></span>
+
         <!-- Cart Content -->
         <div class="cart-content-wrapper">
           <!-- ============ Cart items ============ -->
-          <div class="cart-boxes-wrapper">
+          <ul class="cart_items_list">
             <!-- Cart Box -->
-            <div class="cart-box parent">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="prod-thumb" />
-              <h3 class="prod-name">Vmware Workstation 17 Pro Lifetime License</h3>
-              <p class="prod-price">
+            <li class="cart_item">
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="product_lead_img" />
+              <a href="#" class="product_anchor">
+                <strong class="cart_product_heading">Vmware Workstation 17 Pro Lifetime License</strong>
+              </a>
+              <p class="price_cart_item">
                 <strong>$21,99</strong>
               </p>
-              <div class="order-tracking">
-                <button class="order-tracking-btn">tracking number</button>
-                <div class="order-tracking-popup" hidden>
-                  <button class="order-tracking-closebtn">
+              <form class="order_completed_form">
+                <button class="open_tracking_details" type="button">tracking number</button>
+                <fieldset class="track_order_fieldset" hidden>
+                  <button class="close_track_order" type="button">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <line x1="1.54648" y1="0.660553" x2="11.5749" y2="10.689" stroke="#E7E7ED" stroke-opacity="0.5" stroke-width="1.81084" />
                       <line x1="1.65469" y1="10.6879" x2="11.6831" y2="0.659451" stroke="#E7E7ED" stroke-opacity="0.5" stroke-width="1.81084" />
                     </svg>
                   </button>
-                  <p class="order-tracking-key">FEFN-BEAN-WPRB-2NL5-CNKW</p>
-                  <p class="order-tracking-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit</p>
-                </div>
-              </div>
+                  <p class="digital_order_key">FEFN-BEAN-WPRB-2NL5-CNKW</p>
+                  <p class="digital_order_value">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit</p>
+                </fieldset>
+              </form>
 
-              <p class="quantity-field">1</p>
-              <p class="order-status">processing</p>
-            </div>
+              <p class="order_item_qty">1</p>
+              <p class="order_item_status">processing</p>
+            </li>
             <!-- Cart Box -->
-            <div class="cart-box">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="prod-thumb" />
-              <h3 class="prod-name">Vmware Workstation 17 Pro Lifetime License</h3>
-              <p class="prod-price">
+            <li class="cart_item">
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="product_lead_img" />
+              <a href="#" class="product_anchor">
+                <strong class="cart_product_heading">Vmware Workstation 17 Pro Lifetime License</strong>
+              </a>
+              <p class="price_cart_item">
                 <del>$21,99</del>
                 <ins>$21,99</ins>
               </p>
-              <div class="order-tracking">
-                <button class="order-tracking-btn">digital item</button>
-                <div class="order-tracking-popup" hidden>
-                  <button class="order-tracking-closebtn">
+              <form class="order_completed_form">
+                <button class="open_tracking_details" type="button">digital item</button>
+                <fieldset class="track_order_fieldset" hidden>
+                  <button class="close_track_order" type="button">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <line x1="1.54648" y1="0.660553" x2="11.5749" y2="10.689" stroke="#E7E7ED" stroke-opacity="0.5" stroke-width="1.81084" />
                       <line x1="1.65469" y1="10.6879" x2="11.6831" y2="0.659451" stroke="#E7E7ED" stroke-opacity="0.5" stroke-width="1.81084" />
                     </svg>
                   </button>
-                  <p class="order-tracking-key">FEFN-BEAN-WPRB-2NL5-CNKW</p>
-                  <p class="order-tracking-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit</p>
-                </div>
-              </div>
-              <p class="quantity-field">1</p>
-              <p class="order-status">processing</p>
-            </div>
+                  <p class="digital_order_key">FEFN-BEAN-WPRB-2NL5-CNKW</p>
+                  <p class="digital_order_value">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit</p>
+                </fieldset>
+              </form>
+              <p class="order_item_qty">1</p>
+              <p class="order_item_status">processing</p>
+            </li>
             <!-- Cart Box -->
-            <div class="cart-box">
-              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="prod-thumb" />
-              <h3 class="prod-name">Vmware Workstation 17 Pro Lifetime License</h3>
-              <p class="prod-price">
+            <li class="cart_item">
+              <img src="./assets/images/office_2019_pp_cplanetnp_1a.jpg" alt="" class="product_lead_img" />
+              <a href="#" class="product_anchor">
+                <strong class="cart_product_heading">Vmware Workstation 17 Pro Lifetime License</strong>
+              </a>
+              <p class="price_cart_item">
                 <del>$21,99</del>
                 <ins>$21,99</ins>
               </p>
-              <div class="order-tracking">
-                <button class="order-tracking-btn">digital item</button>
-                <div class="order-tracking-popup" hidden>
-                  <button class="order-tracking-closebtn">
+              <form class="order_completed_form">
+                <button class="open_tracking_details" type="button">digital item</button>
+                <fieldset class="track_order_fieldset" hidden>
+                  <button class="close_track_order" type="button">
                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <line x1="1.54648" y1="0.660553" x2="11.5749" y2="10.689" stroke="#E7E7ED" stroke-opacity="0.5" stroke-width="1.81084" />
                       <line x1="1.65469" y1="10.6879" x2="11.6831" y2="0.659451" stroke="#E7E7ED" stroke-opacity="0.5" stroke-width="1.81084" />
                     </svg>
                   </button>
-                  <p class="order-tracking-key">FEFN-BEAN-WPRB-2NL5-CNKW</p>
-                  <p class="order-tracking-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit</p>
-                </div>
-              </div>
-              <p class="quantity-field">1</p>
-              <p class="order-status">processing</p>
-            </div>
-          </div>
+                  <p class="digital_order_key">FEFN-BEAN-WPRB-2NL5-CNKW</p>
+                  <p class="digital_order_value">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit</p>
+                </fieldset>
+              </form>
+              <p class="order_item_qty">1</p>
+              <p class="order_item_status">processing</p>
+            </li>
+          </ul>
           <!-- ============ Checkout Summary ============ -->
           <div class="order-summary">
-            <p class="subtotal"
-              ><span>Subtotal:</span> <span><del>$54,00</del><ins>$43,99</ins></span></p
-            >
-            <p class="tax"><span>Tax:</span> <span>$1,99</span></p>
+            <p class="cart_price_subtotal">
+              <span class="text_bold">Subtotal:</span>
+              <del class="price_old"><span class="price_value">$54,00</span></del
+              ><ins class="price_discount"><span class="price_currency">$</span><span class="price_value">43,99</span></ins
+              ><!--<strong class="price_normal"><span class="price_currency">$</span><span class="price_value">43,99</span></strong>-->
+            </p>
+            <p class="cart_price_tax"><span class="text_regular">Tax:</span> <span>$1,99</span></p>
             <p class="shipping"><span>Shipping:</span> <span>electronic - free</span></p>
             <hr />
 
@@ -297,13 +307,13 @@
     <!-- ====== Header Script ====== -->
     <script src="./assets/js/header.js"></script>
     <script>
-      const trackingLinks = document.querySelectorAll('.order-tracking-btn');
+      const trackingLinks = document.querySelectorAll('.open_tracking_details');
       trackingLinks.forEach((link) => {
         link.addEventListener('click', () => {
           link.nextElementSibling.toggleAttribute('hidden');
         });
       });
-      const closePopupBtns = document.querySelectorAll('.order-tracking-closebtn');
+      const closePopupBtns = document.querySelectorAll('.close_track_order');
       closePopupBtns.forEach((btn) => {
         btn.addEventListener('click', () => {
           btn.parentElement.toggleAttribute('hidden');
