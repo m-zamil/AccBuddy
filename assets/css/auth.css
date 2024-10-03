@@ -47,6 +47,9 @@ main {
   margin-bottom: 10px;
   width: 100%;
 }
+.signup_form input[type='checkbox'] {
+  width: auto;
+}
 .wrapper_auth_pass {
   position: relative;
 }
