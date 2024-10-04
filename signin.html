@@ -97,11 +97,11 @@
             <h1 class="auth_heading">Sign in</h1>
             <a class="reset_password_anchor" href="https://{site}/reset-password/">Forgot password?</a>
           </div>
-          <form class="signin_form">
+          <form class="signin_form" data-form-invalid>
             <div class="wrapper_form_inputs">
               <input class="auth_email" type="email" placeholder="Email" />
               <div class="wrapper_auth_pass">
-                <input class="auth_password" type="password" placeholder="Password" />
+                <input class="auth_password" type="password" placeholder="Password" data-invalid />
                 <button class="auth_show_password" type="button">
                   <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.3072 8.08737C22.2205 11.7538 18.0827 13.9973 13.5324 13.9973C8.98207 13.9973 4.80931 11.735 1.71867 8.03844C1.68753 8.00079 1.68753 8.06479 1.71867 8.02714C4.80153 4.36071 8.94315 2.11719 13.4935 2.11719C18.0438 2.11719 22.2166 4.37953 25.3072 8.07232C25.3384 8.10996 25.3384 8.04973 25.3072 8.08737Z" stroke="#202020" stroke-width="2.3" stroke-miterlimit="10" />
@@ -110,7 +110,7 @@
                 </button>
               </div>
             </div>
-            <span class="auth_error_message" hidden>error!!!</span>
+            <span class="auth_error_message">Incorrect password!</span>
             <button class="button_execute_auth_form">Sign in</button>
           </form>
         </section>
