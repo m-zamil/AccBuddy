@@ -156,10 +156,20 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.change_password_form .signin_anchor,
+.change_password_form .auth_message {
+  display: none;
+}
 [data-pass-changed] .wrapper_auth_pass,
 [data-pass-changed] .auth_error_message,
 [data-pass-changed] .button_execute_auth_form {
   display: none;
+}
+[data-pass-changed].change_password_form .auth_message {
+  display: block;
+}
+[data-pass-changed].change_password_form .signin_anchor {
+  display: flex;
 }
 .reset_password_form .auth_message {
   display: none;
