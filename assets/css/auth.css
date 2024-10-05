@@ -161,9 +161,15 @@ main {
 [data-pass-changed] .button_execute_auth_form {
   display: none;
 }
+.reset_password_form .auth_message {
+  display: none;
+}
 [data-pass-sent] .wrapper_form_inputs,
 [data-pass-sent] .auth_error_message {
   display: none;
+}
+[data-pass-sent].reset_password_form .auth_message {
+  display: block;
 }
 .auth_section input[data-invalid],
 .auth_section input[data-invalid]:focus-visible {
