@@ -87,11 +87,13 @@
 .catalog_product {
   background-color: white;
   border-radius: 30px;
-  padding: 25px 22px 20px;
   margin-bottom: 30px;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+.catalog_product .product {
+  padding: 25px 22px 20px;
 }
 .product_heading {
   font-size: 14px;
@@ -197,8 +199,10 @@
     width: max-content;
   }
   .catalog_product {
-    padding: 42px 22px 24px;
     margin: 0;
+  }
+  .catalog_product .product {
+    padding: 42px 22px 24px;
   }
   .product {
     flex-direction: column;
@@ -251,6 +255,8 @@
   .catalog_product {
     max-width: 100%;
     margin-bottom: 0;
+  }
+  .catalog_product .product {
     padding: 42px 30px 30px;
   }
 }
