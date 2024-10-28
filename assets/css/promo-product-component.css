@@ -1,0 +1,196 @@
+/* ======================== Promo Product Header Section ======================== */
+img {
+  width: 100%;
+  height: auto;
+}
+.page_header {
+  position: relative;
+  z-index: 2;
+}
+.breadcrumb_ol {
+  position: relative;
+  z-index: 2;
+}
+.breadcrumb_ol > li + li:before {
+  color: white;
+}
+.wrapper_promo_product_header {
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  z-index: 1;
+}
+.promo_product_section {
+  background-color: #202020;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 35px;
+  color: #e7e7ed;
+  position: relative;
+  margin-top: 0;
+  padding: 70px 0 46px;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin: 100px 0;
+}
+.wrapper_promo_product_header .promo_product_section {
+  border-radius: 0 0 35px 35px;
+  padding: 10px 0 46px;
+}
+.wrapper_promo_product_header .promo_product_section {
+  margin-top: -134px;
+  padding: 145px 0 46px;
+}
+.promo_product_section .product_heading {
+  margin: 0 0 28px;
+  margin-right: -2px;
+}
+.promo_product_section .product_heading a {
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  line-height: 1;
+}
+.promo_product_section .product_lead_img {
+  width: 100%;
+}
+.promo_product_section .price {
+  text-align: right;
+  margin: 46px 38px 4px;
+}
+
+.promo_product_section .price del {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(139, 145, 160, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+
+.promo_product_section .price del::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -6px;
+  top: 30%;
+  transform: translateY(-50%) rotate(-15deg);
+  width: 100%;
+  height: 2px;
+  background-color: #ffcc81;
+}
+
+.promo_product_section .price del .product_price_integer {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.promo_product_section .price ins,
+.promo_product_section .price strong {
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.promo_product_section .price ins .product_price_integer,
+.promo_product_section .price strong .product_price_integer {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.promo_product_section .promo_cta {
+  font-size: 14px;
+  background-color: #ffcc81;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10em;
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  padding: 12px;
+  margin-left: auto;
+}
+.page_footer {
+  margin-top: 140px;
+}
+@media (min-width: 768px) {
+  .wrapper_promo_product_header .promo_product_section {
+    margin-top: -142px;
+    padding: 172px 0 100px;
+    border-radius: 0 0 40px 40px;
+  }
+  .promo_product_section {
+    border-radius: 40px;
+    margin-top: 0;
+    padding: 106px 0 100px;
+  }
+  .promo_product_section .product_heading a {
+    font-size: 62px;
+  }
+  .promo_product_section .price {
+    margin: 52px 4px 16px;
+    text-align: left;
+  }
+  .promo_product_section .price del {
+    font-size: 18px;
+  }
+  .promo_product_section .price del .product_price_integer {
+    font-size: 28px;
+  }
+  .promo_product_section .price ins,
+  .promo_product_section .price strong {
+    font-size: 28px;
+  }
+  .promo_product_section .price ins .product_price_integer,
+  .promo_product_section .price strong .product_price_integer {
+    font-size: 48px;
+  }
+  .promo_product_section .promo_cta {
+    font-size: 16px;
+    width: max-content;
+    padding: 12px 36px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1201px) {
+  .wrapper_promo_product_header .promo_product_section {
+    border-radius: 0 0 50px 50px;
+    padding: 172px 0 100px;
+  }
+  .promo_product_section {
+    border-radius: 50px;
+    padding: 100px 0;
+  }
+  .promo_product_section .product {
+    position: relative;
+  }
+  .promo_product_section .product_heading {
+    max-width: calc(46% - 75px);
+    margin-right: 75px;
+    padding-top: 10px;
+    min-width: 27ch;
+  }
+  .promo_product_section .product_lead_img {
+    max-width: 54%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 100%;
+    object-fit: contain;
+    height: 100%;
+  }
+  .promo_product_section .price {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1600px) {
+  .page_footer {
+    margin-top: 180px;
+  }
+}
