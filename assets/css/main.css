@@ -1,5 +1,4 @@
 img {
-  width: 100%;
   height: auto;
 }
 /* ======================== Promo Product Header Section ======================== */
@@ -101,7 +100,7 @@ img {
   font-weight: 400;
 }
 
-.promo_product_section .promo_cta {
+.promo_product_section .wrapper_anchor_product {
   font-size: 14px;
   background-color: #ffcc81;
   text-align: center;
@@ -149,7 +148,7 @@ img {
   .promo_product_section .price strong .product_price_integer {
     font-size: 48px;
   }
-  .promo_product_section .promo_cta {
+  .promo_product_section .wrapper_anchor_product {
     font-size: 16px;
     width: max-content;
     padding: 12px 36px;
