@@ -1,3 +1,7 @@
+img {
+  width: 100%;
+  height: auto;
+}
 /* ======================== Promo Product Header Section ======================== */
 .page_header {
   position: relative;
@@ -41,6 +45,7 @@
 }
 .promo_product_section .product_heading {
   margin: 0 0 28px;
+  margin-right: -2px;
 }
 .promo_product_section .product_heading a {
   font-size: 40px;
