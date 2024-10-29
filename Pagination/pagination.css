@@ -9,26 +9,30 @@
   gap: 7px;
   margin: 40px 0;
 }
-.pag_list li {
+.pag_list li a,
+.pag_list li span {
   background-color: rgb(255, 204, 129, 0.4);
   border-radius: 10px;
   padding: 5px 8px;
   min-width: 34px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.pag_list li a {
   cursor: pointer;
 }
-.pag_list .pag_list_element_number_current,
-.pag_list .pag_list_element_arrow_left,
-.pag_list .pag_list_element_arrow_right {
+.pag_list .pag_list_element_number_current span,
+.pag_list .pag_list_element_arrow_left a,
+.pag_list .pag_list_element_arrow_right a {
   background-color: #ffcc81;
 }
 .pag_list li a span {
   display: flex;
   align-items: center;
 }
-.pag_list li.pag_list_element_dots {
+.pag_list li.pag_list_element_dots span {
   background-color: transparent;
 }
 .pag_list .pag_list_element_number_current,
@@ -39,7 +43,8 @@
   .pag_list {
     font-size: 16px;
   }
-  .pag_list li {
+  .pag_list li a,
+  .pag_list li span {
     min-width: 38px;
   }
 }
