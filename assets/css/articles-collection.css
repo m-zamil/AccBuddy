@@ -69,7 +69,7 @@
   margin: 0;
   margin: 0 0 12px;
 }
-.view_article_button {
+li > .article_anchor:last-child {
   font-size: 14px;
   font-weight: 600;
   background-color: #ffcc81;
@@ -114,7 +114,7 @@
   .article_p_lead {
     font-size: 16px;
   }
-  .view_article_button {
+  li > .article_anchor:last-child {
     font-size: 16px;
   }
 }
