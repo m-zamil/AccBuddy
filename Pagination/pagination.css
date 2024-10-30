@@ -10,7 +10,8 @@
   margin: 40px 0;
 }
 .pag_list li a,
-.pag_list li span {
+.pag_list li span,
+.pag_list_element_number_current {
   background-color: rgb(255, 204, 129, 0.4);
   border-radius: 10px;
   padding: 5px 8px;
@@ -23,7 +24,7 @@
 .pag_list li a {
   cursor: pointer;
 }
-.pag_list .pag_list_element_number_current span,
+.pag_list .pag_list_element_number_current,
 .pag_list .pag_list_element_arrow_left a,
 .pag_list .pag_list_element_arrow_right a {
   background-color: #ffcc81;
@@ -44,7 +45,8 @@
     font-size: 16px;
   }
   .pag_list li a,
-  .pag_list li span {
+  .pag_list li span,
+  .pag_list_element_number_current {
     min-width: 38px;
   }
 }
