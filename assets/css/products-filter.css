@@ -1,0 +1,54 @@
+.catalog_products_sorting_selection {
+  outline: 0;
+  font: inherit;
+  font-size: 14px;
+  background-color: #e7e7ed;
+  border: 0;
+  border-radius: 10em;
+  padding: 12px 22px;
+  min-width: 165px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.sort-filter {
+  margin-top: 28px;
+  text-align: right;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+.select-wrapper::after {
+  content: '';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13.6787' cy='13.748' r='13.3848' transform='rotate(-180 13.6787 13.748)' fill='%23FFCC81'/%3E%3Cline x1='21.3229' y1='13.3386' x2='12.835' y2='21.8265' stroke='%23202020' stroke-width='2.40493'/%3E%3Cline x1='13.5863' y1='4.83203' x2='13.5863' y2='20.5979' stroke='%23202020' stroke-width='2.40493'/%3E%3Cline x1='5.96941' y1='13.3216' x2='14.4574' y2='21.8096' stroke='%23202020' stroke-width='2.40493'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  pointer-events: none;
+}
+.catalog_products_sorting_label_value {
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .catalog_products_sorting_label_value,
+  .catalog_products_sorting_selection {
+    font-size: 16px;
+  }
+  .catalog_products_sorting_selection {
+    min-width: 190px;
+    padding: 12px 35px;
+  }
+  .sort-filter {
+    margin-top: 48px;
+  }
+}

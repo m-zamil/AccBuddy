@@ -299,7 +299,7 @@ img {
 .collection_products_heading {
   margin: 0 0 26px;
 }
-.collection_products_heading a {
+.collection_products_heading {
   color: white;
   font-size: 40px;
   font-weight: 600;
@@ -413,7 +413,7 @@ img {
   .collection_products_heading {
     margin: 0 0 22px;
   }
-  .collection_products_heading a {
+  .collection_products_heading {
     font-size: 62px;
   }
   .collection_products_lead_paragraph {

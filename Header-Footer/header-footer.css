@@ -406,6 +406,7 @@
   background-color: #202020;
   border-radius: 35px 35px 0px 0px;
   padding: 18px 0;
+  margin-top: 140px;
 }
 .page_footer .logo_anchor_2 {
   font-size: 20px;
@@ -571,6 +572,7 @@
   .page_footer {
     padding: 20px 0 32px;
     border-radius: 40px 40px 0px 0px;
+    margin-top: 180px;
   }
   .page_footer .container {
     position: relative;
